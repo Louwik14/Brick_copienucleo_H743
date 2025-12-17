@@ -21,6 +21,11 @@
 #define HALL_VELOCITY_MIN_US      500U
 #define HALL_VELOCITY_MAX_US      30000U
 
+#if !STM32_ADC_USE_ADC12
+#error "Hall sensors expect ADC12/ADCD1 to be enabled in mcuconf.h"
+#endif
+
+/* ADC12_INP4 on PC4, ADC12_INP7 on PA7. MUX select pins sit on PA4/PA5/PA6. */
 #define HALL_LINE_ADC1            PAL_LINE(GPIOC, 4U) /* ADC1 INP4 */
 #define HALL_LINE_ADC2            PAL_LINE(GPIOA, 7U) /* ADC1 INP7 */
 #define HALL_LINE_MUX_S0          PAL_LINE(GPIOA, 5U)
@@ -33,7 +38,7 @@ static const ADCConversionGroup adcgrpcfg1 = {
     .num_channels = 1,
     .end_cb       = NULL,
     .error_cb     = NULL,
-    .cfgr         = 0,
+    .cfgr         = ADC_CFGR_RES_1, /* 12 bits to match HALL_ADC_RESOLUTION */
     .cfgr2        = 0,
     .smpr         = {
         (ADC_SMPR_SMP_64P5 << ADC_SMPR1_SMP4_Pos),
@@ -53,7 +58,7 @@ static const ADCConversionGroup adcgrpcfg2 = {
     .num_channels = 1,
     .end_cb       = NULL,
     .error_cb     = NULL,
-    .cfgr         = 0,
+    .cfgr         = ADC_CFGR_RES_1, /* 12 bits to match HALL_ADC_RESOLUTION */
     .cfgr2        = 0,
     .smpr         = {
         (ADC_SMPR_SMP_64P5 << ADC_SMPR1_SMP7_Pos),
@@ -254,8 +259,11 @@ void drv_hall_task(void) {
         mux_select(mux);
         chThdSleepMicroseconds(HALL_SETTLE_US);
 
-        adcConvert(&ADCD1, &adcgrpcfg1, &adc_sample1, 1);
-        adcConvert(&ADCD1, &adcgrpcfg2, &adc_sample2, 1);
+        msg_t status1 = adcConvert(&ADCD1, &adcgrpcfg1, &adc_sample1, 1);
+        msg_t status2 = adcConvert(&ADCD1, &adcgrpcfg2, &adc_sample2, 1);
+        if (status1 != MSG_OK || status2 != MSG_OK) {
+            continue;
+        }
 
         uint16_t filtered1 = 0;
         uint16_t filtered2 = 0;
