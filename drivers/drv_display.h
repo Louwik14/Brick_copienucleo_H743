@@ -34,7 +34,6 @@ void drv_display_set_font(const font_t *font);
 
 void drv_display_draw_char(uint8_t x, uint8_t y, char c);
 void drv_display_draw_text(uint8_t x, uint8_t y, const char *txt);
-void drv_display_draw_number(uint8_t x, uint8_t y, int num);
 
 void drv_display_draw_text_with_font(const font_t *font,
                                      uint8_t x, uint8_t y,

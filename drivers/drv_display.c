@@ -1,10 +1,9 @@
 #include "drv_display.h"
-#include "drivers.h"
+#include "spi5_bus.h"
 #include "ch.h"
 #include "hal.h"
 #include "brick_config.h"
 #include <string.h>
-#include <stdio.h>
 
 /* ====================================================================== */
 /*                        CONFIGURATION MATÉRIELLE                        */
@@ -108,6 +107,8 @@ static inline void set_pixel(int x, int y, bool on) {
 /* ====================================================================== */
 
 void drv_display_init(void) {
+
+    spi5_bus_init();
 
     /* Reset OLED */
     palClearLine(LINE_SPI5_RES_OLED);
@@ -223,12 +224,6 @@ void drv_display_draw_text_at_baseline(const font_t *font,
 
     drv_display_draw_text(x, y, txt);
     current_font = save;
-}
-
-void drv_display_draw_number(uint8_t x, uint8_t y, int num) {
-    char buf[16];
-    snprintf(buf, sizeof(buf), "%d   ", num);
-    drv_display_draw_text(x, y, buf);
 }
 
 /* ====================================================================== */
