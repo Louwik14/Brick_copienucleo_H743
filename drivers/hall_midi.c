@@ -2,8 +2,8 @@
 
 #include "ch.h"
 #include "drv_hall.h"
-#include "midi.h"
 #include "usb_device.h"
+#include "midi.h"
 
 #include <stdbool.h>
 #include <string.h>
@@ -12,9 +12,13 @@
 #define HALL_MIDI_BASE_NOTE             60U    /* C4 */
 #define HALL_MIDI_VELOCITY_ON           100U
 #define HALL_MIDI_VELOCITY_OFF          0U
-#define HALL_MIDI_POLL_INTERVAL_MS      2U     /* Boucle rapide 1–5 ms */
+#define HALL_MIDI_POLL_INTERVAL_MS      1U     /* Boucle rapide 1–2 ms */
 #define HALL_MIDI_USB_CHECK_INTERVAL_MS 5U
 #define HALL_MIDI_USB_STABLE_MS         200U   /* USB doit rester actif pendant 200 ms */
+#define HALL_MIDI_DEBUG_PULSE_MS        50U
+#define HALL_MIDI_NOTE_START            24U    /* C1  */
+#define HALL_MIDI_NOTE_FIRST_TASK       25U    /* C#1 */
+#define HALL_MIDI_NOTE_ACTIVITY         26U    /* D1  */
 #define HALL_MIDI_THREAD_WA             1024
 
 static THD_WORKING_AREA(hall_midi_wa, HALL_MIDI_THREAD_WA);
@@ -35,8 +39,23 @@ static void reset_sensor_states(bool *states) {
   memset(states, 0, sizeof(bool) * BRICK_NUM_HALL_SENSORS);
 }
 
+static inline bool any_raw_activity(void) {
+  for (uint8_t i = 0; i < BRICK_NUM_HALL_SENSORS; ++i) {
+    if (drv_hall_get_raw(i) != 0U) {
+      return true;
+    }
+  }
+  return false;
+}
+
 static void send_all_notes_off(void) {
   midi_all_notes_off(MIDI_DEST_USB, HALL_MIDI_CHANNEL);
+}
+
+static void send_debug_pulse(uint8_t note) {
+  midi_note_on(MIDI_DEST_USB, HALL_MIDI_CHANNEL, note, HALL_MIDI_VELOCITY_ON);
+  chThdSleepMilliseconds(HALL_MIDI_DEBUG_PULSE_MS);
+  midi_note_off(MIDI_DEST_USB, HALL_MIDI_CHANNEL, note, HALL_MIDI_VELOCITY_OFF);
 }
 
 static void wait_for_usb_ready(void) {
@@ -65,6 +84,7 @@ static THD_FUNCTION(hall_midi_thread_func, arg) {
 
   bool prev_state[BRICK_NUM_HALL_SENSORS];
   bool hall_initialized = false;
+  bool start_debug_sent = false;
 
   reset_sensor_states(prev_state);
 
@@ -72,19 +92,36 @@ static THD_FUNCTION(hall_midi_thread_func, arg) {
     /* Attendre une liaison USB stable (200 ms consécutives) avant toute activité Hall. */
     wait_for_usb_ready();
 
+    if (!start_debug_sent) {
+      send_debug_pulse(HALL_MIDI_NOTE_START);
+      start_debug_sent = true;
+    }
+
     if (!hall_initialized) {
       drv_hall_init();
       hall_initialized = true;
     }
 
+    bool first_task_notified = false;
+    bool raw_activity_notified = false;
+
     /* Synchronise l'état des capteurs avant de commencer à émettre des notes. */
-    drv_hall_task();
     reset_sensor_states(prev_state);
     send_all_notes_off();
 
     /* Boucle principale pendant que l'USB reste actif. */
     while (usb_device_active()) {
       drv_hall_task();
+
+      if (!first_task_notified) {
+        midi_note_on(MIDI_DEST_USB, HALL_MIDI_CHANNEL, HALL_MIDI_NOTE_FIRST_TASK, HALL_MIDI_VELOCITY_ON);
+        first_task_notified = true;
+      }
+
+      if (!raw_activity_notified && any_raw_activity()) {
+        midi_note_on(MIDI_DEST_USB, HALL_MIDI_CHANNEL, HALL_MIDI_NOTE_ACTIVITY, HALL_MIDI_VELOCITY_ON);
+        raw_activity_notified = true;
+      }
 
       for (uint8_t i = 0; i < BRICK_NUM_HALL_SENSORS; ++i) {
         const bool pressed = drv_hall_is_pressed(i);
