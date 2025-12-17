@@ -1,5 +1,5 @@
 #include "drv_buttons.h"
-#include "drivers.h"
+#include "spi5_bus.h"
 #include "ch.h"
 #include "hal.h"
 #include "brick_config.h"
@@ -117,6 +117,7 @@ static THD_FUNCTION(buttonThread, arg) {
 /* ====================================================================== */
 
 void drv_buttons_init(void) {
+    spi5_bus_init();
 
     /* CS shift-register */
     palSetLineMode(LINE_SPI5_CS_SR, PAL_MODE_OUTPUT_PUSHPULL);

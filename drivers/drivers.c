@@ -5,11 +5,10 @@
  */
 
 #include "drivers.h"
-
-mutex_t spi5_mutex;
+#include "spi5_bus.h"
 
 void drivers_init_all(void) {
-    chMtxObjectInit(&spi5_mutex);
+    spi5_bus_init();
 
     /* Contrat de démarrage :
        - drv_display   : init + start (thread de rafraîchissement)
