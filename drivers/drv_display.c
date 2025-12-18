@@ -1,8 +1,11 @@
 #include "drv_display.h"
+
 #include "spi5_bus.h"
+#include "cache_utils.h"
 #include "ch.h"
 #include "hal.h"
 #include "brick_config.h"
+
 #include <string.h>
 
 /* ====================================================================== */
@@ -16,8 +19,8 @@ static const SPIConfig spicfg = {
     .data_cb  = NULL,
     .error_cb = NULL,
 
-    /* ~10–15 MHz selon ton clock SPI */
-    .cfg1 = SPI_CFG1_MBR_2 |               /* Prescaler */
+    /* Fréquence volontairement modérée pour la robustesse. */
+    .cfg1 = SPI_CFG1_MBR_4 |               /* Prescaler */
             SPI_CFG1_DSIZE_VALUE(7),      /* 8 bits */
 
     .cfg2 = SPI_CFG2_MASTER |
@@ -35,9 +38,19 @@ static const SPIConfig spicfg = {
 
 /* Buffer en RAM D2 non-cacheable (MPU) pour éviter la corruption DMA (SPI5). */
 static DISPLAY_DMA_BUFFER_ATTR uint8_t buffer[BRICK_OLED_WIDTH * BRICK_OLED_HEIGHT / 8];
-static DISPLAY_DMA_BUFFER_ATTR uint8_t cmd_byte;
 static const font_t *current_font = NULL;
 static thread_t *display_tp = NULL;
+static binary_semaphore_t refresh_sem;
+static volatile bool framebuffer_dirty = false;
+static volatile bool display_thread_running = false;
+
+/*
+ * Risques identifiés de corruption OLED :
+ *  - préemption en plein transfert SPI5 (CS/DC incohérents),
+ *  - DMA + D-Cache sur buffers cacheables.
+ * Mitigation : thread propriétaire + spi5_bus_lock sur toute la frame,
+ *  envoi dans RAM D2 non‑cacheable + clean D-Cache défensif avant chaque bloc.
+ */
 
 /* ====================================================================== */
 /*                              UTILITAIRES GPIO                          */
@@ -50,34 +63,32 @@ static inline void dc_data(void) { palSetLine  (LINE_SPI5_DC_OLED); }
 /*                              UTILITAIRES SPI                           */
 /* ====================================================================== */
 
-static void send_cmd(uint8_t cmd) {
-    cmd_byte = cmd;
+static void send_bytes(bool data_mode, const uint8_t *data, size_t len) {
+    if (len == 0U || data == NULL) {
+        return;
+    }
 
-    chMtxLock(&spi5_mutex);
+    /* Assure la cohérence DMA si le D-Cache est actif. */
+    cache_utils_clean_dcache(data, len);
 
-    /* SPI5 est partagé, la config est appliquée par transaction sous mutex. */
-    spiStart(&SPID5, &spicfg);
+    if (data_mode) {
+        dc_data();
+    } else {
+        dc_cmd();
+    }
 
-    dc_cmd();
-    palClearLine(LINE_SPI5_CS_OLED);
-    spiSend(&SPID5, 1, &cmd_byte);
-    palSetLine(LINE_SPI5_CS_OLED);
-
-    chMtxUnlock(&spi5_mutex);
-}
-
-static void send_data(const uint8_t *data, size_t len) {
-    chMtxLock(&spi5_mutex);
-
-    /* SPI5 est partagé, la config est appliquée par transaction sous mutex. */
-    spiStart(&SPID5, &spicfg);
-
-    dc_data();
     palClearLine(LINE_SPI5_CS_OLED);
     spiSend(&SPID5, len, data);
     palSetLine(LINE_SPI5_CS_OLED);
+}
 
-    chMtxUnlock(&spi5_mutex);
+static void send_cmd_list(const uint8_t *cmds, size_t count) {
+    send_bytes(false, cmds, count);
+}
+
+static void mark_dirty_and_notify(void) {
+    framebuffer_dirty = true;
+    chBSemSignal(&refresh_sem);
 }
 
 /* ====================================================================== */
@@ -109,6 +120,7 @@ static inline void set_pixel(int x, int y, bool on) {
 void drv_display_init(void) {
 
     spi5_bus_init();
+    chBSemObjectInit(&refresh_sem, true);
 
     /* Reset OLED */
     palClearLine(LINE_SPI5_RES_OLED);
@@ -116,20 +128,30 @@ void drv_display_init(void) {
     palSetLine(LINE_SPI5_RES_OLED);
     chThdSleepMilliseconds(10);
 
-    /* Séquence init SSD1309 / SSD1306 */
-    send_cmd(0xAE);
-    send_cmd(0xD5); send_cmd(0x80);
-    send_cmd(0xA8); send_cmd(0x3F);
-    send_cmd(0xD3); send_cmd(0x00);
-    send_cmd(0x40);
-    send_cmd(0x8D); send_cmd(0x14);
-    send_cmd(0x20); send_cmd(0x00);
-    send_cmd(0xA1);
-    send_cmd(0xC8);
-    send_cmd(0xDA); send_cmd(0x12);
-    send_cmd(0xAF);
+    /* Séquence init SSD1309 / SSD1306 : transaction atomique. */
+    spi5_bus_lock();
+    spi5_bus_start(&spicfg);
+
+    static DISPLAY_DMA_BUFFER_ATTR const uint8_t init_seq[] = {
+        0xAE,
+        0xD5, 0x80,
+        0xA8, 0x3F,
+        0xD3, 0x00,
+        0x40,
+        0x8D, 0x14,
+        0x20, 0x00,
+        0xA1,
+        0xC8,
+        0xDA, 0x12,
+        0xAF
+    };
+
+    send_cmd_list(init_seq, sizeof(init_seq));
+
+    spi5_bus_unlock();
 
     drv_display_clear();
+    framebuffer_dirty = true;
 
     extern const font_t FONT_5X7;
     current_font = &FONT_5X7;
@@ -141,20 +163,40 @@ void drv_display_init(void) {
 
 void drv_display_clear(void) {
     memset(buffer, 0x00, sizeof(buffer));
+    mark_dirty_and_notify();
 }
 
 /* ====================================================================== */
 /*                               UPDATE                                   */
 /* ====================================================================== */
 
-void drv_display_update(void) {
+static void drv_display_flush_frame(void) {
+    spi5_bus_lock();
+    spi5_bus_start(&spicfg);
 
     for (uint8_t page = 0; page < 8; page++) {
-        send_cmd(0xB0 + page);
-        send_cmd(0x00);
-        send_cmd(0x10);
-        send_data(&buffer[page * BRICK_OLED_WIDTH], BRICK_OLED_WIDTH);
+        const uint8_t cmds[] = { (uint8_t)(0xB0 + page), 0x00, 0x10 };
+        send_cmd_list(cmds, sizeof(cmds));
+
+        const uint8_t *page_ptr = &buffer[page * BRICK_OLED_WIDTH];
+        send_bytes(true, page_ptr, BRICK_OLED_WIDTH);
     }
+
+    spi5_bus_unlock();
+}
+
+void drv_display_update(void) {
+    if (display_thread_running) {
+        mark_dirty_and_notify();
+        return;
+    }
+
+    framebuffer_dirty = false;
+    drv_display_flush_frame();
+}
+
+void drv_display_request_refresh(void) {
+    mark_dirty_and_notify();
 }
 
 /* ====================================================================== */
@@ -169,20 +211,27 @@ static inline uint8_t font_advance(const font_t *f) {
     return (uint8_t)(f->width + f->spacing);
 }
 
-void drv_display_draw_char(uint8_t x, uint8_t y, char c) {
+static void draw_char_pixels(uint8_t x, uint8_t y, char c, const font_t *font) {
+    if (!font) return;
 
-    if (!current_font) return;
-
-    if ((uint8_t)c < current_font->first || (uint8_t)c > current_font->last)
+    if ((uint8_t)c < font->first || (uint8_t)c > font->last)
         c = '?';
 
-    for (uint8_t col = 0; col < current_font->width; col++) {
-        uint8_t bits = current_font->get_col(c, col);
-        for (uint8_t row = 0; row < current_font->height; row++) {
+    for (uint8_t col = 0; col < font->width; col++) {
+        uint8_t bits = font->get_col(c, col);
+        for (uint8_t row = 0; row < font->height; row++) {
             if (bits & (1U << row))
                 set_pixel(x + col, y + row, true);
         }
     }
+}
+
+void drv_display_draw_char(uint8_t x, uint8_t y, char c) {
+
+    if (!current_font) return;
+
+    draw_char_pixels(x, y, c, current_font);
+    mark_dirty_and_notify();
 }
 
 void drv_display_draw_text(uint8_t x, uint8_t y, const char *txt) {
@@ -192,9 +241,11 @@ void drv_display_draw_text(uint8_t x, uint8_t y, const char *txt) {
     const uint8_t adv = font_advance(current_font);
 
     while (*txt && x < BRICK_OLED_WIDTH) {
-        drv_display_draw_char(x, y, *txt++);
+        draw_char_pixels(x, y, *txt++, current_font);
         x = (uint8_t)(x + adv);
     }
+
+    mark_dirty_and_notify();
 }
 
 void drv_display_draw_text_with_font(const font_t *font,
@@ -226,6 +277,25 @@ void drv_display_draw_text_at_baseline(const font_t *font,
     current_font = save;
 }
 
+void drv_display_draw_char_in_box(const font_t *font,
+                                  uint8_t x, uint8_t y,
+                                  uint8_t box_w, uint8_t box_h,
+                                  char c) {
+
+    if (!font) return;
+
+    const font_t *save = current_font;
+    current_font = font;
+
+    const uint8_t start_x = (box_w > font->width) ? (uint8_t)(x + (box_w - font->width) / 2U) : x;
+    const uint8_t start_y = (box_h > font->height) ? (uint8_t)(y + (box_h - font->height) / 2U) : y;
+
+    draw_char_pixels(start_x, start_y, c, font);
+
+    current_font = save;
+    mark_dirty_and_notify();
+}
+
 /* ====================================================================== */
 /*                         THREAD DE RAFRAÎCHISSEMENT                      */
 /* ====================================================================== */
@@ -236,11 +306,18 @@ static THD_FUNCTION(displayThread, arg) {
     (void)arg;
     chRegSetThreadName("Display");
 
+    display_thread_running = true;
+
     while (!chThdShouldTerminateX()) {
-        drv_display_update();
-        chThdSleepMilliseconds(33);
+        chBSemWaitTimeout(&refresh_sem, TIME_MS2I(33));
+
+        if (framebuffer_dirty) {
+            framebuffer_dirty = false;
+            drv_display_flush_frame();
+        }
     }
 
+    display_thread_running = false;
     chThdExit(MSG_OK);
 }
 

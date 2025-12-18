@@ -18,6 +18,7 @@
 void drv_display_init(void);
 void drv_display_clear(void);
 void drv_display_update(void);
+void drv_display_request_refresh(void);
 uint8_t* drv_display_get_buffer(void);
 void drv_display_start(void);
 void drv_display_stop(void);
@@ -47,5 +48,15 @@ void drv_display_draw_char_in_box(const font_t *font,
                                   uint8_t x, uint8_t y,
                                   uint8_t box_w, uint8_t box_h,
                                   char c);
+
+/*
+ * Guide rapide (multi-thread temps réel) :
+ *  - drivers_init_all() démarre le thread propriétaire OLED (SPI5 locké frame entière).
+ *  - Thread audio (haute prio) : traite audio, ne touche jamais SPI5.
+ *  - Thread UI : écrit dans le framebuffer via drv_display_draw_* ou directement
+ *    sur drv_display_get_buffer(), puis appelle drv_display_request_refresh().
+ *  - Thread hall : lit les capteurs, envoie MIDI/LEDs ; l’écran reste stable car
+ *    seul le thread display manipule SPI5 + DC/CS.
+ */
 
 #endif /* DRV_DISPLAY_H */

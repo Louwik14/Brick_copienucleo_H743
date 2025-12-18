@@ -10,6 +10,9 @@
 void drivers_init_all(void) {
     spi5_bus_init();
 
+    /* Thread propriétaire de l’écran (rafraîchissement atomique SPI5). */
+    drv_display_start();
+
     /* Contrat de démarrage :
        - drv_display   : init + start (thread de rafraîchissement)
        - drv_leds_addr : init uniquement (rendu déclenché côté UI)
