@@ -5,11 +5,8 @@
  */
 
 #include "drivers.h"
-#include "spi5_bus.h"
 
 void drivers_init_all(void) {
-    spi5_bus_init();
-
     /* Contrat de démarrage :
        - drv_display   : init + start (thread de rafraîchissement)
        - drv_leds_addr : init uniquement (rendu déclenché côté UI)
@@ -17,6 +14,7 @@ void drivers_init_all(void) {
        - drv_encoders  : start = init + thread de scan
        - drv_pots      : start = init + thread de scan */
 
+    drv_display_start();
 }
 
 /* Mise à jour périodique : surtout pour l’écran (les LEDs sont rendues via ui_led_backend_refresh). */
