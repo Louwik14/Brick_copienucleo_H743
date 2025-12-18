@@ -16,11 +16,7 @@ void drivers_init_all(void) {
        - drv_buttons   : start = init + thread de scan
        - drv_encoders  : start = init + thread de scan
        - drv_pots      : start = init + thread de scan */
-    drv_display_start();
-    drv_leds_addr_init();
-    drv_buttons_start();
-    drv_encoders_start();
-    drv_pots_start();
+
 }
 
 /* Mise à jour périodique : surtout pour l’écran (les LEDs sont rendues via ui_led_backend_refresh). */

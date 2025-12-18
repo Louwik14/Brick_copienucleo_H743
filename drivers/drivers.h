@@ -23,10 +23,7 @@
  * @brief Drivers matériels composant le système Brick.
  */
 #include "drv_display.h"
-#include "drv_leds_addr.h"
-#include "drv_buttons.h"
-#include "drv_encoders.h"
-#include "drv_pots.h"
+
 
 /* ====================================================================== */
 /*                              INTERFACE API                             */

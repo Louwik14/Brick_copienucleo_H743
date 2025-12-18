@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 1
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -14,1144 +14,579 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 1
   11              		.eabi_attribute 34, 1
   12              		.eabi_attribute 18, 4
   13              		.file	"font4x6.c"
-  14              		.file 1 "c:\\chibistudio\\tools\\gnu tools arm embedded\\11.3 2022.08\\arm-none-eabi\\include\\mac
-  15              		.file 2 "c:\\chibistudio\\tools\\gnu tools arm embedded\\11.3 2022.08\\arm-none-eabi\\include\\sys
-  16              		.file 3 "ui/font4x6.h"
-  17              		.file 4 "ui/font4x6.c"
-  18              		.section	.gnu.debuglto_.debug_info,"e",%progbits
-  19              	.Ldebug_info0:
-  20              		.hidden	font4x6.c.1643defd
-  21              		.weak	font4x6.c.1643defd
-  22              	font4x6.c.1643defd:
-  23 0000 E5000000 		.4byte	0xe5
-  24 0004 0500     		.2byte	0x5
-  25 0006 01       		.byte	0x1
-  26 0007 04       		.byte	0x4
-  27 0008 00000000 		.4byte	.Ldebug_abbrev0
-  28 000c 08       		.uleb128 0x8
-  29 000d 17000000 		.4byte	.LASF14
-  30 0011 1D       		.byte	0x1d
-  31 0012 00000000 		.4byte	.LASF15
-  32 0016 6E010000 		.4byte	.LASF16
-  33 001a 00000000 		.4byte	.Ldebug_line0
-  34 001e 01       		.uleb128 0x1
-  35 001f 01       		.byte	0x1
-  36 0020 06       		.byte	0x6
-  37 0021 C6010000 		.4byte	.LASF0
-  38 0025 05       		.uleb128 0x5
-  39 0026 0D000000 		.4byte	.LASF9
-  40 002a 01       		.byte	0x1
-  41 002b 2B       		.byte	0x2b
-  42 002c 18       		.byte	0x18
-  43 002d 31000000 		.4byte	0x31
-  44 0031 01       		.uleb128 0x1
-  45 0032 01       		.byte	0x1
-  46 0033 08       		.byte	0x8
-  47 0034 D2000000 		.4byte	.LASF1
-  48 0038 01       		.uleb128 0x1
-  49 0039 02       		.byte	0x2
-  50 003a 05       		.byte	0x5
-  51 003b 64010000 		.4byte	.LASF2
-  52 003f 01       		.uleb128 0x1
-  53 0040 02       		.byte	0x2
-  54 0041 07       		.byte	0x7
-  55 0042 F2000000 		.4byte	.LASF3
-  56 0046 01       		.uleb128 0x1
-  57 0047 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 2
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	font4x6
+  18              		.global	font4x6_height
+  19              		.global	font4x6_width
+  20              		.section	.rodata.font4x6,"a"
+  21              		.align	2
+  22              		.type	font4x6, %object
+  23              		.size	font4x6, 384
+  24              	font4x6:
+  25 0000 000000   		.ascii	"\000\000\000"
+  26 0003 000000   		.ascii	"\000\000\000"
+  27 0006 000000   		.ascii	"\000\000\000"
+  28 0009 000000   		.ascii	"\000\000\000"
+  29 000c 000000   		.ascii	"\000\000\000"
+  30 000f 000000   		.ascii	"\000\000\000"
+  31 0012 000000   		.ascii	"\000\000\000"
+  32 0015 000000   		.ascii	"\000\000\000"
+  33 0018 000000   		.ascii	"\000\000\000"
+  34 001b 000000   		.ascii	"\000\000\000"
+  35 001e 000000   		.ascii	"\000\000\000"
+  36 0021 000000   		.ascii	"\000\000\000"
+  37 0024 000000   		.ascii	"\000\000\000"
+  38 0027 000000   		.ascii	"\000\000\000"
+  39 002a 000000   		.ascii	"\000\000\000"
+  40 002d 000000   		.ascii	"\000\000\000"
+  41 0030 000000   		.ascii	"\000\000\000"
+  42 0033 000000   		.ascii	"\000\000\000"
+  43 0036 000000   		.ascii	"\000\000\000"
+  44 0039 000000   		.ascii	"\000\000\000"
+  45 003c 000000   		.ascii	"\000\000\000"
+  46 003f 000000   		.ascii	"\000\000\000"
+  47 0042 000000   		.ascii	"\000\000\000"
+  48 0045 000000   		.ascii	"\000\000\000"
+  49 0048 000000   		.ascii	"\000\000\000"
+  50 004b 000000   		.ascii	"\000\000\000"
+  51 004e 000000   		.ascii	"\000\000\000"
+  52 0051 000000   		.ascii	"\000\000\000"
+  53 0054 000000   		.ascii	"\000\000\000"
+  54 0057 000000   		.ascii	"\000\000\000"
+  55 005a 000000   		.ascii	"\000\000\000"
+  56 005d 000000   		.ascii	"\000\000\000"
+  57 0060 000000   		.ascii	"\000\000\000"
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 2
 
 
-  58 0048 05       		.byte	0x5
-  59 0049 BD010000 		.4byte	.LASF4
-  60 004d 01       		.uleb128 0x1
-  61 004e 04       		.byte	0x4
-  62 004f 07       		.byte	0x7
-  63 0050 E0000000 		.4byte	.LASF5
-  64 0054 01       		.uleb128 0x1
-  65 0055 08       		.byte	0x8
-  66 0056 05       		.byte	0x5
-  67 0057 56010000 		.4byte	.LASF6
-  68 005b 01       		.uleb128 0x1
-  69 005c 08       		.byte	0x8
-  70 005d 07       		.byte	0x7
-  71 005e 37010000 		.4byte	.LASF7
-  72 0062 09       		.uleb128 0x9
-  73 0063 04       		.byte	0x4
-  74 0064 05       		.byte	0x5
-  75 0065 696E7400 		.ascii	"int\000"
-  76 0069 01       		.uleb128 0x1
-  77 006a 04       		.byte	0x4
-  78 006b 07       		.byte	0x7
-  79 006c 1B010000 		.4byte	.LASF8
-  80 0070 05       		.uleb128 0x5
-  81 0071 4E010000 		.4byte	.LASF10
-  82 0075 02       		.byte	0x2
-  83 0076 18       		.byte	0x18
-  84 0077 13       		.byte	0x13
-  85 0078 25000000 		.4byte	0x25
-  86 007c 02       		.uleb128 0x2
-  87 007d 70000000 		.4byte	0x70
-  88 0081 06       		.uleb128 0x6
-  89 0082 7C000000 		.4byte	0x7c
-  90 0086 92000000 		.4byte	0x92
-  91 008a 0A       		.uleb128 0xa
-  92 008b 03       		.uleb128 0x3
-  93 008c 69000000 		.4byte	0x69
-  94 0090 02       		.byte	0x2
-  95 0091 00       		.byte	0
-  96 0092 02       		.uleb128 0x2
-  97 0093 81000000 		.4byte	0x81
-  98 0097 04       		.uleb128 0x4
-  99 0098 13010000 		.4byte	.LASF11
- 100 009c 1D       		.byte	0x1d
- 101 009d 92000000 		.4byte	0x92
- 102 00a1 04       		.uleb128 0x4
- 103 00a2 05010000 		.4byte	.LASF12
- 104 00a6 20       		.byte	0x20
- 105 00a7 7C000000 		.4byte	0x7c
- 106 00ab 04       		.uleb128 0x4
- 107 00ac 28010000 		.4byte	.LASF13
- 108 00b0 23       		.byte	0x23
- 109 00b1 7C000000 		.4byte	0x7c
- 110 00b5 07       		.uleb128 0x7
- 111 00b6 A1000000 		.4byte	0xa1
- 112 00ba 1D       		.byte	0x1d
- 113 00bb 07       		.uleb128 0x7
- 114 00bc AB000000 		.4byte	0xab
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 3
+  58 0063 222020   		.ascii	"\"  "
+  59 0066 550000   		.ascii	"U\000\000"
+  60 0069 575750   		.ascii	"WWP"
+  61 006c 636720   		.ascii	"cg "
+  62 006f 542150   		.ascii	"T!P"
+  63 0072 636560   		.ascii	"ce`"
+  64 0075 220000   		.ascii	"\"\000\000"
+  65 0078 211120   		.ascii	"!\021 "
+  66 007b 244420   		.ascii	"$D "
+  67 007e 525000   		.ascii	"RP\000"
+  68 0081 027200   		.ascii	"\002r\000"
+  69 0084 000021   		.ascii	"\000\000!"
+  70 0087 007000   		.ascii	"\000p\000"
+  71 008a 000010   		.ascii	"\000\000\020"
+  72 008d 442110   		.ascii	"D!\020"
+  73 0090 755570   		.ascii	"uUp"
+  74 0093 322270   		.ascii	"2\"p"
+  75 0096 747170   		.ascii	"tqp"
+  76 0099 747470   		.ascii	"ttp"
+  77 009c 557440   		.ascii	"Ut@"
+  78 009f 717470   		.ascii	"qtp"
+  79 00a2 717570   		.ascii	"qup"
+  80 00a5 744440   		.ascii	"tD@"
+  81 00a8 757570   		.ascii	"uup"
+  82 00ab 757470   		.ascii	"utp"
+  83 00ae 002020   		.ascii	"\000  "
+  84 00b1 002021   		.ascii	"\000 !"
+  85 00b4 421240   		.ascii	"B\022@"
+  86 00b7 070700   		.ascii	"\007\007\000"
+  87 00ba 124210   		.ascii	"\022B\020"
+  88 00bd 746020   		.ascii	"t` "
+  89 00c0 255160   		.ascii	"%Q`"
+  90 00c3 257550   		.ascii	"%uP"
+  91 00c6 353530   		.ascii	"550"
+  92 00c9 611160   		.ascii	"a\021`"
+  93 00cc 355530   		.ascii	"5U0"
+  94 00cf 713170   		.ascii	"q1p"
+  95 00d2 713110   		.ascii	"q1\020"
+  96 00d5 615560   		.ascii	"aU`"
+  97 00d8 557550   		.ascii	"UuP"
+  98 00db 722270   		.ascii	"r\"p"
+  99 00de 444520   		.ascii	"DE "
+ 100 00e1 553550   		.ascii	"U5P"
+ 101 00e4 111170   		.ascii	"\021\021p"
+ 102 00e7 577550   		.ascii	"WuP"
+ 103 00ea 755550   		.ascii	"uUP"
+ 104 00ed 255520   		.ascii	"%U "
+ 105 00f0 757110   		.ascii	"uq\020"
+ 106 00f3 655360   		.ascii	"eS`"
+ 107 00f6 353550   		.ascii	"55P"
+ 108 00f9 617430   		.ascii	"at0"
+ 109 00fc 722220   		.ascii	"r\" "
+ 110 00ff 555570   		.ascii	"UUp"
+ 111 0102 555220   		.ascii	"UR "
+ 112 0105 557750   		.ascii	"UwP"
+ 113 0108 552550   		.ascii	"U%P"
+ 114 010b 552220   		.ascii	"U\" "
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 3
 
 
- 115 00c0 20       		.byte	0x20
- 116 00c1 06       		.uleb128 0x6
- 117 00c2 7C000000 		.4byte	0x7c
- 118 00c6 D7000000 		.4byte	0xd7
- 119 00ca 03       		.uleb128 0x3
- 120 00cb 69000000 		.4byte	0x69
- 121 00cf 7F       		.byte	0x7f
- 122 00d0 03       		.uleb128 0x3
- 123 00d1 69000000 		.4byte	0x69
- 124 00d5 02       		.byte	0x2
- 125 00d6 00       		.byte	0
- 126 00d7 02       		.uleb128 0x2
- 127 00d8 C1000000 		.4byte	0xc1
- 128 00dc 0B       		.uleb128 0xb
- 129 00dd 97000000 		.4byte	0x97
- 130 00e1 04       		.byte	0x4
- 131 00e2 29       		.byte	0x29
- 132 00e3 0F       		.byte	0xf
- 133 00e4 D7000000 		.4byte	0xd7
- 134 00e8 00       		.byte	0
- 135              		.section	.gnu.debuglto_.debug_abbrev,"e",%progbits
- 136              	.Ldebug_abbrev0:
- 137 0000 01       		.uleb128 0x1
- 138 0001 24       		.uleb128 0x24
- 139 0002 00       		.byte	0
- 140 0003 0B       		.uleb128 0xb
- 141 0004 0B       		.uleb128 0xb
- 142 0005 3E       		.uleb128 0x3e
- 143 0006 0B       		.uleb128 0xb
- 144 0007 03       		.uleb128 0x3
- 145 0008 0E       		.uleb128 0xe
- 146 0009 00       		.byte	0
- 147 000a 00       		.byte	0
- 148 000b 02       		.uleb128 0x2
- 149 000c 26       		.uleb128 0x26
- 150 000d 00       		.byte	0
- 151 000e 49       		.uleb128 0x49
- 152 000f 13       		.uleb128 0x13
- 153 0010 00       		.byte	0
- 154 0011 00       		.byte	0
- 155 0012 03       		.uleb128 0x3
- 156 0013 21       		.uleb128 0x21
- 157 0014 00       		.byte	0
- 158 0015 49       		.uleb128 0x49
- 159 0016 13       		.uleb128 0x13
- 160 0017 2F       		.uleb128 0x2f
- 161 0018 0B       		.uleb128 0xb
- 162 0019 00       		.byte	0
- 163 001a 00       		.byte	0
- 164 001b 04       		.uleb128 0x4
- 165 001c 34       		.uleb128 0x34
- 166 001d 00       		.byte	0
- 167 001e 03       		.uleb128 0x3
- 168 001f 0E       		.uleb128 0xe
- 169 0020 3A       		.uleb128 0x3a
- 170 0021 21       		.uleb128 0x21
- 171 0022 03       		.sleb128 3
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 4
+ 115 010e 742170   		.ascii	"t!p"
+ 116 0111 622260   		.ascii	"b\"`"
+ 117 0114 112440   		.ascii	"\021$@"
+ 118 0117 322230   		.ascii	"2\"0"
+ 119 011a 250000   		.ascii	"%\000\000"
+ 120 011d 000070   		.ascii	"\000\000p"
+ 121 0120 120000   		.ascii	"\022\000\000"
+ 122 0123 065560   		.ascii	"\006U`"
+ 123 0126 135530   		.ascii	"\023U0"
+ 124 0129 061160   		.ascii	"\006\021`"
+ 125 012c 465560   		.ascii	"FU`"
+ 126 012f 025360   		.ascii	"\002S`"
+ 127 0132 427220   		.ascii	"Br "
+ 128 0135 025642   		.ascii	"\002VB"
+ 129 0138 113550   		.ascii	"\0215P"
+ 130 013b 020220   		.ascii	"\002\002 "
+ 131 013e 020221   		.ascii	"\002\002!"
+ 132 0141 153550   		.ascii	"\0255P"
+ 133 0144 222240   		.ascii	"\"\"@"
+ 134 0147 057550   		.ascii	"\005uP"
+ 135 014a 035550   		.ascii	"\003UP"
+ 136 014d 025520   		.ascii	"\002U "
+ 137 0150 035531   		.ascii	"\003U1"
+ 138 0153 065564   		.ascii	"\006Ud"
+ 139 0156 025110   		.ascii	"\002Q\020"
+ 140 0159 061430   		.ascii	"\006\0240"
+ 141 015c 272240   		.ascii	"'\"@"
+ 142 015f 055560   		.ascii	"\005U`"
+ 143 0162 055220   		.ascii	"\005R "
+ 144 0165 055750   		.ascii	"\005WP"
+ 145 0168 052250   		.ascii	"\005\"P"
+ 146 016b 055642   		.ascii	"\005VB"
+ 147 016e 074170   		.ascii	"\007Ap"
+ 148 0171 621260   		.ascii	"b\022`"
+ 149 0174 222220   		.ascii	"\"\" "
+ 150 0177 324230   		.ascii	"2B0"
+ 151 017a 036000   		.ascii	"\003`\000"
+ 152 017d 000000   		.ascii	"\000\000\000"
+ 153              		.section	.rodata.font4x6_height,"a"
+ 154              		.type	font4x6_height, %object
+ 155              		.size	font4x6_height, 1
+ 156              	font4x6_height:
+ 157 0000 06       		.byte	6
+ 158              		.section	.rodata.font4x6_width,"a"
+ 159              		.type	font4x6_width, %object
+ 160              		.size	font4x6_width, 1
+ 161              	font4x6_width:
+ 162 0000 04       		.byte	4
+ 163              		.text
+ 164              	.Letext0:
+ 165              		.file 1 "c:\\chibistudio\\tools\\gnu tools arm embedded\\11.3 2022.08\\arm-none-eabi\\include\\mac
+ 166              		.file 2 "c:\\chibistudio\\tools\\gnu tools arm embedded\\11.3 2022.08\\arm-none-eabi\\include\\sys
+ 167              		.file 3 "ui/font4x6.h"
+ 168              		.file 4 "ui/font4x6.c"
+ 169              		.section	.debug_info,"",%progbits
+ 170              	.Ldebug_info0:
+ 171 0000 F7000000 		.4byte	0xf7
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 4
 
 
- 172 0023 3B       		.uleb128 0x3b
- 173 0024 0B       		.uleb128 0xb
- 174 0025 39       		.uleb128 0x39
- 175 0026 21       		.uleb128 0x21
- 176 0027 16       		.sleb128 22
- 177 0028 49       		.uleb128 0x49
- 178 0029 13       		.uleb128 0x13
- 179 002a 3F       		.uleb128 0x3f
- 180 002b 19       		.uleb128 0x19
- 181 002c 3C       		.uleb128 0x3c
- 182 002d 19       		.uleb128 0x19
- 183 002e 00       		.byte	0
- 184 002f 00       		.byte	0
- 185 0030 05       		.uleb128 0x5
- 186 0031 16       		.uleb128 0x16
- 187 0032 00       		.byte	0
- 188 0033 03       		.uleb128 0x3
- 189 0034 0E       		.uleb128 0xe
- 190 0035 3A       		.uleb128 0x3a
- 191 0036 0B       		.uleb128 0xb
- 192 0037 3B       		.uleb128 0x3b
- 193 0038 0B       		.uleb128 0xb
- 194 0039 39       		.uleb128 0x39
- 195 003a 0B       		.uleb128 0xb
- 196 003b 49       		.uleb128 0x49
- 197 003c 13       		.uleb128 0x13
- 198 003d 00       		.byte	0
- 199 003e 00       		.byte	0
- 200 003f 06       		.uleb128 0x6
- 201 0040 01       		.uleb128 0x1
- 202 0041 01       		.byte	0x1
- 203 0042 49       		.uleb128 0x49
- 204 0043 13       		.uleb128 0x13
- 205 0044 01       		.uleb128 0x1
- 206 0045 13       		.uleb128 0x13
- 207 0046 00       		.byte	0
- 208 0047 00       		.byte	0
- 209 0048 07       		.uleb128 0x7
- 210 0049 34       		.uleb128 0x34
- 211 004a 00       		.byte	0
- 212 004b 47       		.uleb128 0x47
- 213 004c 13       		.uleb128 0x13
- 214 004d 3A       		.uleb128 0x3a
- 215 004e 21       		.uleb128 0x21
- 216 004f 04       		.sleb128 4
- 217 0050 3B       		.uleb128 0x3b
- 218 0051 0B       		.uleb128 0xb
- 219 0052 39       		.uleb128 0x39
- 220 0053 21       		.uleb128 0x21
- 221 0054 0F       		.sleb128 15
- 222 0055 00       		.byte	0
- 223 0056 00       		.byte	0
- 224 0057 08       		.uleb128 0x8
- 225 0058 11       		.uleb128 0x11
- 226 0059 01       		.byte	0x1
- 227 005a 25       		.uleb128 0x25
- 228 005b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 5
+ 172 0004 0500     		.2byte	0x5
+ 173 0006 01       		.byte	0x1
+ 174 0007 04       		.byte	0x4
+ 175 0008 00000000 		.4byte	.Ldebug_abbrev0
+ 176 000c 08       		.uleb128 0x8
+ 177 000d 02010000 		.4byte	.LASF14
+ 178 0011 1D       		.byte	0x1d
+ 179 0012 00000000 		.4byte	.LASF15
+ 180 0016 B3000000 		.4byte	.LASF16
+ 181 001a 00000000 		.4byte	.Ldebug_line0
+ 182 001e 01       		.uleb128 0x1
+ 183 001f 01       		.byte	0x1
+ 184 0020 06       		.byte	0x6
+ 185 0021 C0010000 		.4byte	.LASF0
+ 186 0025 05       		.uleb128 0x5
+ 187 0026 0D000000 		.4byte	.LASF9
+ 188 002a 01       		.byte	0x1
+ 189 002b 2B       		.byte	0x2b
+ 190 002c 18       		.byte	0x18
+ 191 002d 31000000 		.4byte	0x31
+ 192 0031 01       		.uleb128 0x1
+ 193 0032 01       		.byte	0x1
+ 194 0033 08       		.byte	0x8
+ 195 0034 17000000 		.4byte	.LASF1
+ 196 0038 01       		.uleb128 0x1
+ 197 0039 02       		.byte	0x2
+ 198 003a 05       		.byte	0x5
+ 199 003b A9000000 		.4byte	.LASF2
+ 200 003f 01       		.uleb128 0x1
+ 201 0040 02       		.byte	0x2
+ 202 0041 07       		.byte	0x7
+ 203 0042 37000000 		.4byte	.LASF3
+ 204 0046 01       		.uleb128 0x1
+ 205 0047 04       		.byte	0x4
+ 206 0048 05       		.byte	0x5
+ 207 0049 B7010000 		.4byte	.LASF4
+ 208 004d 01       		.uleb128 0x1
+ 209 004e 04       		.byte	0x4
+ 210 004f 07       		.byte	0x7
+ 211 0050 25000000 		.4byte	.LASF5
+ 212 0054 01       		.uleb128 0x1
+ 213 0055 08       		.byte	0x8
+ 214 0056 05       		.byte	0x5
+ 215 0057 9B000000 		.4byte	.LASF6
+ 216 005b 01       		.uleb128 0x1
+ 217 005c 08       		.byte	0x8
+ 218 005d 07       		.byte	0x7
+ 219 005e 7C000000 		.4byte	.LASF7
+ 220 0062 09       		.uleb128 0x9
+ 221 0063 04       		.byte	0x4
+ 222 0064 05       		.byte	0x5
+ 223 0065 696E7400 		.ascii	"int\000"
+ 224 0069 01       		.uleb128 0x1
+ 225 006a 04       		.byte	0x4
+ 226 006b 07       		.byte	0x7
+ 227 006c 60000000 		.4byte	.LASF8
+ 228 0070 05       		.uleb128 0x5
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 5
 
 
- 229 005c 13       		.uleb128 0x13
- 230 005d 0B       		.uleb128 0xb
- 231 005e 03       		.uleb128 0x3
- 232 005f 0E       		.uleb128 0xe
- 233 0060 1B       		.uleb128 0x1b
- 234 0061 0E       		.uleb128 0xe
- 235 0062 10       		.uleb128 0x10
- 236 0063 17       		.uleb128 0x17
- 237 0064 00       		.byte	0
- 238 0065 00       		.byte	0
- 239 0066 09       		.uleb128 0x9
- 240 0067 24       		.uleb128 0x24
- 241 0068 00       		.byte	0
- 242 0069 0B       		.uleb128 0xb
- 243 006a 0B       		.uleb128 0xb
- 244 006b 3E       		.uleb128 0x3e
- 245 006c 0B       		.uleb128 0xb
- 246 006d 03       		.uleb128 0x3
- 247 006e 08       		.uleb128 0x8
- 248 006f 00       		.byte	0
- 249 0070 00       		.byte	0
- 250 0071 0A       		.uleb128 0xa
- 251 0072 21       		.uleb128 0x21
- 252 0073 00       		.byte	0
- 253 0074 00       		.byte	0
- 254 0075 00       		.byte	0
- 255 0076 0B       		.uleb128 0xb
- 256 0077 34       		.uleb128 0x34
- 257 0078 00       		.byte	0
- 258 0079 47       		.uleb128 0x47
- 259 007a 13       		.uleb128 0x13
- 260 007b 3A       		.uleb128 0x3a
- 261 007c 0B       		.uleb128 0xb
- 262 007d 3B       		.uleb128 0x3b
- 263 007e 0B       		.uleb128 0xb
- 264 007f 39       		.uleb128 0x39
- 265 0080 0B       		.uleb128 0xb
- 266 0081 49       		.uleb128 0x49
- 267 0082 13       		.uleb128 0x13
- 268 0083 00       		.byte	0
- 269 0084 00       		.byte	0
- 270 0085 00       		.byte	0
- 271              		.section	.gnu.debuglto_.debug_line,"e",%progbits
- 272              	.Ldebug_line0:
- 273 0000 4D000000 		.4byte	.LELT0-.LSLT0
- 274              	.LSLT0:
- 275 0004 0500     		.2byte	0x5
- 276 0006 04       		.byte	0x4
- 277 0007 00       		.byte	0
- 278 0008 45000000 		.4byte	.LELTP0-.LASLTP0
- 279              	.LASLTP0:
- 280 000c 01       		.byte	0x1
- 281 000d 01       		.byte	0x1
- 282 000e 01       		.byte	0x1
- 283 000f F6       		.byte	0xf6
- 284 0010 F2       		.byte	0xf2
- 285 0011 0D       		.byte	0xd
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 6
+ 229 0071 93000000 		.4byte	.LASF10
+ 230 0075 02       		.byte	0x2
+ 231 0076 18       		.byte	0x18
+ 232 0077 13       		.byte	0x13
+ 233 0078 25000000 		.4byte	0x25
+ 234 007c 02       		.uleb128 0x2
+ 235 007d 70000000 		.4byte	0x70
+ 236 0081 06       		.uleb128 0x6
+ 237 0082 7C000000 		.4byte	0x7c
+ 238 0086 92000000 		.4byte	0x92
+ 239 008a 0A       		.uleb128 0xa
+ 240 008b 03       		.uleb128 0x3
+ 241 008c 69000000 		.4byte	0x69
+ 242 0090 02       		.byte	0x2
+ 243 0091 00       		.byte	0
+ 244 0092 02       		.uleb128 0x2
+ 245 0093 81000000 		.4byte	0x81
+ 246 0097 04       		.uleb128 0x4
+ 247 0098 58000000 		.4byte	.LASF11
+ 248 009c 1D       		.byte	0x1d
+ 249 009d 92000000 		.4byte	0x92
+ 250 00a1 04       		.uleb128 0x4
+ 251 00a2 4A000000 		.4byte	.LASF12
+ 252 00a6 20       		.byte	0x20
+ 253 00a7 7C000000 		.4byte	0x7c
+ 254 00ab 04       		.uleb128 0x4
+ 255 00ac 6D000000 		.4byte	.LASF13
+ 256 00b0 23       		.byte	0x23
+ 257 00b1 7C000000 		.4byte	0x7c
+ 258 00b5 07       		.uleb128 0x7
+ 259 00b6 A1000000 		.4byte	0xa1
+ 260 00ba 1D       		.byte	0x1d
+ 261 00bb 05       		.uleb128 0x5
+ 262 00bc 03       		.byte	0x3
+ 263 00bd 00000000 		.4byte	font4x6_width
+ 264 00c1 07       		.uleb128 0x7
+ 265 00c2 AB000000 		.4byte	0xab
+ 266 00c6 20       		.byte	0x20
+ 267 00c7 05       		.uleb128 0x5
+ 268 00c8 03       		.byte	0x3
+ 269 00c9 00000000 		.4byte	font4x6_height
+ 270 00cd 06       		.uleb128 0x6
+ 271 00ce 7C000000 		.4byte	0x7c
+ 272 00d2 E3000000 		.4byte	0xe3
+ 273 00d6 03       		.uleb128 0x3
+ 274 00d7 69000000 		.4byte	0x69
+ 275 00db 7F       		.byte	0x7f
+ 276 00dc 03       		.uleb128 0x3
+ 277 00dd 69000000 		.4byte	0x69
+ 278 00e1 02       		.byte	0x2
+ 279 00e2 00       		.byte	0
+ 280 00e3 02       		.uleb128 0x2
+ 281 00e4 CD000000 		.4byte	0xcd
+ 282 00e8 0B       		.uleb128 0xb
+ 283 00e9 97000000 		.4byte	0x97
+ 284 00ed 04       		.byte	0x4
+ 285 00ee 29       		.byte	0x29
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 6
 
 
- 286 0012 00       		.byte	0
- 287 0013 01       		.byte	0x1
- 288 0014 01       		.byte	0x1
- 289 0015 01       		.byte	0x1
- 290 0016 01       		.byte	0x1
- 291 0017 00       		.byte	0
- 292 0018 00       		.byte	0
- 293 0019 00       		.byte	0
- 294 001a 01       		.byte	0x1
- 295 001b 00       		.byte	0
- 296 001c 00       		.byte	0
- 297 001d 01       		.byte	0x1
- 298 001e 01       		.byte	0x1
- 299 001f 01       		.uleb128 0x1
- 300 0020 1F       		.uleb128 0x1f
- 301 0021 04       		.uleb128 0x4
- 302 0022 D5000000 		.4byte	.LASF17
- 303 0026 63000000 		.4byte	.LASF18
- 304 002a 03000000 		.4byte	.LASF19
- 305 002e 00000000 		.4byte	.LASF20
- 306 0032 02       		.byte	0x2
- 307 0033 01       		.uleb128 0x1
- 308 0034 1F       		.uleb128 0x1f
- 309 0035 02       		.uleb128 0x2
- 310 0036 0B       		.uleb128 0xb
- 311 0037 05       		.uleb128 0x5
- 312 0038 56000000 		.4byte	.LASF21
- 313 003c 00       		.byte	0
- 314 003d C4000000 		.4byte	.LASF22
- 315 0041 01       		.byte	0x1
- 316 0042 24010000 		.4byte	.LASF23
- 317 0046 02       		.byte	0x2
- 318 0047 2E010000 		.4byte	.LASF24
- 319 004b 03       		.byte	0x3
- 320 004c BA000000 		.4byte	.LASF25
- 321 0050 03       		.byte	0x3
- 322              	.LELTP0:
- 323              	.LELT0:
- 324              		.section	.gnu.debuglto_.debug_str,"eMS",%progbits,1
- 325              	.LASF15:
- 326 0000 75692F66 		.ascii	"ui/font4x6.c\000"
- 326      6F6E7434 
- 326      78362E63 
- 326      00
- 327              	.LASF9:
- 328 000d 5F5F7569 		.ascii	"__uint8_t\000"
- 328      6E74385F 
- 328      7400
- 329              	.LASF14:
- 330 0017 474E5520 		.ascii	"GNU C17 11.3.1 20220712 -mcpu=cortex-m7 -mthumb -mf"
- 330      43313720 
- 330      31312E33 
- 330      2E312032 
- 330      30323230 
- 331 004a 6C6F6174 		.ascii	"loat-abi=soft -march=armv7e-m -ggdb -O2 -fomit-fram"
- 331      2D616269 
- 331      3D736F66 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 7
+ 286 00ef 0F       		.byte	0xf
+ 287 00f0 E3000000 		.4byte	0xe3
+ 288 00f4 05       		.uleb128 0x5
+ 289 00f5 03       		.byte	0x3
+ 290 00f6 00000000 		.4byte	font4x6
+ 291 00fa 00       		.byte	0
+ 292              		.section	.debug_abbrev,"",%progbits
+ 293              	.Ldebug_abbrev0:
+ 294 0000 01       		.uleb128 0x1
+ 295 0001 24       		.uleb128 0x24
+ 296 0002 00       		.byte	0
+ 297 0003 0B       		.uleb128 0xb
+ 298 0004 0B       		.uleb128 0xb
+ 299 0005 3E       		.uleb128 0x3e
+ 300 0006 0B       		.uleb128 0xb
+ 301 0007 03       		.uleb128 0x3
+ 302 0008 0E       		.uleb128 0xe
+ 303 0009 00       		.byte	0
+ 304 000a 00       		.byte	0
+ 305 000b 02       		.uleb128 0x2
+ 306 000c 26       		.uleb128 0x26
+ 307 000d 00       		.byte	0
+ 308 000e 49       		.uleb128 0x49
+ 309 000f 13       		.uleb128 0x13
+ 310 0010 00       		.byte	0
+ 311 0011 00       		.byte	0
+ 312 0012 03       		.uleb128 0x3
+ 313 0013 21       		.uleb128 0x21
+ 314 0014 00       		.byte	0
+ 315 0015 49       		.uleb128 0x49
+ 316 0016 13       		.uleb128 0x13
+ 317 0017 2F       		.uleb128 0x2f
+ 318 0018 0B       		.uleb128 0xb
+ 319 0019 00       		.byte	0
+ 320 001a 00       		.byte	0
+ 321 001b 04       		.uleb128 0x4
+ 322 001c 34       		.uleb128 0x34
+ 323 001d 00       		.byte	0
+ 324 001e 03       		.uleb128 0x3
+ 325 001f 0E       		.uleb128 0xe
+ 326 0020 3A       		.uleb128 0x3a
+ 327 0021 21       		.uleb128 0x21
+ 328 0022 03       		.sleb128 3
+ 329 0023 3B       		.uleb128 0x3b
+ 330 0024 0B       		.uleb128 0xb
+ 331 0025 39       		.uleb128 0x39
+ 332 0026 21       		.uleb128 0x21
+ 333 0027 16       		.sleb128 22
+ 334 0028 49       		.uleb128 0x49
+ 335 0029 13       		.uleb128 0x13
+ 336 002a 3F       		.uleb128 0x3f
+ 337 002b 19       		.uleb128 0x19
+ 338 002c 3C       		.uleb128 0x3c
+ 339 002d 19       		.uleb128 0x19
+ 340 002e 00       		.byte	0
+ 341 002f 00       		.byte	0
+ 342 0030 05       		.uleb128 0x5
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 7
 
 
- 331      74202D6D 
- 331      61726368 
- 332 007d 652D706F 		.ascii	"e-pointer -falign-functions=16 -ffunction-sections "
- 332      696E7465 
- 332      72202D66 
- 332      616C6967 
- 332      6E2D6675 
- 333 00b0 2D666461 		.ascii	"-fdata-sections -fno-common -flto\000"
- 333      74612D73 
- 333      65637469 
- 333      6F6E7320 
- 333      2D666E6F 
- 334              	.LASF1:
- 335 00d2 756E7369 		.ascii	"unsigned char\000"
- 335      676E6564 
- 335      20636861 
- 335      7200
- 336              	.LASF5:
- 337 00e0 6C6F6E67 		.ascii	"long unsigned int\000"
- 337      20756E73 
- 337      69676E65 
- 337      6420696E 
- 337      7400
- 338              	.LASF3:
- 339 00f2 73686F72 		.ascii	"short unsigned int\000"
- 339      7420756E 
- 339      7369676E 
- 339      65642069 
- 339      6E7400
- 340              	.LASF12:
- 341 0105 666F6E74 		.ascii	"font4x6_width\000"
- 341      3478365F 
- 341      77696474 
- 341      6800
- 342              	.LASF11:
- 343 0113 666F6E74 		.ascii	"font4x6\000"
- 343      34783600 
- 344              	.LASF8:
- 345 011b 756E7369 		.ascii	"unsigned int\000"
- 345      676E6564 
- 345      20696E74 
- 345      00
- 346              	.LASF13:
- 347 0128 666F6E74 		.ascii	"font4x6_height\000"
- 347      3478365F 
- 347      68656967 
- 347      687400
- 348              	.LASF7:
- 349 0137 6C6F6E67 		.ascii	"long long unsigned int\000"
- 349      206C6F6E 
- 349      6720756E 
- 349      7369676E 
- 349      65642069 
- 350              	.LASF10:
- 351 014e 75696E74 		.ascii	"uint8_t\000"
- 351      385F7400 
- 352              	.LASF6:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 8
+ 343 0031 16       		.uleb128 0x16
+ 344 0032 00       		.byte	0
+ 345 0033 03       		.uleb128 0x3
+ 346 0034 0E       		.uleb128 0xe
+ 347 0035 3A       		.uleb128 0x3a
+ 348 0036 0B       		.uleb128 0xb
+ 349 0037 3B       		.uleb128 0x3b
+ 350 0038 0B       		.uleb128 0xb
+ 351 0039 39       		.uleb128 0x39
+ 352 003a 0B       		.uleb128 0xb
+ 353 003b 49       		.uleb128 0x49
+ 354 003c 13       		.uleb128 0x13
+ 355 003d 00       		.byte	0
+ 356 003e 00       		.byte	0
+ 357 003f 06       		.uleb128 0x6
+ 358 0040 01       		.uleb128 0x1
+ 359 0041 01       		.byte	0x1
+ 360 0042 49       		.uleb128 0x49
+ 361 0043 13       		.uleb128 0x13
+ 362 0044 01       		.uleb128 0x1
+ 363 0045 13       		.uleb128 0x13
+ 364 0046 00       		.byte	0
+ 365 0047 00       		.byte	0
+ 366 0048 07       		.uleb128 0x7
+ 367 0049 34       		.uleb128 0x34
+ 368 004a 00       		.byte	0
+ 369 004b 47       		.uleb128 0x47
+ 370 004c 13       		.uleb128 0x13
+ 371 004d 3A       		.uleb128 0x3a
+ 372 004e 21       		.uleb128 0x21
+ 373 004f 04       		.sleb128 4
+ 374 0050 3B       		.uleb128 0x3b
+ 375 0051 0B       		.uleb128 0xb
+ 376 0052 39       		.uleb128 0x39
+ 377 0053 21       		.uleb128 0x21
+ 378 0054 0F       		.sleb128 15
+ 379 0055 02       		.uleb128 0x2
+ 380 0056 18       		.uleb128 0x18
+ 381 0057 00       		.byte	0
+ 382 0058 00       		.byte	0
+ 383 0059 08       		.uleb128 0x8
+ 384 005a 11       		.uleb128 0x11
+ 385 005b 01       		.byte	0x1
+ 386 005c 25       		.uleb128 0x25
+ 387 005d 0E       		.uleb128 0xe
+ 388 005e 13       		.uleb128 0x13
+ 389 005f 0B       		.uleb128 0xb
+ 390 0060 03       		.uleb128 0x3
+ 391 0061 0E       		.uleb128 0xe
+ 392 0062 1B       		.uleb128 0x1b
+ 393 0063 0E       		.uleb128 0xe
+ 394 0064 10       		.uleb128 0x10
+ 395 0065 17       		.uleb128 0x17
+ 396 0066 00       		.byte	0
+ 397 0067 00       		.byte	0
+ 398 0068 09       		.uleb128 0x9
+ 399 0069 24       		.uleb128 0x24
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 8
 
 
- 353 0156 6C6F6E67 		.ascii	"long long int\000"
- 353      206C6F6E 
- 353      6720696E 
- 353      7400
- 354              	.LASF2:
- 355 0164 73686F72 		.ascii	"short int\000"
- 355      7420696E 
- 355      7400
- 356              	.LASF16:
- 357 016e 433A5C43 		.ascii	"C:\\ChibiStudio\\chibios2111\\demos\\STM32\\RT-STM3"
- 357      68696269 
- 357      53747564 
- 357      696F5C63 
- 357      68696269 
- 358 019c 32483734 		.ascii	"2H743ZI_REV_XY-NUCLEO144 - Copie\000"
- 358      335A495F 
- 358      5245565F 
- 358      58592D4E 
- 358      55434C45 
- 359              	.LASF4:
- 360 01bd 6C6F6E67 		.ascii	"long int\000"
- 360      20696E74 
- 360      00
- 361              	.LASF0:
- 362 01c6 7369676E 		.ascii	"signed char\000"
- 362      65642063 
- 362      68617200 
- 363              		.section	.gnu.debuglto_.debug_line_str,"eMS",%progbits,1
- 364              	.LASF20:
- 365 0000 756900   		.ascii	"ui\000"
- 366              	.LASF19:
- 367 0003 633A5C63 		.ascii	"c:\\chibistudio\\tools\\gnu tools arm embedded\\11."
- 367      68696269 
- 367      73747564 
- 367      696F5C74 
- 367      6F6F6C73 
- 368 0032 33203230 		.ascii	"3 2022.08\\arm-none-eabi\\include\\sys\000"
- 368      32322E30 
- 368      385C6172 
- 368      6D2D6E6F 
- 368      6E652D65 
- 369              	.LASF21:
- 370 0056 75692F66 		.ascii	"ui/font4x6.c\000"
- 370      6F6E7434 
- 370      78362E63 
- 370      00
- 371              	.LASF18:
- 372 0063 633A5C63 		.ascii	"c:\\chibistudio\\tools\\gnu tools arm embedded\\11."
- 372      68696269 
- 372      73747564 
- 372      696F5C74 
- 372      6F6F6C73 
- 373 0092 33203230 		.ascii	"3 2022.08\\arm-none-eabi\\include\\machine\000"
- 373      32322E30 
- 373      385C6172 
- 373      6D2D6E6F 
- 373      6E652D65 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 9
+ 400 006a 00       		.byte	0
+ 401 006b 0B       		.uleb128 0xb
+ 402 006c 0B       		.uleb128 0xb
+ 403 006d 3E       		.uleb128 0x3e
+ 404 006e 0B       		.uleb128 0xb
+ 405 006f 03       		.uleb128 0x3
+ 406 0070 08       		.uleb128 0x8
+ 407 0071 00       		.byte	0
+ 408 0072 00       		.byte	0
+ 409 0073 0A       		.uleb128 0xa
+ 410 0074 21       		.uleb128 0x21
+ 411 0075 00       		.byte	0
+ 412 0076 00       		.byte	0
+ 413 0077 00       		.byte	0
+ 414 0078 0B       		.uleb128 0xb
+ 415 0079 34       		.uleb128 0x34
+ 416 007a 00       		.byte	0
+ 417 007b 47       		.uleb128 0x47
+ 418 007c 13       		.uleb128 0x13
+ 419 007d 3A       		.uleb128 0x3a
+ 420 007e 0B       		.uleb128 0xb
+ 421 007f 3B       		.uleb128 0x3b
+ 422 0080 0B       		.uleb128 0xb
+ 423 0081 39       		.uleb128 0x39
+ 424 0082 0B       		.uleb128 0xb
+ 425 0083 49       		.uleb128 0x49
+ 426 0084 13       		.uleb128 0x13
+ 427 0085 02       		.uleb128 0x2
+ 428 0086 18       		.uleb128 0x18
+ 429 0087 00       		.byte	0
+ 430 0088 00       		.byte	0
+ 431 0089 00       		.byte	0
+ 432              		.section	.debug_aranges,"",%progbits
+ 433 0000 14000000 		.4byte	0x14
+ 434 0004 0200     		.2byte	0x2
+ 435 0006 00000000 		.4byte	.Ldebug_info0
+ 436 000a 04       		.byte	0x4
+ 437 000b 00       		.byte	0
+ 438 000c 0000     		.2byte	0
+ 439 000e 0000     		.2byte	0
+ 440 0010 00000000 		.4byte	0
+ 441 0014 00000000 		.4byte	0
+ 442              		.section	.debug_line,"",%progbits
+ 443              	.Ldebug_line0:
+ 444 0000 04010000 		.section	.debug_str,"MS",%progbits,1
+ 444      0300FE00 
+ 444      00000201 
+ 444      FB0E0D00 
+ 444      01010101 
+ 445              	.LASF15:
+ 446 0000 75692F66 		.ascii	"ui/font4x6.c\000"
+ 446      6F6E7434 
+ 446      78362E63 
+ 446      00
+ 447              	.LASF9:
+ 448 000d 5F5F7569 		.ascii	"__uint8_t\000"
+ 448      6E74385F 
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 9
 
 
- 374              	.LASF25:
- 375 00ba 666F6E74 		.ascii	"font4x6.c\000"
- 375      3478362E 
- 375      6300
- 376              	.LASF22:
- 377 00c4 5F646566 		.ascii	"_default_types.h\000"
- 377      61756C74 
- 377      5F747970 
- 377      65732E68 
- 377      00
- 378              	.LASF17:
- 379 00d5 433A5C43 		.ascii	"C:\\ChibiStudio\\chibios2111\\demos\\STM32\\RT-STM3"
- 379      68696269 
- 379      53747564 
- 379      696F5C63 
- 379      68696269 
- 380 0103 32483734 		.ascii	"2H743ZI_REV_XY-NUCLEO144 - Copie\000"
- 380      335A495F 
- 380      5245565F 
- 380      58592D4E 
- 380      55434C45 
- 381              	.LASF23:
- 382 0124 5F737464 		.ascii	"_stdint.h\000"
- 382      696E742E 
- 382      6800
- 383              	.LASF24:
- 384 012e 666F6E74 		.ascii	"font4x6.h\000"
- 384      3478362E 
- 384      6800
- 385              		.text
- 386              		.section	.gnu.lto_.profile.2cb8c464,"e",%progbits
- 387 0000 789C6362 		.ascii	"x\234cb\000\001\000\000\022\000\003"
- 387      00010000 
- 387      120003
- 388              		.text
- 389              		.section	.gnu.lto_.icf.2cb8c464,"e",%progbits
- 390 0000 789C1361 		.ascii	"x\234\023a@\000f\206M\233V\275\343`\354\377w\352.\037"
- 390      40006686 
- 390      4D9B56BD 
- 390      E360ECFF 
- 390      77EA2E1F 
- 391 0014 D386831F 		.ascii	"\323\206\203\037\367\3622\000\000d\000\011\215"
- 391      F7F23200 
- 391      00640009 
- 391      8D
- 392              		.text
- 393              		.section	.gnu.lto_.ipa_sra.2cb8c464,"e",%progbits
- 394 0000 789C6362 		.ascii	"x\234cb@\006\000\000*\000\003"
- 394      40060000 
- 394      2A0003
- 395              		.text
- 396              		.section	.gnu.lto_.inline.2cb8c464,"e",%progbits
- 397 0000 789C6362 		.ascii	"x\234cb@\006\000\000*\000\003"
- 397      40060000 
- 397      2A0003
- 398              		.text
- 399              		.section	.gnu.lto_.jmpfuncs.2cb8c464,"e",%progbits
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 10
+ 448      7400
+ 449              	.LASF1:
+ 450 0017 756E7369 		.ascii	"unsigned char\000"
+ 450      676E6564 
+ 450      20636861 
+ 450      7200
+ 451              	.LASF5:
+ 452 0025 6C6F6E67 		.ascii	"long unsigned int\000"
+ 452      20756E73 
+ 452      69676E65 
+ 452      6420696E 
+ 452      7400
+ 453              	.LASF3:
+ 454 0037 73686F72 		.ascii	"short unsigned int\000"
+ 454      7420756E 
+ 454      7369676E 
+ 454      65642069 
+ 454      6E7400
+ 455              	.LASF12:
+ 456 004a 666F6E74 		.ascii	"font4x6_width\000"
+ 456      3478365F 
+ 456      77696474 
+ 456      6800
+ 457              	.LASF11:
+ 458 0058 666F6E74 		.ascii	"font4x6\000"
+ 458      34783600 
+ 459              	.LASF8:
+ 460 0060 756E7369 		.ascii	"unsigned int\000"
+ 460      676E6564 
+ 460      20696E74 
+ 460      00
+ 461              	.LASF13:
+ 462 006d 666F6E74 		.ascii	"font4x6_height\000"
+ 462      3478365F 
+ 462      68656967 
+ 462      687400
+ 463              	.LASF7:
+ 464 007c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 464      206C6F6E 
+ 464      6720756E 
+ 464      7369676E 
+ 464      65642069 
+ 465              	.LASF10:
+ 466 0093 75696E74 		.ascii	"uint8_t\000"
+ 466      385F7400 
+ 467              	.LASF6:
+ 468 009b 6C6F6E67 		.ascii	"long long int\000"
+ 468      206C6F6E 
+ 468      6720696E 
+ 468      7400
+ 469              	.LASF2:
+ 470 00a9 73686F72 		.ascii	"short int\000"
+ 470      7420696E 
+ 470      7400
+ 471              	.LASF16:
+ 472 00b3 433A5C43 		.ascii	"C:\\ChibiStudio\\chibios2111\\demos\\STM32\\RT-STM3"
+ 472      68696269 
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 10
 
 
- 400 0000 789C6362 		.ascii	"x\234cb@\006\000\000*\000\003"
- 400      40060000 
- 400      2A0003
- 401              		.text
- 402              		.section	.gnu.lto_.pureconst.2cb8c464,"e",%progbits
- 403 0000 789C6364 		.ascii	"x\234cd\000\002\000\000\012\000\002"
- 403      00020000 
- 403      0A0002
- 404              		.text
- 405              		.section	.gnu.lto_.ipa_modref.2cb8c464,"e",%progbits
- 406 0000 789C6362 		.ascii	"x\234cb@\006\000\000*\000\003"
- 406      40060000 
- 406      2A0003
- 407              		.text
- 408              		.section	.gnu.lto_.lto.2cb8c464,"e",%progbits
- 409 0000 0B000300 		.ascii	"\013\000\003\000\001\000\000\000"
- 409      01000000 
- 410              		.text
- 411              		.section	.gnu.lto_font4x6.2.2cb8c464,"e",%progbits
- 412 0000 789C4DD6 		.ascii	"x\234M\326ilTU\024\007\3609\377\343\264\212[\247,**"
- 412      696C5455 
- 412      1407F039 
- 412      FFE3B48A 
- 412      5BA72C2A 
- 413 0015 CE8C1414 		.ascii	"\316\214\024\024\025\207\302\240\242Bm*\037\374`\012"
- 413      1587C2A0 
- 413      A2426D2A 
- 413      1FFC600A 
- 414 0025 3A90F8C1 		.ascii	":\220\370\301\014 \232\370\301L\233\251&&(\224}\337"
- 414      0C209AF8 
- 414      C14C9BA9 
- 414      26262894 
- 414      7DDF
- 415 0037 F77DDF77 		.ascii	"\367}\337we_\013\024(P\240@\201\002\005\012\024(P\240"
- 415      655F0B14 
- 415      2850A040 
- 415      8102050A 
- 415      142850A0 
- 416 004b 408102C5 		.ascii	"@\201\002\305{\310=\3466\271y\377\337{\363\356y\257"
- 416      7BC83DE6 
- 416      36B979FF 
- 416      DF7BF3EE 
- 416      79AF
- 417 005d FF4CD3AC 		.ascii	"\377L\323\254\347=\236\036\344y\366\343\245\246\300"
- 417      E73D9E1E 
- 417      E479F6E3 
- 417      A5A6C0
- 418 006c DF5E4AA8 		.ascii	"\337^J\250OO\005\011\026\265\202:\026O\004\257X<\026"
- 418      4F4F0509 
- 418      16B5823A 
- 418      164F04AF 
- 418      583C16
- 419 007f 245B3C12 		.ascii	"$[<\0224\260\250\0214\264x(hd\361@\020\264\270/hbQ-"
- 419      34B0A811 
- 419      34B47828 
- 419      6864F140 
- 419      10B4B82F 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 11
-
-
- 420 0097 6866714F 		.ascii	"hfqO\320\334\342\256 \325\342\216\240\265E\225\240\215"
- 420      D0DCE2AE 
- 420      20D5E28E 
- 420      A0B54595 
- 420      A08D
- 421 00a9 C56D415B 		.ascii	"\305mA[\213[\202t\213\233\202\366\026\225\202o,n\010"
- 421      8B5B8274 
- 421      8B9B82F6 
- 421      1695826F 
- 421      2C6E08
- 422 00bc BEB5B82E 		.ascii	"\276\265\270.\350hqM\320\311\242B\360\203\305U\301\217"
- 422      E868714D 
- 422      D0C9A242 
- 422      F083C555 
- 422      C18F
- 423 00ce 1657045D 		.ascii	"\026W\004]-.\013~\266(\027\374jqI\360\233\305EA\266"
- 423      2D2E0B7E 
- 423      B62817FC 
- 423      6A7149F0 
- 423      9BC54541 
- 424 00e3 C505C1EF 		.ascii	"\305\005\301\357\026e\202?-\316\013\376\2628'\310%\253"
- 424      1665823F 
- 424      2DCE0BFE 
- 424      B23827C8 
- 424      25AB
- 425 00f5 B3A27EAA 		.ascii	"\263\242~\252R\321 \325\031\3210\325i\321(\325)\321"
- 425      52D120D5 
- 425      19D130D5 
- 425      69D128D5 
- 425      29D1
- 426 0107 38558968 		.ascii	"8U\211h\222\352\244h\232\352\204h\226\352\270h\236\252"
- 426      92EAA468 
- 426      9AEA8468 
- 426      96EAB868 
- 426      9EAA
- 427 0119 58B44875 		.ascii	"X\264HuL\264LuT\264JuD\264FU$\332\240:,\332\242:$\312"
- 427      4CB44C75 
- 427      54B44A75 
- 427      44B44655 
- 427      24DAA03A 
- 428 0133 531D14E5 		.ascii	"S\035\024\345\253\012E\005\252\003\242B\325~Q\221j\237"
- 428      AB0A4505 
- 428      AA03A242 
- 428      D57E5191 
- 428      6A9F
- 429 0145 A8585520 		.ascii	"\250XU *Q\355\025\225\252\366\210\312T\273E\345\252"
- 429      2A51ED15 
- 429      95AAF688 
- 429      CA54BB45 
- 429      E5AA
- 430 0157 7C51856A 		.ascii	"|Q\205j\227\250R\265ST\245\332!\252V\345\211jT\333E"
- 430      97A852B5 
- 430      5354A5DA 
- 430      21AA56E5 
- 430      896A54DB 
- 431 016c B5AA6DCF 		.ascii	"\265\252m\317\372\323/X;\251O\321V\332S|)\345)\276\220"
- 431      FAD32F58 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 12
-
-
- 431      3BA94FD1 
- 431      56DA537C 
- 431      29E529BE 
- 432 0181 EE149F4B 		.ascii	"\356\024\237Ku\2126\322\234\3423)N\361\251\364\246\370"
- 432      758A36D2 
- 432      9CE23329 
- 432      4EF1A9F4 
- 432      A6F8
- 433 0193 446A53B4 		.ascii	"DjS\264\226\326\024a)M\321J:S\264\224\312\024\251\322"
- 433      96D61461 
- 433      294DD14A 
- 433      3A53B494 
- 433      CA14A9D2 
- 434 01a7 98A28514 		.ascii	"\230\242\205\024\246\010I_\212\217\245.EsiK\361\221"
- 434      A608495F 
- 434      8A8FA52E 
- 434      4573694B 
- 434      F191
- 435 01b9 94A5F850 		.ascii	"\224\245\370P\272R| U)\232IS\212\367\245(\305{\322\223"
- 435      BA527C20 
- 435      55299A49 
- 435      538AF7A5 
- 435      28C57BD2 
- 436 01ce A2A9D4A4 		.ascii	"\242\251\324\244h\"-)R\244$Ec\351H\361\256T\244\010"
- 436      68222D29 
- 436      52A42445 
- 436      63E948F1 
- 436      AE54A408 
- 437 01e2 4A438A80 		.ascii	"JC\212\200\363'\317\357\344w\234\334\310\311o;\371-"
- 437      F327CFEF 
- 437      E4779CDC 
- 437      C8C96F3B 
- 437      F92D
- 438 01f4 27BFE9E4 		.ascii	"'\277\351\344\206N~\303\311\257;\3715'7pr}'\327sr]'"
- 438      864E7EC3 
- 438      C9AF3BF9 
- 438      35273770 
- 438      727D27D7 
- 439 020c 273BD9E7 		.ascii	"';\331\347\344$'\277\352\344W\234\374\262\223_r\362"
- 439      E42427BF 
- 439      EAE4579C 
- 439      FCB2935F 
- 439      72F2
- 440 021e 8B4EAEE3 		.ascii	"\213N\256\343\344\0274\377\177&\321\311\011N\366:\371"
- 440      E41734FF 
- 440      7F26D1C9 
- 440      094EF63A 
- 440      F9
- 441 022f 3927B393 		.ascii	"9'\263\223\341\356\326.w@\317\031\365z\264\\\315\255"
- 441      E1EED62E 
- 441      7740CF19 
- 441      F57AB45C 
- 441      CDAD
- 442 0241 56F14A5E 		.ascii	"V\361J^\301\313y\031/\345%\274\230\027\361B^\300\363"
- 442      C1CB7919 
- 442      2FE525BC 
- 442      9817F142 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 13
-
-
- 442      5EC0F3
- 443 0254 791E87E7 		.ascii	"y\036\207\347\362\034\236\315\263x&\317\340\351<\215"
- 443      F21C9ECD 
- 443      B37826CF 
- 443      E0E93C8D 
- 444 0264 A7F2149E 		.ascii	"\247\362\024\236\314\223x\"O\340\361<\216\307\362\030"
- 444      CC937822 
- 444      4FE0F13C 
- 444      8EC7F218 
- 445 0274 1ECDA378 		.ascii	"\036\315\243x$\217\340\341<\214\207\362\020\036\314"
- 445      248FE0E1 
- 445      3C8C87F2 
- 445      101ECC
- 446 0283 8378200F 		.ascii	"\203x \017\340\376\334\217\373r\037\356\315\271\334"
- 446      E0FEDC8F 
- 446      FB721FEE 
- 446      CDB9DC
- 447 0292 8B7BF253 		.ascii	"\213{\362S\324\342\011\036\343\021j\360\020\017p\037"
- 447      D4E2091E 
- 447      E3116AF0 
- 447      100F701F 
- 448 02a2 D5B887BB 		.ascii	"\325\270\207\273\270\203*\334\306-\334D%n\340:\256\241"
- 448      B8832ADC 
- 448      C62DDC44 
- 448      256EE03A 
- 448      AEA1
- 449 02b4 02577105 		.ascii	"\002Wq\005\227Q\216K\270\210\013(\303y\234\303Y\224"
- 449      97518E4B 
- 449      B8880B28 
- 449      C3799CC3 
- 449      5994
- 450 02c6 E20C4EE3 		.ascii	"\342\014N\343\024Jp\022'p\034\3058\206\2438\202\"\034"
- 450      144A7012 
- 450      27701CC5 
- 450      3886A338 
- 450      82221C
- 451 02d9 C6211C44 		.ascii	"\306!\034D!\016`?\366\241\000{\261\007\273\221\217]"
- 451      210E603F 
- 451      F6A1007B 
- 451      B107BB91 
- 451      8F5D
- 452 02eb D8891DC8 		.ascii	"\330\211\035\310\303vl\303Vl\301fl\302Fl\300z\254\303"
- 452      C3766CC3 
- 452      566CC166 
- 452      6CC2466C 
- 452      C07AACC3 
- 453 02ff 5AACC1BF 		.ascii	"Z\254\301\277\370\007\253\261\012+\261\002\313\261\014"
- 453      F807ABB1 
- 453      0A2BB102 
- 453      CBB10C
- 454 030e 4BB1048B 		.ascii	"K\261\004\213\261\010\013\261\000\3631\017s1\007\263"
- 454      B1080BB1 
- 454      00F3310F 
- 454      733107B3 
- 455 031e 310B3331 		.ascii	"1\01331\003\3231\015S1\005\2231\011\0231\001\3431\016"
- 455      03D3310D 
- 455      53310593 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 14
-
-
- 455      31091331 
- 455      01E3310E 
- 456 0332 633106A3 		.ascii	"c1\006\2431\012#1\002\3031\014C1\004\2031\010\0031\000"
- 456      310A2331 
- 456      02C3310C 
- 456      43310483 
- 456      31080331 
- 457 0347 FDD10F7D 		.ascii	"\375\321\017}\321\007\275\221\213^\350\211\247TKO\350"
- 457      D107BD91 
- 457      8B5EE889 
- 457      A7544B4F 
- 457      E8
- 458 0358 313DA21A 		.ascii	"1=\242\032zH\017\350>U\323=\272Kw\250\212n\323-\272"
- 458      7A480FE8 
- 458      3E55D33D 
- 458      BA4B77A8 
- 458      8A6ED32D 
- 459 036d 49957483 		.ascii	"I\225t\203\256\3235\252\240\253t\205.S9]\242\213t\201"
- 459      AED335AA 
- 459      A0AB7485 
- 459      2E53395D 
- 459      A28B7481 
- 460 0381 CAE83C9D 		.ascii	"\312\350<\235\243\263TJg\3504\235\242\022:I'\3508\025"
- 460      A3B3544A 
- 460      67E8349D 
- 460      A2123A49 
- 460      27E83815 
- 461 0395 D3313A4A 		.ascii	"\3231:JG\250\210\016\323!:H\205t\200\366\323>*\240\275"
- 461      47A8880E 
- 461      D3213A48 
- 461      857480F6 
- 461      D33E2AA0 
- 462 03aa B4877653 		.ascii	"\264\207vS>\355\242\235\264\203\362h;m\243\255\264\205"
- 462      3EEDA29D 
- 462      B483F268 
- 462      3B6DA3AD 
- 462      B485
- 463 03bc 36D326DA 		.ascii	"6\323&\332H\033h=\255\243\265\344a\363_\007s\324\303"
- 463      481B683D 
- 463      ADA3B5E4 
- 463      61F35F07 
- 463      73D4C3
- 464 03cf A9E9210E 		.ascii	"\251\351!\016\006\375\33459\312\211_\305\330\333)\235"
- 464      06FDDC35 
- 464      39CA895F 
- 464      C5D8DB29 
- 464      9D
- 465 03e0 BDC14CF6 		.ascii	"\275\301L\366v6\253\243\237\275\221(7\015\246qB\275"
- 465      7636ABA3 
- 465      9FBD9128 
- 465      370DA671 
- 465      42BD
- 466 03f2 10A34312 		.ascii	"\020\243C\022'D~b\216\264`D\374\346h>\223\223i\356O"
- 466      27447E62 
- 466      8EB46044 
- 466      FCE6683E 
- 466      939369EE 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 15
-
-
- 467 0407 E3FAE14C 		.ascii	"\343\372\341L\006\002f\371\331'\331\354\223\236\355"
- 467      060266F9 
- 467      D927D9EC 
- 467      939EED
- 468 0416 677C17E5 		.ascii	"g|\027\345\366f\217\004_\224\353FB\346\376('{d~\214"
- 468      F6668F04 
- 468      5F94EB46 
- 468      42E6FE28 
- 468      277B647E 
- 469 042b 53CC3135 		.ascii	"S\31415\030b_\3434\356\032\214r<\020\343\210y\226HJ"
- 469      18625FE3 
- 469      34EE1A8C 
- 469      723C10E3 
- 469      88799648 
- 470 0440 2647FE30 		.ascii	"&G\3760\313\314\217Db\234m\316u\211\2078l\366\355n\366"
- 470      CBCC8F44 
- 470      629C6DCE 
- 470      75898738 
- 470      6CF6ED6E 
- 471 0455 CBC94AE2 		.ascii	"\313\311J\342\0243?\307\314\357l\346\373|\346>s-\343"
- 471      14333FC7 
- 471      CCEF6CE6 
- 471      FB7CE63E 
- 471      732DE3
- 472 0468 6BBFF9AC 		.ascii	"k\277\371\254\311\346\\\0273'\253E\222Y1\016\233\271"
- 472      C9E65C17 
- 472      3327AB45 
- 472      9259310E 
- 472      9BB9
- 473 047a 5DCCFC70 		.ascii	"]\314\374p8\304)\346ZJ\0073+\352\347\344\364$NL\364"
- 473      38C429E6 
- 473      5A4A0733 
- 473      2BEAE7E4 
- 473      F4244E4C 
- 474 048f 707A721A 		.ascii	"pzr\032{\374\001\263\314\236\361\030\347\344\3048\236"
- 474      7BFC01B3 
- 474      CC9EF118 
- 474      E7E4C438 
- 474      9E
- 475 04a0 91C659E6 		.ascii	"\221\306Y\346\230e\034\211\247q\334\034\343Y1\363\274"
- 475      98651C89 
- 475      A771DC1C 
- 475      E35931F3 
- 475      BC
- 476 04b1 E6BA79A6 		.ascii	"\346\272y\246\214@\222y\007\263b\362.\346\275\263=\334"
- 476      8C409279 
- 476      07B362F2 
- 476      2EE6BDB3 
- 476      3DDC
- 477 04c3 31D3C38D 		.ascii	"1\323\303\2153\374\034\360\3719h\336\255[\367(\177\037"
- 477      33FC1CF0 
- 477      F93968DE 
- 477      AD5BF728 
- 477      7F1F
- 478 04d5 C8E46EBF 		.ascii	"\310\344n\277\370\271\263\371}F\314\271\240\337\377"
- 478      F8B9B3F9 
- 478      7D46CCB9 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 16
-
-
- 478      A0DFFF
- 479 04e4 1FFFADE5 		.ascii	"\037\377\255\345\213"
- 479      8B
- 480              		.text
- 481              		.section	.gnu.lto_.symbol_nodes.2cb8c464,"e",%progbits
- 482 0000 789C9362 		.ascii	"x\234\223b\000\002V&\206F'\020\315\310\010\241\031\230"
- 482      00025626 
- 482      86462710 
- 482      CDC808A1 
- 482      1998
- 483 0012 C0340300 		.ascii	"\3004\003\000#\276\002y"
- 483      23BE0279 
- 484              		.text
- 485              		.section	.gnu.lto_.refs.2cb8c464,"e",%progbits
- 486 0000 789C6364 		.ascii	"x\234cd\000\002\000\000\012\000\002"
- 486      00020000 
- 486      0A0002
- 487              		.text
- 488              		.section	.gnu.lto_.decls.2cb8c464,"e",%progbits
- 489 0000 789C658E 		.ascii	"x\234e\216OH\024q\024\307\337\233\031f\307m\325\303"
- 489      4F481471 
- 489      14C7DF9B 
- 489      1966C76D 
- 489      D5C3
- 490 0012 227911E6 		.ascii	"\"y\021\346\030\310\032\263;\376!\3504H\006\246\340"
- 490      18C81AB3 
- 490      3BFE21E8 
- 490      344806A6 
- 490      E0
- 491 0023 9FA818D8 		.ascii	"\237\250\030\330\310Y\3339\344\010\316R\307_\341QD!"
- 491      C859DB39 
- 491      E408CE52 
- 491      C75FE151 
- 491      4421
- 492 0035 08434F41 		.ascii	"\010COA\020Y\211e[n\326j\255m\263\306\306\212\027\321"
- 492      10598965 
- 492      5B6ED66A 
- 492      AD6DB3C6 
- 492      C68A17D1 
- 493 0049 431DC2E3 		.ascii	"C\035\302\343vP\024\202\355\3150\033\261=\370\376\346"
- 493      76501482 
- 493      EDCD301B 
- 493      B13DF8FE 
- 493      E6
- 494 005a FD7EDFCF 		.ascii	"\375~\337\317\373\316K#\300k\0008C\252Pq\364\335&\361"
- 494      FBCE4B23 
- 494      C06B0038 
- 494      43AA5071 
- 494      F4DD26F1 
- 495 006e A42D5291 		.ascii	"\244-R\221T\"\315\021\347z\016\251@\2228\020\303\310"
- 495      5422CD11 
- 495      E77A0EA9 
- 495      40923810 
- 495      C3C8
- 496 0080 78B10959 		.ascii	"x\261\011Y\263\024\204v\346\325\217S\260J$\225\034\""
- 496      B3148476 
- 496      E6D58F53 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 17
-
-
- 496      B04A2495 
- 496      1C22
- 497 0092 BFE24202 		.ascii	"\277\342B\0021\262\3009\263l=\320HL\231e'\353\302\357"
- 497      31B2C039 
- 497      B36C3DD0 
- 497      484C9965 
- 497      27EBC2EF 
- 498 00a6 718DC00F 		.ascii	"q\215\300\017\010\312;$\210\023\270\342\322\343\005"
- 498      08CA3B24 
- 498      8813B8E2 
- 498      D2E305
- 499 00b5 AE165827 		.ascii	"\256\026X' \353\002\356\237\232\305\026\254 \035 \251"
- 499      20EB02EE 
- 499      9F9AC516 
- 499      AC201D20 
- 499      A9
- 500 00c6 2070B9DF 		.ascii	" p\271\337\273\213\241\306,c\007l\343.\017\355Q\330"
- 500      BB8BA1C6 
- 500      2C63076C 
- 500      E32E0FED 
- 500      51D8
- 501 00d8 C4960CE6 		.ascii	"\304\226\014\346\360\023\012\334\363\027OKu\247)m\222"
- 501      F0130ADC 
- 501      F3174F4B 
- 501      75A7296D 
- 501      92
- 502 00e9 B1EB9FF1 		.ascii	"\261\353\237\361#nPZ\036\335@\032=\232~9\207U7\217o"
- 502      236E505A 
- 502      1EDD401A 
- 502      3D9A7E39 
- 502      8755378F 
- 503 00fe F10D3D7F 		.ascii	"\361\015=\177Aw\037r\247\027\313G\015^p\366\377\340"
- 503      41771F72 
- 503      A717CB47 
- 503      0D5E70F6 
- 503      FFE0
- 504 0110 C2FEC983 		.ascii	"\302\376\311\203@u\324\251\015\376>\365l7Xu\013\265"
- 504      4075D4A9 
- 504      0DFE3EF5 
- 504      6C375875 
- 504      0BB5
- 505 0122 C153FBAB 		.ascii	"\301S\373\253\345`\353\374\014;>\371u\177\371\374,c"
- 505      E560EBFC 
- 505      0C3B3EF9 
- 505      757FF9FC 
- 505      2C63
- 506 0134 3D5B98C6 		.ascii	"=[\230\306\214\317\245\021WP\336C\321A\024\245\207H"
- 506      8CCFA511 
- 506      5750DE43 
- 506      D14114A5 
- 506      8748
- 507 0146 133BF772 		.ascii	"\023;\367r\217\370\326\275\031\266\224\177\305\030\017"
- 507      8FF8D6BD 
- 507      19B6947F 
- 507      C5180F
- 508 0155 0E1609A7 		.ascii	"\016\026\011\247\215\240\210\370\025\345\214\007\013"
- 508      8DA088F8 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 18
-
-
- 508      15E58C07 
- 508      0B
- 509 0162 D213175E 		.ascii	"\322\023\027^\336<\374)y\360\232\017\227|\270\204\370"
- 509      DE3CFC29 
- 509      79F09A0F 
- 509      977CB884 
- 509      F8
- 510 0173 0DE51584 		.ascii	"\015\345\025\204\300\2505f\253w:B)\363\254\337\266\215"
- 510      C0A83566 
- 510      AB773A42 
- 510      29F3ACDF 
- 510      B68D
- 511 0185 4817FA86 		.ascii	"H\027\372\206eM\351\204\360\337\2476\245C\215\031\211"
- 511      654DE984 
- 511      F0DFA736 
- 511      A5438D19 
- 511      89
- 512 0196 51030229 		.ascii	"Q\003\002)s\314\356\212\333\375\3329]K\2327\314A;e\230"
- 512      73CCEE8A 
- 512      DBFDDA39 
- 512      5D4B9A37 
- 512      CC413B65 
- 513 01ab 963EE2F6 		.ascii	"\226>\342\366\326DTQ\024\335H\334\262&\364\301\241K"
- 513      D6445451 
- 513      14DD48DC 
- 513      B226F4C1 
- 513      A14B
- 514 01bd B1A83E30 		.ascii	"\261\250>0\024\361\232\236N5v\355b|\240\373r\374\312"
- 514      14F19A9E 
- 514      4E3576ED 
- 514      627CA0FB 
- 514      72FCCA
- 515 01d0 D548DFB0 		.ascii	"\325H\337\260\326\333\335\257\250\252\034\2215k\334"
- 515      D6DBDDAF 
- 515      A8AA1C91 
- 515      356BDC
- 516 01df 4C40FDBF 		.ascii	"L@\375\277\033@\203\337\306\223\011\363f\322\256\257"
- 516      1B4083DF 
- 516      C69309F3 
- 516      66D2AEAF 
- 517 01ef 5E6F9B86 		.ascii	"^o\233\206\235\374\003\215E\3226"
- 517      9DFC038D 
- 517      45D236
- 518              		.text
- 519              		.section	.gnu.lto_.symtab.2cb8c464,"e",%progbits
- 520 0000 666F6E74 		.ascii	"font4x6\000"
- 520      34783600 
- 521 0008 00       		.ascii	"\000"
- 522 0009 00       		.ascii	"\000"
- 523 000a 00       		.ascii	"\000"
- 524 000b 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 524      00000000 
- 525 0013 CC000000 		.ascii	"\314\000\000\000"
- 526 0017 666F6E74 		.ascii	"font4x6_height\000"
- 526      3478365F 
- 526      68656967 
- 526      687400
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 19
-
-
- 527 0026 00       		.ascii	"\000"
- 528 0027 00       		.ascii	"\000"
- 529 0028 00       		.ascii	"\000"
- 530 0029 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 530      00000000 
- 531 0031 CF000000 		.ascii	"\317\000\000\000"
- 532 0035 666F6E74 		.ascii	"font4x6_width\000"
- 532      3478365F 
- 532      77696474 
- 532      6800
- 533 0043 00       		.ascii	"\000"
- 534 0044 00       		.ascii	"\000"
- 535 0045 00       		.ascii	"\000"
- 536 0046 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
- 536      00000000 
- 537 004e D2000000 		.ascii	"\322\000\000\000"
- 538              		.text
- 539              		.section	.gnu.lto_.ext_symtab.2cb8c464,"e",%progbits
- 540 0000 01       		.ascii	"\001"
- 541 0001 02       		.ascii	"\002"
- 542 0002 00       		.ascii	"\000"
- 543 0003 02       		.ascii	"\002"
- 544 0004 00       		.ascii	"\000"
- 545 0005 02       		.ascii	"\002"
- 546 0006 00       		.ascii	"\000"
- 547              		.text
- 548              		.section	.gnu.lto_.opts,"e",%progbits
- 549 0000 272D666E 		.ascii	"'-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-prote"
- 549      6F2D6F70 
- 549      656E6D70 
- 549      2720272D 
- 549      666E6F2D 
- 550 0033 6374696F 		.ascii	"ction=none' '-g' '-mcpu=cortex-m7' '-mthumb' '-mflo"
- 550      6E3D6E6F 
- 550      6E652720 
- 550      272D6727 
- 550      20272D6D 
- 551 0066 61742D61 		.ascii	"at-abi=soft' '-mlibarch=armv7e-m' '-march=armv7e-m'"
- 551      62693D73 
- 551      6F667427 
- 551      20272D6D 
- 551      6C696261 
- 552 0099 20272D4F 		.ascii	" '-O2' '-fomit-frame-pointer' '-falign-functions=16"
- 552      32272027 
- 552      2D666F6D 
- 552      69742D66 
- 552      72616D65 
- 553 00cc 2720272D 		.ascii	"' '-ffunction-sections' '-fdata-sections' '-fno-com"
- 553      6666756E 
- 553      6374696F 
- 553      6E2D7365 
- 553      6374696F 
- 554 00ff 6D6F6E27 		.ascii	"mon' '-flto' '-Xassembler' '-alms=./build/lst/font4"
- 554      20272D66 
- 554      6C746F27 
- 554      20272D58 
- 554      61737365 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 20
-
-
- 555 0132 78362E6C 		.ascii	"x6.lst'\000"
- 555      73742700 
- 556              		.text
- 557              		.comm	__gnu_lto_slim,1,1
- 558              		.ident	"GCC: (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s 			page 21
+ 472      53747564 
+ 472      696F5C63 
+ 472      68696269 
+ 473 00e1 32483734 		.ascii	"2H743ZI_REV_XY-NUCLEO144 - Copie\000"
+ 473      335A495F 
+ 473      5245565F 
+ 473      58592D4E 
+ 473      55434C45 
+ 474              	.LASF14:
+ 475 0102 474E5520 		.ascii	"GNU C17 11.3.1 20220712 -mcpu=cortex-m7 -mthumb -mf"
+ 475      43313720 
+ 475      31312E33 
+ 475      2E312032 
+ 475      30323230 
+ 476 0135 6C6F6174 		.ascii	"loat-abi=soft -march=armv7e-m -ggdb -O2 -fomit-fram"
+ 476      2D616269 
+ 476      3D736F66 
+ 476      74202D6D 
+ 476      61726368 
+ 477 0168 652D706F 		.ascii	"e-pointer -falign-functions=16 -ffunction-sections "
+ 477      696E7465 
+ 477      72202D66 
+ 477      616C6967 
+ 477      6E2D6675 
+ 478 019b 2D666461 		.ascii	"-fdata-sections -fno-common\000"
+ 478      74612D73 
+ 478      65637469 
+ 478      6F6E7320 
+ 478      2D666E6F 
+ 479              	.LASF4:
+ 480 01b7 6C6F6E67 		.ascii	"long int\000"
+ 480      20696E74 
+ 480      00
+ 481              	.LASF0:
+ 482 01c0 7369676E 		.ascii	"signed char\000"
+ 482      65642063 
+ 482      68617200 
+ 483              		.ident	"GCC: (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712"
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 font4x6.c
-C:\Users\DEVELO~1\AppData\Local\Temp\ccovIAqi.s:22     .gnu.debuglto_.debug_info:00000000 font4x6.c.1643defd
-                            *COM*:00000001 __gnu_lto_slim
+C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s:24     .rodata.font4x6:00000000 font4x6
+C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s:156    .rodata.font4x6_height:00000000 font4x6_height
+C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s:161    .rodata.font4x6_width:00000000 font4x6_width
+C:\Users\DEVELO~1\AppData\Local\Temp\ccuXM391.s:21     .rodata.font4x6:00000000 $d
 
 NO UNDEFINED SYMBOLS

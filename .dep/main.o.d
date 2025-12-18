@@ -129,8 +129,9 @@ build/obj/main.o: main.c ../../../os/rt/include/ch.h \
  ../../../os/hal/include/hal_st.h \
  ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
  ../../../os/hal/include/hal_mmc_spi.h \
- ../../../os/hal/include/hal_serial_usb.h drivers/usb/usb_device.h \
- drivers/midi/midi.h
+ ../../../os/hal/include/hal_serial_usb.h drivers/drivers.h \
+ drivers/brick_config.h drivers/drv_display.h ui/font.h \
+ drivers/drv_display.h
 ../../../os/rt/include/ch.h:
 ../../../os/license/chlicense.h:
 ../../../os/license/chversion.h:
@@ -291,5 +292,8 @@ cfg/mcuconf.h:
 ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h:
 ../../../os/hal/include/hal_mmc_spi.h:
 ../../../os/hal/include/hal_serial_usb.h:
-drivers/usb/usb_device.h:
-drivers/midi/midi.h:
+drivers/drivers.h:
+drivers/brick_config.h:
+drivers/drv_display.h:
+ui/font.h:
+drivers/drv_display.h:

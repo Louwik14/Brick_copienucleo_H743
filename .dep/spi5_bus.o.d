@@ -1,8 +1,7 @@
-build/obj/drv_leds_addr.o: drivers/drv_leds_addr.c \
- drivers/drv_leds_addr.h ../../../os/rt/include/ch.h \
- ../../../os/license/chlicense.h ../../../os/license/chversion.h \
- ../../../os/license/chcustomer.h cfg/chconf.h \
- ../../../os/rt/include/chchecks.h \
+build/obj/spi5_bus.o: drivers/spi5_bus.c drivers/spi5_bus.h \
+ ../../../os/rt/include/ch.h ../../../os/license/chlicense.h \
+ ../../../os/license/chversion.h ../../../os/license/chcustomer.h \
+ cfg/chconf.h ../../../os/rt/include/chchecks.h \
  ../../../os/rt/include/chrestrictions.h ../../../os/rt/include/chearly.h \
  ../../../os/common/ports/ARM-common/chtypes.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stddef.h \
@@ -76,62 +75,8 @@ build/obj/drv_leds_addr.o: drivers/drv_leds_addr.c \
  ../../../os/oslib/include/chdelegates.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdarg.h \
  ../../../os/oslib/include/chjobs.h ../../../os/oslib/include/chfactory.h \
- ../../../os/rt/include/chdynamic.h drivers/brick_config.h \
- ../../../os/hal/include/hal.h ../../../os/hal/osal/rt-nil/osal.h \
- ../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h cfg/halconf.h \
- cfg/mcuconf.h ../../../os/hal/ports/STM32/STM32H7xx/hal_lld.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_registry.h \
- ../../../os/hal/ports/common/ARMCMx/nvic.h \
- ../../../os/hal/ports/common/ARMCMx/cache.h \
- ../../../os/hal/ports/common/ARMCMx/mpu_v7m.h \
- ../../../os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_isr.h \
- ../../../os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h \
- ../../../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h \
- ../../../os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h \
- ../../../os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_rcc.h \
- ../../../os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
- ../../../os/hal/include/hal_objects.h \
- ../../../os/hal/include/hal_streams.h \
- ../../../os/hal/include/hal_channels.h \
- ../../../os/hal/include/hal_files.h \
- ../../../os/hal/include/hal_ioblock.h \
- ../../../os/hal/include/hal_mmcsd.h \
- ../../../os/hal/include/hal_persistent.h \
- ../../../os/hal/include/hal_flash.h \
- ../../../os/hal/include/hal_buffers.h \
- ../../../os/hal/include/hal_queues.h \
- ../../../os/hal/include/hal_buffered_serial.h \
- ../../../os/hal/include/hal_pal.h \
- ../../../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h \
- ../../../os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h \
- ../../../os/hal/include/hal_adc.h \
- ../../../os/hal/ports/STM32/LLD/ADCv4/hal_adc_lld.h \
- ../../../os/hal/include/hal_can.h ../../../os/hal/include/hal_crypto.h \
- ../../../os/hal/include/hal_dac.h ../../../os/hal/include/hal_efl.h \
- ../../../os/hal/include/hal_gpt.h ../../../os/hal/include/hal_i2c.h \
- ../../../os/hal/include/hal_i2s.h ../../../os/hal/include/hal_icu.h \
- ../../../os/hal/include/hal_mac.h ../../../os/hal/include/hal_pwm.h \
- ../../../os/hal/include/hal_rtc.h ../../../os/hal/include/hal_serial.h \
- ../../../os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h \
- ../../../os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h \
- ../../../os/hal/include/hal_sdc.h \
- ../../../os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h \
- ../../../os/hal/include/hal_sio.h ../../../os/hal/include/hal_spi.h \
- ../../../os/hal/include/hal_spi_v2.h \
- ../../../os/hal/ports/STM32/LLD/SPIv3/hal_spi_v2_lld.h \
- ../../../os/hal/include/hal_trng.h ../../../os/hal/include/hal_uart.h \
- ../../../os/hal/include/hal_usb.h \
- ../../../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
- ../../../os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
- ../../../os/hal/include/hal_wdg.h ../../../os/hal/include/hal_wspi.h \
- ../../../os/hal/include/hal_st.h \
- ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
- ../../../os/hal/include/hal_mmc_spi.h \
- ../../../os/hal/include/hal_serial_usb.h
-drivers/drv_leds_addr.h:
+ ../../../os/rt/include/chdynamic.h
+drivers/spi5_bus.h:
 ../../../os/rt/include/ch.h:
 ../../../os/license/chlicense.h:
 ../../../os/license/chversion.h:
@@ -226,70 +171,3 @@ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-ea
 ../../../os/oslib/include/chjobs.h:
 ../../../os/oslib/include/chfactory.h:
 ../../../os/rt/include/chdynamic.h:
-drivers/brick_config.h:
-../../../os/hal/include/hal.h:
-../../../os/hal/osal/rt-nil/osal.h:
-../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
-cfg/halconf.h:
-cfg/mcuconf.h:
-../../../os/hal/ports/STM32/STM32H7xx/hal_lld.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_registry.h:
-../../../os/hal/ports/common/ARMCMx/nvic.h:
-../../../os/hal/ports/common/ARMCMx/cache.h:
-../../../os/hal/ports/common/ARMCMx/mpu_v7m.h:
-../../../os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_isr.h:
-../../../os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h:
-../../../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h:
-../../../os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h:
-../../../os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_rcc.h:
-../../../os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h:
-../../../os/hal/include/hal_objects.h:
-../../../os/hal/include/hal_streams.h:
-../../../os/hal/include/hal_channels.h:
-../../../os/hal/include/hal_files.h:
-../../../os/hal/include/hal_ioblock.h:
-../../../os/hal/include/hal_mmcsd.h:
-../../../os/hal/include/hal_persistent.h:
-../../../os/hal/include/hal_flash.h:
-../../../os/hal/include/hal_buffers.h:
-../../../os/hal/include/hal_queues.h:
-../../../os/hal/include/hal_buffered_serial.h:
-../../../os/hal/include/hal_pal.h:
-../../../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h:
-../../../os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h:
-../../../os/hal/include/hal_adc.h:
-../../../os/hal/ports/STM32/LLD/ADCv4/hal_adc_lld.h:
-../../../os/hal/include/hal_can.h:
-../../../os/hal/include/hal_crypto.h:
-../../../os/hal/include/hal_dac.h:
-../../../os/hal/include/hal_efl.h:
-../../../os/hal/include/hal_gpt.h:
-../../../os/hal/include/hal_i2c.h:
-../../../os/hal/include/hal_i2s.h:
-../../../os/hal/include/hal_icu.h:
-../../../os/hal/include/hal_mac.h:
-../../../os/hal/include/hal_pwm.h:
-../../../os/hal/include/hal_rtc.h:
-../../../os/hal/include/hal_serial.h:
-../../../os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h:
-../../../os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h:
-../../../os/hal/include/hal_sdc.h:
-../../../os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h:
-../../../os/hal/include/hal_sio.h:
-../../../os/hal/include/hal_spi.h:
-../../../os/hal/include/hal_spi_v2.h:
-../../../os/hal/ports/STM32/LLD/SPIv3/hal_spi_v2_lld.h:
-../../../os/hal/include/hal_trng.h:
-../../../os/hal/include/hal_uart.h:
-../../../os/hal/include/hal_usb.h:
-../../../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h:
-../../../os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h:
-../../../os/hal/include/hal_wdg.h:
-../../../os/hal/include/hal_wspi.h:
-../../../os/hal/include/hal_st.h:
-../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h:
-../../../os/hal/include/hal_mmc_spi.h:
-../../../os/hal/include/hal_serial_usb.h:

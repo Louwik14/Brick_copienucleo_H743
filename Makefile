@@ -24,7 +24,7 @@ ifeq ($(USE_LDOPT),)
 endif
 
 ifeq ($(USE_LTO),)
-  USE_LTO = yes
+  USE_LTO = no
 endif
 
 ifeq ($(USE_VERBOSE_COMPILE),)
@@ -104,7 +104,8 @@ CSRC = $(ALLCSRC) \
        $(wildcard drivers/audio/*.c) \
        $(wildcard drivers/midi/*.c) \
        drivers/usb/usb_device.c \
-       drivers/usb/usbcfg.c
+       drivers/usb/usbcfg.c \
+       syscalls.c 
 
 ##############################################################################
 # STM32 HAL – REQUIRED FOR USB DEVICE

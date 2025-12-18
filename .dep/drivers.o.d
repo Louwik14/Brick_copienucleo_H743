@@ -129,7 +129,8 @@ build/obj/drivers.o: drivers/drivers.c drivers/drivers.h \
  ../../../os/hal/include/hal_st.h \
  ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
  ../../../os/hal/include/hal_mmc_spi.h \
- ../../../os/hal/include/hal_serial_usb.h drivers/drv_display.h ui/font.h
+ ../../../os/hal/include/hal_serial_usb.h drivers/drv_display.h ui/font.h \
+ drivers/spi5_bus.h
 drivers/drivers.h:
 ../../../os/rt/include/ch.h:
 ../../../os/license/chlicense.h:
@@ -294,3 +295,4 @@ cfg/mcuconf.h:
 ../../../os/hal/include/hal_serial_usb.h:
 drivers/drv_display.h:
 ui/font.h:
+drivers/spi5_bus.h:
