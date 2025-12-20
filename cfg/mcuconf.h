@@ -1,5 +1,5 @@
 /*
-    ChibiOS - Copyright (C) 2006..2020 Giovanni Di Sirio
+    ChibiOS - Copyright (C) 2006..2025 Giovanni Di Sirio
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -50,7 +50,7 @@
 /*
  * Memory attributes settings.
  */
-#define STM32_NOCACHE_ENABLE                TRUE
+#define STM32_NOCACHE_ENABLE                FALSE
 #define STM32_NOCACHE_MPU_REGION            MPU_REGION_6
 #define STM32_NOCACHE_RBAR                  0x24000000U
 #define STM32_NOCACHE_RASR                  MPU_RASR_SIZE_16K
@@ -61,7 +61,7 @@
  * very critical.
  * Register constants are taken from the ST header.
  */
-#define STM32_VOS                           STM32_VOS_SCALE1
+#define STM32_VOS                           STM32_VOS_SCALE0
 #define STM32_PWR_CR1                       (PWR_CR1_SVOS_1 | PWR_CR1_SVOS_0)
 #define STM32_PWR_CR2                       (PWR_CR2_BREN)
 #define STM32_PWR_CR3                       (PWR_CR3_LDOEN | PWR_CR3_USB33DEN)
@@ -75,42 +75,42 @@
 #define STM32_LSI_ENABLED                   TRUE
 #define STM32_CSI_ENABLED                   TRUE
 #define STM32_HSI48_ENABLED                 TRUE
-#define STM32_HSE_ENABLED                                     FALSE
-#define STM32_LSE_ENABLED                                     FALSE
+#define STM32_HSE_ENABLED                   TRUE
+#define STM32_LSE_ENABLED                   TRUE
 #define STM32_HSIDIV                        STM32_HSIDIV_DIV1
 
 /*
  * PLLs static settings.
  * Reading STM32 Reference Manual is required.
  */
-#define STM32_PLLSRC                                                STM32_PLLSRC_HSI_CK
+#define STM32_PLLSRC                        STM32_PLLSRC_HSE_CK
 #define STM32_PLLCFGR_MASK                  ~0
-#define STM32_PLL1_ENABLED                                    FALSE
+#define STM32_PLL1_ENABLED                  TRUE
 #define STM32_PLL1_P_ENABLED                TRUE
 #define STM32_PLL1_Q_ENABLED                TRUE
 #define STM32_PLL1_R_ENABLED                TRUE
 #define STM32_PLL1_DIVM_VALUE               4
-#define STM32_PLL1_DIVN_VALUE                             50
+#define STM32_PLL1_DIVN_VALUE               480
 #define STM32_PLL1_FRACN_VALUE              0
 #define STM32_PLL1_DIVP_VALUE               2
-#define STM32_PLL1_DIVQ_VALUE               16
-#define STM32_PLL1_DIVR_VALUE               8
-#define STM32_PLL2_ENABLED                                    FALSE
+#define STM32_PLL1_DIVQ_VALUE               4
+#define STM32_PLL1_DIVR_VALUE               2
+#define STM32_PLL2_ENABLED                  TRUE
 #define STM32_PLL2_P_ENABLED                TRUE
 #define STM32_PLL2_Q_ENABLED                TRUE
 #define STM32_PLL2_R_ENABLED                TRUE
 #define STM32_PLL2_DIVM_VALUE               4
-#define STM32_PLL2_DIVN_VALUE                             50
+#define STM32_PLL2_DIVN_VALUE               200
 #define STM32_PLL2_FRACN_VALUE              0
-#define STM32_PLL2_DIVP_VALUE               40
-#define STM32_PLL2_DIVQ_VALUE               8
-#define STM32_PLL2_DIVR_VALUE               8
-#define STM32_PLL3_ENABLED                                    TRUE
+#define STM32_PLL2_DIVP_VALUE               12
+#define STM32_PLL2_DIVQ_VALUE               2
+#define STM32_PLL2_DIVR_VALUE               3
+#define STM32_PLL3_ENABLED                  TRUE
 #define STM32_PLL3_P_ENABLED                TRUE
 #define STM32_PLL3_Q_ENABLED                TRUE
 #define STM32_PLL3_R_ENABLED                TRUE
 #define STM32_PLL3_DIVM_VALUE               4
-#define STM32_PLL3_DIVN_VALUE                             50
+#define STM32_PLL3_DIVN_VALUE               400
 #define STM32_PLL3_FRACN_VALUE              0
 #define STM32_PLL3_DIVP_VALUE               8
 #define STM32_PLL3_DIVQ_VALUE               8
@@ -120,8 +120,8 @@
  * Core clocks dynamic settings (can be changed at runtime).
  * Reading STM32 Reference Manual is required.
  */
-#define STM32_SW                                                        STM32_SW_HSI_CK
-#define STM32_RTCSEL                                                STM32_RTCSEL_LSI_CK
+#define STM32_SW                            STM32_SW_PLL1_P_CK
+#define STM32_RTCSEL                        STM32_RTCSEL_LSE_CK
 #define STM32_D1CPRE                        STM32_D1CPRE_DIV1
 #define STM32_D1HPRE                        STM32_D1HPRE_DIV2
 #define STM32_D1PPRE3                       STM32_D1PPRE3_DIV2
@@ -142,12 +142,12 @@
 #define STM32_STOPKERWUCK                   0
 #define STM32_STOPWUCK                      0
 #define STM32_RTCPRE_VALUE                  8
-#define STM32_CKPERSEL                                            STM32_CKPERSEL_HSI_CK
-#define STM32_SDMMCSEL                      STM32_SDMMCSEL_PLL1_Q_CK
+#define STM32_CKPERSEL                      STM32_CKPERSEL_HSE_CK
+#define STM32_SDMMCSEL                      STM32_SDMMCSEL_PLL2_R_CK
 #define STM32_QSPISEL                       STM32_QSPISEL_HCLK
 #define STM32_FMCSEL                        STM32_FMCSEL_HCLK
 #define STM32_SWPSEL                        STM32_SWPSEL_PCLK1
-#define STM32_FDCANSEL                                            STM32_FDCANSEL_HSE_CK
+#define STM32_FDCANSEL                      STM32_FDCANSEL_HSE_CK
 #define STM32_DFSDM1SEL                     STM32_DFSDM1SEL_PCLK2
 #define STM32_SPDIFSEL                      STM32_SPDIFSEL_PLL1_Q_CK
 #define STM32_SPI45SEL                      STM32_SPI45SEL_PCLK2
@@ -228,15 +228,17 @@
 #define STM32_ADC_DUAL_MODE                 FALSE
 #define STM32_ADC_SAMPLES_SIZE              16
 #define STM32_ADC_USE_ADC12                 TRUE
-#define STM32_ADC_USE_ADC3                  TRUE
+#define STM32_ADC_USE_ADC3                  FALSE
 #define STM32_ADC_ADC12_DMA_STREAM          STM32_DMA_STREAM_ID_ANY
+#define STM32_ADC_ADC3_DMA_STREAM           STM32_DMA_STREAM_ID_ANY
+#define STM32_ADC_ADC3_USE_BDMA             FALSE
 #define STM32_ADC_ADC3_BDMA_STREAM          STM32_BDMA_STREAM_ID_ANY
 #define STM32_ADC_ADC12_DMA_PRIORITY        2
 #define STM32_ADC_ADC3_DMA_PRIORITY         2
 #define STM32_ADC_ADC12_IRQ_PRIORITY        5
 #define STM32_ADC_ADC3_IRQ_PRIORITY         5
-#define STM32_ADC_ADC12_CLOCK_MODE          ADC_CCR_CKMODE_AHB_DIV4
-#define STM32_ADC_ADC3_CLOCK_MODE           ADC_CCR_CKMODE_AHB_DIV4
+#define STM32_ADC_ADC12_CLOCK_MODE          ADC_CCR_CKMODE_ADCCK
+#define STM32_ADC_ADC3_CLOCK_MODE           ADC_CCR_CKMODE_ADCCK
 
 /*
  * CAN driver system settings.
@@ -278,7 +280,7 @@
 /*
  * I2C driver system settings.
  */
-#define STM32_I2C_USE_I2C1                  TRUE
+#define STM32_I2C_USE_I2C1                  FALSE
 #define STM32_I2C_USE_I2C2                  FALSE
 #define STM32_I2C_USE_I2C3                  FALSE
 #define STM32_I2C_USE_I2C4                  FALSE
@@ -336,7 +338,7 @@
 #define STM32_PWM_USE_TIM3                  FALSE
 #define STM32_PWM_USE_TIM4                  FALSE
 #define STM32_PWM_USE_TIM5                  FALSE
-#define STM32_PWM_USE_TIM8                  TRUE
+#define STM32_PWM_USE_TIM8                  FALSE
 #define STM32_PWM_USE_TIM12                 FALSE
 #define STM32_PWM_USE_TIM13                 FALSE
 #define STM32_PWM_USE_TIM14                 FALSE
@@ -358,8 +360,8 @@
 #define STM32_SDC_USE_SDMMC1                TRUE
 #define STM32_SDC_USE_SDMMC2                FALSE
 #define STM32_SDC_SDMMC_UNALIGNED_SUPPORT   TRUE
-#define STM32_SDC_SDMMC_WRITE_TIMEOUT       1000000
-#define STM32_SDC_SDMMC_READ_TIMEOUT        1000000
+#define STM32_SDC_SDMMC_WRITE_TIMEOUT       10000
+#define STM32_SDC_SDMMC_READ_TIMEOUT        10000
 #define STM32_SDC_SDMMC_CLOCK_DELAY         10
 #define STM32_SDC_SDMMC_PWRSAV              TRUE
 
