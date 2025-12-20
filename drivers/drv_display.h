@@ -17,10 +17,7 @@
 
 void drv_display_init(void);
 void drv_display_clear(void);
-
-/* Demande d’envoi de la frame courante (double buffer statique + thread OLED). */
 void drv_display_update(void);
-
 uint8_t* drv_display_get_buffer(void);
 void drv_display_start(void);
 void drv_display_stop(void);

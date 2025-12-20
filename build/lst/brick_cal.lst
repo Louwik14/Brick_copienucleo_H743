@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
   55 0014 0446     		mov	r4, r0
   56              		.loc 1 27 19 view .LVU8
   57 0016 0370     		strb	r3, [r0]
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 2
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 2
 
 
   58              		.loc 1 28 3 is_stmt 1 view .LVU9
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  112 004c C4F88830 		str	r3, [r4, #136]	@ unaligned
  113 0050 C4F88C30 		str	r3, [r4, #140]	@ unaligned
  114 0054 C4F89030 		str	r3, [r4, #144]	@ unaligned
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 3
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 3
 
 
  115              	.LBE19:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  169              		.loc 1 60 1 view .LVU47
  170 000c 08BD     		pop	{r3, pc}
  171              	.LVL12:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 4
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 4
 
 
  172              	.L24:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  226              		.global	brick_cal_pot_enable_get
  227              		.syntax unified
  228              		.thumb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 5
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 5
 
 
  229              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  283              		.loc 1 73 1 is_stmt 0 view .LVU81
  284 0024 7047     		bx	lr
  285              		.cfi_endproc
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 6
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 6
 
 
  286              	.LFE3:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  340              		.loc 1 85 10 discriminator 1 view .LVU96
  341 001a 0020     		movs	r0, #0
  342              	.LVL33:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 7
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 7
 
 
  343              		.loc 1 84 11 discriminator 1 view .LVU97
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  397              		.loc 1 15 32 is_stmt 0 view .LVU114
  398 0002 90F801C0 		ldrb	ip, [r0, #1]	@ zero_extendqisi2
  399 0006 8C45     		cmp	ip, r1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 8
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 8
 
 
  400 0008 01D9     		bls	.L54
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  454              		.cfi_def_cfa_offset 0
  455 0030 7047     		bx	lr
  456              	.LVL48:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 9
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 9
 
 
  457              	.L52:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  511              	.L69:
  512              		.loc 1 15 32 view .LVU145
  513              	.LBE28:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 10
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 10
 
 
  514              	.LBE27:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  568              		.loc 1 15 3 view .LVU161
  569              		.loc 1 15 32 is_stmt 0 view .LVU162
  570 000a 90F801C0 		ldrb	ip, [r0, #1]	@ zero_extendqisi2
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 11
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 11
 
 
  571 000e 8C45     		cmp	ip, r1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  625              	.LBB31:
  626              	.LBI31:
  627              		.loc 1 10 13 view .LVU177
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 12
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 12
 
 
  628              	.LBB32:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  682              		.loc 1 173 6 is_stmt 0 view .LVU194
  683 002a 8C88     		ldrh	r4, [r1, #4]
  684              		.loc 1 176 20 view .LVU195
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 13
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 13
 
 
  685 002c 888C     		ldrh	r0, [r1, #36]
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  739              		.loc 1 192 10 is_stmt 0 view .LVU219
  740 0054 4FF00000 		mov	r0, #0
  741              	.LVL73:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 14
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 14
 
 
  742              	.LBB44:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  796              		.loc 1 193 1 is_stmt 0 view .LVU238
  797 0076 30BD     		pop	{r4, r5, pc}
  798              	.LVL81:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 15
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 15
 
 
  799              	.L98:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  853              		.size	brick_cal_pot_next, .-brick_cal_pot_next
  854              		.global	brick_cal_state
  855              		.section	.bss.brick_cal_state,"aw",%nobits
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 16
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 16
 
 
  856              		.align	2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  906 0053 02       		.uleb128 0x2
  907 0054 02       		.byte	0x2
  908 0055 07       		.byte	0x7
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 17
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 17
 
 
  909 0056 D8000000 		.4byte	.LASF5
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  963 00bf 11       		.byte	0x11
  964 00c0 0B       		.byte	0xb
  965 00c1 84000000 		.4byte	0x84
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 18
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 18
 
 
  966 00c5 01       		.byte	0x1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1020 0137 8E000000 		.4byte	.LASF22
  1021 013b 24       		.byte	0x24
  1022 013c 18       		.byte	0x18
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 19
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 19
 
 
  1023 013d A3000000 		.4byte	0xa3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1077 01ba 9D       		.byte	0x9d
  1078 01bb 5B       		.byte	0x5b
  1079 01bc 93020000 		.4byte	0x293
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 20
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 20
 
 
  1080 01c0 01       		.uleb128 0x1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1134 024a 03       		.byte	0x3
  1135 024b 0D       		.uleb128 0xd
  1136 024c EC020000 		.4byte	0x2ec
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 21
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 21
 
 
  1137 0250 0D       		.uleb128 0xd
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1191 02d1 31       		.byte	0x31
  1192 02d2 8E020000 		.4byte	0x28e
  1193 02d6 08       		.uleb128 0x8
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 22
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 22
 
 
  1194 02d7 37000000 		.4byte	.LASF24
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1248 0359 93020000 		.4byte	0x293
  1249 035d 01       		.uleb128 0x1
  1250 035e 52       		.byte	0x52
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 23
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 23
 
 
  1251 035f 09       		.uleb128 0x9
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1305 03ec 01       		.uleb128 0x1
  1306 03ed CF060000 		.4byte	0x6cf
  1307 03f1 C4010000 		.4byte	.LLST25
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 24
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 24
 
 
  1308 03f5 C2010000 		.4byte	.LVUS25
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1362 047c 4A020000 		.4byte	.LVUS21
  1363 0480 01       		.uleb128 0x1
  1364 0481 C4060000 		.4byte	0x6c4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 25
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 25
 
 
  1365 0485 57020000 		.4byte	.LLST22
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1419 050c EB020000 		.4byte	.LLST17
  1420 0510 E9020000 		.4byte	.LVUS17
  1421 0514 01       		.uleb128 0x1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 26
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 26
 
 
  1422 0515 C4060000 		.4byte	0x6c4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1476 05a2 05       		.uleb128 0x5
  1477 05a3 91010000 		.4byte	.LASF40
  1478 05a7 2A       		.byte	0x2a
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 27
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 27
 
 
  1479 05a8 76000000 		.4byte	0x76
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1533 0630 00       		.byte	0
  1534 0631 05       		.uleb128 0x5
  1535 0632 0E000000 		.4byte	.LASF43
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 28
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 28
 
 
  1536 0636 12       		.byte	0x12
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1590 06af 02       		.uleb128 0x2
  1591 06b0 08       		.byte	0x8
  1592 06b1 40       		.byte	0x40
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 29
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 29
 
 
  1593 06b2 00       		.byte	0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1647 001b 0E       		.uleb128 0xe
  1648 001c 3A       		.uleb128 0x3a
  1649 001d 21       		.uleb128 0x21
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 30
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 30
 
 
  1650 001e 01       		.sleb128 1
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1704 0056 12       		.uleb128 0x12
  1705 0057 06       		.uleb128 0x6
  1706 0058 40       		.uleb128 0x40
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 31
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 31
 
 
  1707 0059 18       		.uleb128 0x18
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1761 008f 0B       		.uleb128 0xb
  1762 0090 49       		.uleb128 0x49
  1763 0091 13       		.uleb128 0x13
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 32
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 32
 
 
  1764 0092 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1818 00c9 3A       		.uleb128 0x3a
  1819 00ca 21       		.uleb128 0x21
  1820 00cb 01       		.sleb128 1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 33
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 33
 
 
  1821 00cc 3B       		.uleb128 0x3b
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1875 0102 49       		.uleb128 0x49
  1876 0103 13       		.uleb128 0x13
  1877 0104 02       		.uleb128 0x2
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 34
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 34
 
 
  1878 0105 17       		.uleb128 0x17
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1932 013c 00       		.byte	0
  1933 013d 49       		.uleb128 0x49
  1934 013e 13       		.uleb128 0x13
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 35
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 35
 
 
  1935 013f 2F       		.uleb128 0x2f
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  1989 0176 3B       		.uleb128 0x3b
  1990 0177 0B       		.uleb128 0xb
  1991 0178 39       		.uleb128 0x39
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 36
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 36
 
 
  1992 0179 21       		.uleb128 0x21
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2046 01af 39       		.uleb128 0x39
  2047 01b0 0B       		.uleb128 0xb
  2048 01b1 49       		.uleb128 0x49
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 37
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 37
 
 
  2049 01b2 13       		.uleb128 0x13
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2103 01e9 57       		.uleb128 0x57
  2104 01ea 0B       		.uleb128 0xb
  2105 01eb 01       		.uleb128 0x1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 38
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 38
 
 
  2106 01ec 13       		.uleb128 0x13
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2160 0224 01       		.byte	0x1
  2161 0225 03       		.uleb128 0x3
  2162 0226 0E       		.uleb128 0xe
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 39
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 39
 
 
  2163 0227 3A       		.uleb128 0x3a
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2217 0010 00       		.uleb128 .LVU184
  2218 0011 00       		.uleb128 .LVU196
  2219 0012 00       		.uleb128 .LVU196
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 40
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 40
 
 
  2220 0013 00       		.uleb128 .LVU226
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2274 004b 01       		.uleb128 0x1
  2275 004c 50       		.byte	0x50
  2276 004d 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 41
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 41
 
 
  2277 004e 74       		.uleb128 .LVL80-.LVL64
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2331 0086 51       		.byte	0x51
  2332 0087 04       		.byte	0x4
  2333 0088 78       		.uleb128 .LVL81-.LVL64
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 42
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 42
 
 
  2334 0089 A401     		.uleb128 .LFE10-.LVL64
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2388 00c4 01       		.uleb128 0x1
  2389 00c5 50       		.byte	0x50
  2390 00c6 9F       		.byte	0x9f
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 43
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 43
 
 
  2391 00c7 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2445 0101 04       		.byte	0x4
  2446 0102 00       		.uleb128 .LVL72-.LVL72
  2447 0103 0C       		.uleb128 .LVL73-.LVL72
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 44
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 44
 
 
  2448 0104 01       		.uleb128 0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2502 0140 04       		.byte	0x4
  2503 0141 18       		.uleb128 .LVL60-.LVL57
  2504 0142 1A       		.uleb128 .LVL61-.LVL57
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 45
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 45
 
 
  2505 0143 04       		.uleb128 0x4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2559              	.LLST30:
  2560 017a 08       		.byte	0x8
  2561 017b 0A000000 		.4byte	.LVL58
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 46
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 46
 
 
  2562 017f 0C       		.uleb128 .LVL59-.LVL58
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2616 01b7 01       		.uleb128 0x1
  2617 01b8 51       		.byte	0x51
  2618 01b9 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 47
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 47
 
 
  2619 01ba 1E       		.uleb128 .LVL55-.LVL50
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2673 01f3 10       		.uleb128 .LVL42-.LVL39
  2674 01f4 12       		.uleb128 .LVL43-.LVL39
  2675 01f5 04       		.uleb128 0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 48
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 48
 
 
  2676 01f6 A3       		.byte	0xa3
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2730 022a 06       		.byte	0x6
  2731 022b 00000000 		.4byte	.LVL39
  2732 022f 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 49
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 49
 
 
  2733 0230 00       		.uleb128 .LVL39-.LVL39
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2787 0267 00       		.uleb128 .LVU101
  2788 0268 00       		.uleb128 .LVU101
  2789 0269 00       		.uleb128 .LVU103
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 50
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 50
 
 
  2790 026a 00       		.uleb128 .LVU103
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2844              	.LLST15:
  2845 02a1 06       		.byte	0x6
  2846 02a2 00000000 		.4byte	.LVL27
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 51
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 51
 
 
  2847 02a6 04       		.byte	0x4
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2901 02dd 2E       		.uleb128 .LVL38-.LVL27
  2902 02de 01       		.uleb128 0x1
  2903 02df 53       		.byte	0x53
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 52
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 52
 
 
  2904 02e0 04       		.byte	0x4
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  2958 0319 04       		.byte	0x4
  2959 031a 1A       		.uleb128 .LVL24-.LVL20
  2960 031b 1E       		.uleb128 .LVL26-.LVL20
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 53
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 53
 
 
  2961 031c 01       		.uleb128 0x1
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3015 0354 00       		.uleb128 0
  3016 0355 00       		.uleb128 .LVU47
  3017 0356 00       		.uleb128 .LVU47
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 54
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 54
 
 
  3018 0357 00       		.uleb128 .LVU48
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3072 038e 00       		.uleb128 .LVU57
  3073 038f 00       		.uleb128 .LVU57
  3074 0390 00       		.uleb128 .LVU62
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 55
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 55
 
 
  3075 0391 00       		.uleb128 .LVU62
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3129 03c9 01       		.uleb128 .LVU52
  3130 03ca 00       		.uleb128 .LVU56
  3131 03cb 00       		.uleb128 .LVU56
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 56
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 56
 
 
  3132 03cc 00       		.uleb128 .LVU57
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3186 0405 10       		.uleb128 .LVL15-.LVL13
  3187 0406 1A       		.uleb128 .LVL17-.LVL13
  3188 0407 04       		.uleb128 0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 57
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 57
 
 
  3189 0408 A3       		.byte	0xa3
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3243 043d 00000000 		.4byte	.LVL0
  3244 0441 04       		.byte	0x4
  3245 0442 00       		.uleb128 .LVL0-.LVL0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 58
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 58
 
 
  3246 0443 0A       		.uleb128 .LVL1-.LVL0
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3300              	.LVUS4:
  3301 047a 02       		.uleb128 .LVU19
  3302 047b 03       		.uleb128 .LVU20
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 59
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 59
 
 
  3303              	.LLST4:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3357 0018 05       		.byte	0x5
  3358 0019 04000000 		.4byte	.LBB31
  3359 001d 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 60
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 60
 
 
  3360 001e 00       		.uleb128 .LBB31-.LBB31
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3414              	.Ldebug_ranges3:
  3415              		.section	.debug_line,"",%progbits
  3416              	.Ldebug_line0:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 61
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 61
 
 
  3417 0000 5C050000 		.section	.debug_str,"MS",%progbits,1
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3444              	.LASF30:
  3445 0078 62726963 		.ascii	"brick_cal_pot_max_get\000"
  3445      6B5F6361 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 62
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 62
 
 
  3445      6C5F706F 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3469 0124 6C6F6E67 		.ascii	"long unsigned int\000"
  3469      20756E73 
  3469      69676E65 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 63
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 63
 
 
  3469      6420696E 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3491 01e8 6C6F6E67 		.ascii	"long long int\000"
  3491      206C6F6E 
  3491      6720696E 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 64
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 64
 
 
  3491      7400
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3511      3D736F66 
  3511      74202D6D 
  3511      61726368 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 65
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 65
 
 
  3512 0312 652D706F 		.ascii	"e-pointer -falign-functions=16 -ffunction-sections "
@@ -3874,30 +3874,30 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 1
  3525 0393 6C656E67 		.ascii	"length\000"
  3525      746800
  3526              		.ident	"GCC: (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s 			page 66
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s 			page 66
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 brick_cal.c
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:18     .text.brick_cal_pot_init:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:25     .text.brick_cal_pot_init:00000000 brick_cal_pot_init
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:137    .text.brick_cal_pot_enable_range:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:144    .text.brick_cal_pot_enable_range:00000000 brick_cal_pot_enable_range
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:224    .text.brick_cal_pot_enable_get:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:231    .text.brick_cal_pot_enable_get:00000000 brick_cal_pot_enable_get
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:289    .text.brick_cal_pot_detent_get:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:296    .text.brick_cal_pot_detent_get:00000000 brick_cal_pot_detent_get
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:371    .text.brick_cal_pot_detent_set:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:378    .text.brick_cal_pot_detent_set:00000000 brick_cal_pot_detent_set
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:475    .text.brick_cal_pot_min_get:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:482    .text.brick_cal_pot_min_get:00000000 brick_cal_pot_min_get
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:540    .text.brick_cal_pot_max_get:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:547    .text.brick_cal_pot_max_get:00000000 brick_cal_pot_max_get
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:605    .text.brick_cal_pot_next:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:612    .text.brick_cal_pot_next:00000000 brick_cal_pot_next
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:848    .text.brick_cal_pot_next:000000a0 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:859    .bss.brick_cal_state:00000000 brick_cal_state
-C:\Users\DEVELO~1\AppData\Local\Temp\ccS7mMok.s:856    .bss.brick_cal_state:00000000 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:18     .text.brick_cal_pot_init:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:25     .text.brick_cal_pot_init:00000000 brick_cal_pot_init
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:137    .text.brick_cal_pot_enable_range:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:144    .text.brick_cal_pot_enable_range:00000000 brick_cal_pot_enable_range
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:224    .text.brick_cal_pot_enable_get:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:231    .text.brick_cal_pot_enable_get:00000000 brick_cal_pot_enable_get
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:289    .text.brick_cal_pot_detent_get:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:296    .text.brick_cal_pot_detent_get:00000000 brick_cal_pot_detent_get
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:371    .text.brick_cal_pot_detent_set:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:378    .text.brick_cal_pot_detent_set:00000000 brick_cal_pot_detent_set
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:475    .text.brick_cal_pot_min_get:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:482    .text.brick_cal_pot_min_get:00000000 brick_cal_pot_min_get
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:540    .text.brick_cal_pot_max_get:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:547    .text.brick_cal_pot_max_get:00000000 brick_cal_pot_max_get
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:605    .text.brick_cal_pot_next:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:612    .text.brick_cal_pot_next:00000000 brick_cal_pot_next
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:848    .text.brick_cal_pot_next:000000a0 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:859    .bss.brick_cal_state:00000000 brick_cal_state
+C:\Users\DEVELO~1\AppData\Local\Temp\ccV5bJ7x.s:856    .bss.brick_cal_state:00000000 $d
 
 UNDEFINED SYMBOLS
 memset
