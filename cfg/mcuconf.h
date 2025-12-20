@@ -100,11 +100,11 @@
 #define STM32_PLL2_Q_ENABLED                TRUE
 #define STM32_PLL2_R_ENABLED                TRUE
 #define STM32_PLL2_DIVM_VALUE               4
-#define STM32_PLL2_DIVN_VALUE               200
+#define STM32_PLL2_DIVN_VALUE               240
 #define STM32_PLL2_FRACN_VALUE              0
-#define STM32_PLL2_DIVP_VALUE               8
+#define STM32_PLL2_DIVP_VALUE               10
 #define STM32_PLL2_DIVQ_VALUE               4
-#define STM32_PLL2_DIVR_VALUE               4
+#define STM32_PLL2_DIVR_VALUE               10
 #define STM32_PLL3_ENABLED                  TRUE
 #define STM32_PLL3_P_ENABLED                TRUE
 #define STM32_PLL3_Q_ENABLED                TRUE
