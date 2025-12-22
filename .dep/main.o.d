@@ -93,7 +93,23 @@ build/obj/main.o: main.c ChibiOS/os/rt/include/ch.h \
  ChibiOS/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
  ChibiOS/os/hal/include/hal_mmc_spi.h \
  ChibiOS/os/hal/include/hal_serial_usb.h drivers/drivers.h \
- drivers/brick_config.h
+ drivers/brick_config.h drivers/audio/drv_audio.h \
+ drivers/audio/audio_conf.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\string.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_locale.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\strings.h \
+ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\string.h
 ChibiOS/os/rt/include/ch.h:
 ChibiOS/os/license/chlicense.h:
 ChibiOS/os/license/chversion.h:
@@ -227,3 +243,20 @@ ChibiOS/os/hal/include/hal_mmc_spi.h:
 ChibiOS/os/hal/include/hal_serial_usb.h:
 drivers/drivers.h:
 drivers/brick_config.h:
+drivers/audio/drv_audio.h:
+drivers/audio/audio_conf.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\string.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_locale.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\strings.h:
+c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\string.h:

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
   55 0008 FFF7FEFF 		bl	stGetCounter
   56              	.LVL1:
   57              	.LBE93:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 2
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 2
 
 
   58              	.LBE92:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  112              		.thumb_func
  113              		.type	__trace_object_init, %function
  114              	__trace_object_init:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 3
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 3
 
 
  115              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  169              		.syntax unified
  170              		.thumb
  171              		.thumb_func
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 4
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 4
 
 
  172              		.type	__trace_ready, %function
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  226              		.section	.text.__trace_switch,"ax",%progbits
  227              		.align	1
  228              		.p2align 4,,15
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 5
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 5
 
 
  229              		.global	__trace_switch
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  283              	.L27:
  284              		.loc 1 135 5 view .LVU82
  285              		.align	2
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 6
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 6
 
 
  286              	.L26:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  340              		.syntax unified
  341              	@ 493 "./ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
  342 0012 83F31188 		MSR basepri, r3
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 7
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 7
 
 
  343              	@ 0 "" 2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  397 002a 00BF     		.align	2
  398              	.L32:
  399 002c 00000000 		.word	ch0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 8
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 8
 
 
  400              		.cfi_endproc
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  454              	@ 0 "" 2
  455              	.LVL18:
  456              		.loc 5 493 3 is_stmt 0 view .LVU131
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 9
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 9
 
 
  457              		.thumb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  511              		.cfi_endproc
  512              	.LFE357:
  513              		.size	__trace_isr_leave, .-__trace_isr_leave
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 10
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 10
 
 
  514              		.section	.text.__trace_halt,"ax",%progbits
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  568              		.thumb
  569              		.thumb_func
  570              		.type	chTraceWriteI, %function
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 11
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 11
 
 
  571              	chTraceWriteI:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  625              		.p2align 4,,15
  626              		.global	chTraceWrite
  627              		.syntax unified
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 12
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 12
 
 
  628              		.thumb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  682              		.loc 1 230 3 view .LVU196
  683              	.LBB141:
  684              	.LBI141:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 13
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 13
 
 
  685              		.loc 1 205 6 view .LVU197
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  739              	.LBB145:
  740              	.LBB143:
  741              	.LBI143:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 14
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 14
 
 
  742              		.loc 1 205 6 is_stmt 1 view .LVU218
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  796              	.LBE156:
  797              		.loc 1 232 1 view .LVU243
  798 0030 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 15
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 15
 
 
  799              	.L55:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  853              		@ args = 0, pretend = 0, frame = 0
  854              		@ frame_needed = 0, uses_anonymous_args = 0
  855              		@ link register save eliminated.
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 16
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 16
 
 
  856              		.loc 1 257 3 view .LVU251
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  910              		.loc 1 245 36 view .LVU267
  911 000a B3F8E810 		ldrh	r1, [r3, #232]
  912 000e 0843     		orrs	r0, r0, r1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 17
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 17
 
 
  913              	.LVL37:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  967              		.thumb
  968              		.thumb_func
  969              		.type	chTraceResumeI, %function
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 18
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 18
 
 
  970              	chTraceResumeI:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1024 0000 3023     		movs	r3, #48
  1025              		.syntax unified
  1026              	@ 493 "./ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h" 1
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 19
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 19
 
 
  1027 0002 83F31188 		MSR basepri, r3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1081              		.loc 6 395 3 view .LVU313
  1082              		.loc 6 395 3 view .LVU314
  1083              		.loc 6 395 3 view .LVU315
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 20
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 20
 
 
  1084              		.loc 6 399 3 view .LVU316
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1138 000c 2D       		.uleb128 0x2d
  1139 000d D3020000 		.4byte	.LASF178
  1140 0011 1D       		.byte	0x1d
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 21
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 21
 
 
  1141 0012 70050000 		.4byte	.LASF179
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1195 007e 82000000 		.4byte	0x82
  1196 0082 06       		.uleb128 0x6
  1197 0083 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 22
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 22
 
 
  1198 0084 05       		.byte	0x5
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1252 00f0 14       		.byte	0x14
  1253 00f1 9C000000 		.4byte	0x9c
  1254 00f5 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 23
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 23
 
 
  1255 00f6 E9000000 		.4byte	0xe9
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1309 0162 C7000000 		.4byte	0xc7
  1310 0166 02       		.uleb128 0x2
  1311 0167 06040000 		.4byte	.LASF29
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 24
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 24
 
 
  1312 016b 0A       		.byte	0xa
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1366 01d1 22       		.byte	0x22
  1367 01d2 2D0A0000 		.4byte	0xa2d
  1368 01d6 14       		.byte	0x14
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 25
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 25
 
 
  1369 01d7 03       		.uleb128 0x3
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1423 023a EA030000 		.4byte	0x3ea
  1424 023e 30       		.byte	0x30
  1425 023f 07       		.uleb128 0x7
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 26
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 26
 
 
  1426 0240 7500     		.ascii	"u\000"
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1480 02a9 3A030000 		.4byte	0x33a
  1481 02ad 01       		.uleb128 0x1
  1482 02ae F1070000 		.4byte	.LASF51
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 27
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 27
 
 
  1483 02b2 0B       		.byte	0xb
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1537 031d 07       		.uleb128 0x7
  1538 031e 64626700 		.ascii	"dbg\000"
  1539 0322 0B       		.byte	0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 28
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 28
 
 
  1540 0323 C401     		.2byte	0x1c4
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1594 0388 05       		.uleb128 0x5
  1595 0389 99030000 		.4byte	0x399
  1596 038d 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 29
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 29
 
 
  1597 038e 88030000 		.4byte	0x388
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1651 03f4 0A       		.uleb128 0xa
  1652 03f5 747000   		.ascii	"tp\000"
  1653 03f8 0F       		.byte	0xf
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 30
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 30
 
 
  1654 03f9 94       		.byte	0x94
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1708 0456 1E       		.byte	0x1e
  1709 0457 EA030000 		.4byte	0x3ea
  1710 045b 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 31
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 31
 
 
  1711 045c 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1765 04c7 03       		.uleb128 0x3
  1766 04c8 06050000 		.4byte	.LASF76
  1767 04cc 0F       		.byte	0xf
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 32
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 32
 
 
  1768 04cd 7E       		.byte	0x7e
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1822 052c E0040000 		.4byte	0x4e0
  1823 0530 15       		.uleb128 0x15
  1824 0531 E0040000 		.4byte	0x4e0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 33
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 33
 
 
  1825 0535 40050000 		.4byte	0x540
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1879 05a4 10       		.byte	0x10
  1880 05a5 6204     		.2byte	0x462
  1881 05a7 12       		.byte	0x12
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 34
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 34
 
 
  1882 05a8 DF000000 		.4byte	0xdf
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1936 0615 6A04     		.2byte	0x46a
  1937 0617 12       		.byte	0x12
  1938 0618 DF000000 		.4byte	0xdf
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 35
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 35
 
 
  1939 061c 30       		.byte	0x30
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  1993 0687 12       		.byte	0x12
  1994 0688 DF000000 		.4byte	0xdf
  1995 068c 50       		.byte	0x50
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 36
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 36
 
 
  1996 068d 01       		.uleb128 0x1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2050 0702 5202     		.2byte	0x252
  2051 0704 11       		.byte	0x11
  2052 0705 D3000000 		.4byte	0xd3
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 37
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 37
 
 
  2053 0709 00       		.byte	0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2107 076e 11       		.byte	0x11
  2108 076f D3000000 		.4byte	0xd3
  2109 0773 20       		.byte	0x20
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 38
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 38
 
 
  2110 0774 00       		.byte	0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2164 07db 03       		.uleb128 0x3
  2165 07dc C9000000 		.4byte	.LASF111
  2166 07e0 11       		.byte	0x11
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 39
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 39
 
 
  2167 07e1 46       		.byte	0x46
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2221 0847 5F       		.byte	0x5f
  2222 0848 1E       		.byte	0x1e
  2223 0849 4D080000 		.4byte	0x84d
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 40
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 40
 
 
  2224 084d 09       		.uleb128 0x9
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2278 08b3 0B       		.byte	0xb
  2279 08b4 7B       		.byte	0x7b
  2280 08b5 21       		.byte	0x21
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 41
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 41
 
 
  2281 08b6 B6030000 		.4byte	0x3b6
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2335 091f E5030000 		.4byte	0x3e5
  2336 0923 00       		.byte	0
  2337 0924 23       		.uleb128 0x23
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 42
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 42
 
 
  2338 0925 0C       		.byte	0xc
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2392 0997 0C       		.uleb128 0xc
  2393 0998 7C020000 		.4byte	.LASF138
  2394 099c 2C01     		.2byte	0x12c
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 43
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 43
 
 
  2395 099e 22       		.byte	0x22
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2449 0a09 80060000 		.4byte	.LASF33
  2450 0a0d 13       		.byte	0x13
  2451 0a0e 3C       		.byte	0x3c
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 44
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 44
 
 
  2452 0a0f 1A       		.byte	0x1a
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2506 0a7d 7F01     		.2byte	0x17f
  2507 0a7f 22       		.byte	0x22
  2508 0a80 88030000 		.4byte	0x388
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 45
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 45
 
 
  2509 0a84 00       		.byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2563 0af3 01       		.byte	0x1
  2564 0af4 02       		.byte	0x2
  2565 0af5 A1050000 		.4byte	.LASF153
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 46
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 46
 
 
  2566 0af9 38       		.uleb128 0x38
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2620 0b82 00       		.byte	0
  2621 0b83 26       		.uleb128 0x26
  2622 0b84 EF0B0000 		.4byte	0xbef
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 47
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 47
 
 
  2623 0b88 06000000 		.4byte	.LBI179
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2677 0c06 BB000000 		.4byte	0xbb
  2678 0c0a 00       		.byte	0
  2679 0c0b 0D       		.uleb128 0xd
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 48
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 48
 
 
  2680 0c0c 20080000 		.4byte	.LASF155
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2734 0c9d 7B000000 		.4byte	.LLST32
  2735 0ca1 77000000 		.4byte	.LVUS32
  2736 0ca5 00       		.byte	0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 49
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 49
 
 
  2737 0ca6 0B       		.uleb128 0xb
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2791 0d21 19       		.byte	0x19
  2792 0d22 EA030000 		.4byte	0x3ea
  2793 0d26 9E000000 		.4byte	.LLST17
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 50
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 50
 
 
  2794 0d2a 9A000000 		.4byte	.LVUS17
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2848 0db9 670E0000 		.4byte	0xe67
  2849 0dbd 20       		.uleb128 0x20
  2850 0dbe 470E0000 		.4byte	0xe47
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 51
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 51
 
 
  2851 0dc2 1A000000 		.4byte	.LBI143
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2905 0e45 00       		.byte	0
  2906 0e46 00       		.byte	0
  2907 0e47 29       		.uleb128 0x29
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 52
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 52
 
 
  2908 0e48 E3070000 		.4byte	.LASF159
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  2962 0ecc 70010000 		.4byte	.LLST9
  2963 0ed0 6C010000 		.4byte	.LVUS9
  2964 0ed4 10       		.uleb128 0x10
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 53
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 53
 
 
  2965 0ed5 6F697000 		.ascii	"oip\000"
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3019 0f62 24000000 		.4byte	.LBI114
  3020 0f66 05       		.byte	.LVU145
  3021 0f67 24000000 		.4byte	.LBB114
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 54
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 54
 
 
  3022 0f6b 04000000 		.4byte	.LBE114-.LBB114
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3076 0ff4 10000000 		.4byte	.LBB100
  3077 0ff8 06000000 		.4byte	.LBE100-.LBB100
  3078 0ffc 04       		.byte	0x4
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 55
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 55
 
 
  3079 0ffd 5003     		.2byte	0x350
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3133 1084 7F       		.byte	0x7f
  3134 1085 1F       		.byte	0x1f
  3135 1086 E5030000 		.4byte	0x3e5
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 56
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 56
 
 
  3136 108a D0010000 		.4byte	.LLST4
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3190 1116 3B110000 		.4byte	0x113b
  3191 111a 3E       		.uleb128 0x3e
  3192 111b 74627000 		.ascii	"tbp\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 57
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 57
 
 
  3193 111f 01       		.byte	0x1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3247 1190 13       		.uleb128 0x13
  3248 1191 15060000 		.4byte	.LASF171
  3249 1195 06       		.byte	0x6
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 58
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 58
 
 
  3250 1196 7401     		.2byte	0x174
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3304 1204 43       		.uleb128 0x43
  3305 1205 4D110000 		.4byte	0x114d
  3306 1209 12       		.uleb128 0x12
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 59
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 59
 
 
  3307 120a 59110000 		.4byte	0x1159
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3361 1297 01       		.byte	0x1
  3362 1298 CD       		.byte	0xcd
  3363 1299 06       		.byte	0x6
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 60
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 60
 
 
  3364 129a 04       		.uleb128 0x4
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3418 000d 38       		.uleb128 0x38
  3419 000e 0B       		.uleb128 0xb
  3420 000f 00       		.byte	0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 61
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 61
 
 
  3421 0010 00       		.byte	0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3475 0047 06       		.uleb128 0x6
  3476 0048 24       		.uleb128 0x24
  3477 0049 00       		.byte	0
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 62
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 62
 
 
  3478 004a 0B       		.uleb128 0xb
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3532 0081 3A       		.uleb128 0x3a
  3533 0082 0B       		.uleb128 0xb
  3534 0083 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 63
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 63
 
 
  3535 0084 0B       		.uleb128 0xb
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3589 00bb 39       		.uleb128 0x39
  3590 00bc 0B       		.uleb128 0xb
  3591 00bd 49       		.uleb128 0x49
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 64
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 64
 
 
  3592 00be 13       		.uleb128 0x13
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3646 00f5 01       		.byte	0x1
  3647 00f6 0B       		.uleb128 0xb
  3648 00f7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 65
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 65
 
 
  3649 00f8 3A       		.uleb128 0x3a
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3703 012f 12       		.uleb128 0x12
  3704 0130 06       		.uleb128 0x6
  3705 0131 58       		.uleb128 0x58
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 66
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 66
 
 
  3706 0132 21       		.uleb128 0x21
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3760 0168 05       		.uleb128 0x5
  3761 0169 39       		.uleb128 0x39
  3762 016a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 67
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 67
 
 
  3763 016b 01       		.uleb128 0x1
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3817 01a2 0B       		.uleb128 0xb
  3818 01a3 39       		.uleb128 0x39
  3819 01a4 21       		.uleb128 0x21
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 68
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 68
 
 
  3820 01a5 07       		.sleb128 7
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3874 01db 31       		.uleb128 0x31
  3875 01dc 13       		.uleb128 0x13
  3876 01dd 52       		.uleb128 0x52
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 69
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 69
 
 
  3877 01de 01       		.uleb128 0x1
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3931 0215 0B       		.uleb128 0xb
  3932 0216 3B       		.uleb128 0x3b
  3933 0217 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 70
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 70
 
 
  3934 0218 39       		.uleb128 0x39
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  3988 024f 31       		.uleb128 0x31
  3989 0250 13       		.uleb128 0x13
  3990 0251 52       		.uleb128 0x52
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 71
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 71
 
 
  3991 0252 01       		.uleb128 0x1
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4045 028a 01       		.byte	0x1
  4046 028b 3F       		.uleb128 0x3f
  4047 028c 19       		.uleb128 0x19
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 72
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 72
 
 
  4048 028d 03       		.uleb128 0x3
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4102 02c4 27       		.uleb128 0x27
  4103 02c5 19       		.uleb128 0x19
  4104 02c6 49       		.uleb128 0x49
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 73
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 73
 
 
  4105 02c7 13       		.uleb128 0x13
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4159 02fd 00       		.byte	0
  4160 02fe 00       		.byte	0
  4161 02ff 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 74
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 74
 
 
  4162 0300 13       		.uleb128 0x13
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4216 0336 21       		.uleb128 0x21
  4217 0337 00       		.byte	0
  4218 0338 49       		.uleb128 0x49
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 75
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 75
 
 
  4219 0339 13       		.uleb128 0x13
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4273 036f 00       		.byte	0
  4274 0370 38       		.uleb128 0x38
  4275 0371 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 76
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 76
 
 
  4276 0372 00       		.byte	0
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4330 03a8 05       		.uleb128 0x5
  4331 03a9 39       		.uleb128 0x39
  4332 03aa 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 77
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 77
 
 
  4333 03ab 49       		.uleb128 0x49
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4387 03e3 17       		.uleb128 0x17
  4388 03e4 58       		.uleb128 0x58
  4389 03e5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 78
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 78
 
 
  4390 03e6 59       		.uleb128 0x59
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4444 041d 19       		.uleb128 0x19
  4445 041e 20       		.uleb128 0x20
  4446 041f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 79
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 79
 
 
  4447 0420 01       		.uleb128 0x1
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4501 0457 59       		.uleb128 0x59
  4502 0458 0B       		.uleb128 0xb
  4503 0459 57       		.uleb128 0x57
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 80
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 80
 
 
  4504 045a 0B       		.uleb128 0xb
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4558 001f 01       		.uleb128 0x1
  4559 0020 50       		.byte	0x50
  4560 0021 9F       		.byte	0x9f
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 81
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 81
 
 
  4561 0022 00       		.byte	0
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4615 005c 04       		.byte	0x4
  4616 005d 00       		.uleb128 .LVL35-.LVL35
  4617 005e 10       		.uleb128 .LVL37-.LVL35
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 82
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 82
 
 
  4618 005f 01       		.uleb128 0x1
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4672 0098 9F       		.byte	0x9f
  4673 0099 00       		.byte	0
  4674              	.LVUS17:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 83
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 83
 
 
  4675 009a 00       		.uleb128 0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4729 00d4 00       		.byte	0
  4730              	.LVUS22:
  4731 00d5 04       		.uleb128 .LVU197
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 84
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 84
 
 
  4732 00d6 00       		.uleb128 .LVU203
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4786 010f 9F       		.byte	0x9f
  4787 0110 00       		.byte	0
  4788              	.LVUS24:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 85
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 85
 
 
  4789 0111 00       		.uleb128 .LVU218
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4843 014b 02       		.uleb128 0x2
  4844 014c 30       		.byte	0x30
  4845 014d 9F       		.byte	0x9f
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 86
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 86
 
 
  4846 014e 04       		.byte	0x4
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4900              	.LLST10:
  4901 0185 08       		.byte	0x8
  4902 0186 10000000 		.4byte	.LVL17
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 87
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 87
 
 
  4903 018a 06       		.uleb128 .LVL18-.LVL17
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  4957              	.LLST8:
  4958 01c2 08       		.byte	0x8
  4959 01c3 24000000 		.4byte	.LVL14
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 88
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 88
 
 
  4960 01c7 04       		.uleb128 .LVL15-.LVL14
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5014              	.LLST2:
  5015 01fe 06       		.byte	0x6
  5016 01ff 00000000 		.4byte	.LVL6
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 89
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 89
 
 
  5017 0203 04       		.byte	0x4
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5071 023b 04       		.byte	0x4
  5072 023c 00       		.uleb128 .LVL3-.LVL3
  5073 023d 06       		.uleb128 .LVL4-.LVL3
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 90
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 90
 
 
  5074 023e 01       		.uleb128 0x1
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5128 0276 A3       		.byte	0xa3
  5129 0277 01       		.uleb128 0x1
  5130 0278 51       		.byte	0x51
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 91
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 91
 
 
  5131 0279 9F       		.byte	0x9f
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5185 02b2 04       		.byte	0x4
  5186 02b3 00       		.uleb128 .LVL33-.LVL33
  5187 02b4 08       		.uleb128 .LVL34-.LVL33
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 92
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 92
 
 
  5188 02b5 01       		.uleb128 0x1
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5242 0007 00       		.byte	0
  5243 0008 00000000 		.4byte	0
  5244              	.LLRL0:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 93
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 93
 
 
  5245 000c 05       		.byte	0x5
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5299 004f 02       		.uleb128 .LBE164-.LBB164
  5300 0050 04       		.byte	0x4
  5301 0051 0C       		.uleb128 .LBB174-.LBB164
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 94
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 94
 
 
  5302 0052 10       		.uleb128 .LBE174-.LBB164
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5356 00a9 00000000 		.4byte	.LFB362
  5357 00ad 20       		.uleb128 .LFE362-.LFB362
  5358 00ae 07       		.byte	0x7
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 95
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 95
 
 
  5359 00af 00000000 		.4byte	.LFB363
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5392 005e 6C6F6E67 		.ascii	"long int\000"
  5392      20696E74 
  5392      00
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 96
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 96
 
 
  5393              	.LASF77:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5420      7400
  5421              	.LASF84:
  5422 00fa 43504943 		.ascii	"CPICNT\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 97
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 97
 
 
  5422      4E5400
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5450 018c 63685F72 		.ascii	"ch_registry\000"
  5450      65676973 
  5450      74727900 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 98
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 98
 
 
  5451              	.LASF165:
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5475      00
  5476              	.LASF166:
  5477 025f 74726163 		.ascii	"trace_next\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 99
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 99
 
 
  5477      655F6E65 
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5501      696E7465 
  5501      72202D66 
  5501      616C6967 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 100
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 100
 
 
  5501      6E2D6675 
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5528 03ff 43594343 		.ascii	"CYCCNT\000"
  5528      4E5400
  5529              	.LASF29:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 101
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 101
 
 
  5530 0406 6576656E 		.ascii	"eventmask_t\000"
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5554      6400
  5555              	.LASF147:
  5556 04aa 63737461 		.ascii	"cstack_base\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 102
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 102
 
 
  5556      636B5F62 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5584 0531 6C617374 		.ascii	"lastdelta\000"
  5584      64656C74 
  5584      6100
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 103
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 103
 
 
  5585              	.LASF31:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5614      54494F4E 
  5614      3100
  5615              	.LASF100:
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 104
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 104
 
 
  5616 05d1 46554E43 		.ascii	"FUNCTION2\000"
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5641              	.LASF129:
  5642 065e 72656769 		.ascii	"registry_t\000"
  5642      73747279 
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 105
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 105
 
 
  5642      5F7400
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5669              	.LASF122:
  5670 06fd 646C6973 		.ascii	"dlist\000"
  5670      7400
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 106
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 106
 
 
  5671              	.LASF68:
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5694      737200
  5695              	.LASF82:
  5696 07a0 4354524C 		.ascii	"CTRL\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 107
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 107
 
 
  5696      00
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5722      00
  5723              	.LASF142:
  5724 0834 63685F6D 		.ascii	"ch_mutex\000"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 108
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 108
 
 
  5724      75746578 
@@ -6450,50 +6450,50 @@ ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 1
  5738      74687265 
  5738      616400
  5739              		.ident	"GCC: (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712"
-ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s 			page 109
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s 			page 109
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chtrace.c
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:18     .text.trace_next.constprop.0:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:24     .text.trace_next.constprop.0:00000000 trace_next.constprop.0
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:101    .text.trace_next.constprop.0:00000034 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:107    .text.__trace_object_init:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:114    .text.__trace_object_init:00000000 __trace_object_init
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:161    .text.__trace_object_init:00000020 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:166    .text.__trace_ready:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:173    .text.__trace_ready:00000000 __trace_ready
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:222    .text.__trace_ready:00000028 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:227    .text.__trace_switch:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:234    .text.__trace_switch:00000000 __trace_switch
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:287    .text.__trace_switch:00000028 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:292    .text.__trace_isr_enter:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:299    .text.__trace_isr_enter:00000000 __trace_isr_enter
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:399    .text.__trace_isr_enter:0000002c $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:404    .text.__trace_isr_leave:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:411    .text.__trace_isr_leave:00000000 __trace_isr_leave
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:510    .text.__trace_isr_leave:0000002c $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:515    .text.__trace_halt:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:522    .text.__trace_halt:00000000 __trace_halt
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:559    .text.__trace_halt:0000001c $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:564    .text.chTraceWriteI:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:571    .text.chTraceWriteI:00000000 chTraceWriteI
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:617    .text.chTraceWriteI:0000001c $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:624    .text.chTraceWrite:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:631    .text.chTraceWrite:00000000 chTraceWrite
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:802    .text.chTraceWrite:00000034 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:807    .text.chTraceSuspendI:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:814    .text.chTraceSuspendI:00000000 chTraceSuspendI
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:836    .text.chTraceSuspendI:00000010 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:841    .text.chTraceSuspend:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:848    .text.chTraceSuspend:00000000 chTraceSuspend
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:958    .text.chTraceSuspend:0000001c $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:963    .text.chTraceResumeI:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:970    .text.chTraceResumeI:00000000 chTraceResumeI
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:990    .text.chTraceResumeI:00000010 $d
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:995    .text.chTraceResume:00000000 $t
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:1002   .text.chTraceResume:00000000 chTraceResume
-C:\Users\DEVELO~1\AppData\Local\Temp\ccKSeyjE.s:1112   .text.chTraceResume:0000001c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:18     .text.trace_next.constprop.0:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:24     .text.trace_next.constprop.0:00000000 trace_next.constprop.0
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:101    .text.trace_next.constprop.0:00000034 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:107    .text.__trace_object_init:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:114    .text.__trace_object_init:00000000 __trace_object_init
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:161    .text.__trace_object_init:00000020 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:166    .text.__trace_ready:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:173    .text.__trace_ready:00000000 __trace_ready
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:222    .text.__trace_ready:00000028 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:227    .text.__trace_switch:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:234    .text.__trace_switch:00000000 __trace_switch
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:287    .text.__trace_switch:00000028 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:292    .text.__trace_isr_enter:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:299    .text.__trace_isr_enter:00000000 __trace_isr_enter
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:399    .text.__trace_isr_enter:0000002c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:404    .text.__trace_isr_leave:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:411    .text.__trace_isr_leave:00000000 __trace_isr_leave
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:510    .text.__trace_isr_leave:0000002c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:515    .text.__trace_halt:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:522    .text.__trace_halt:00000000 __trace_halt
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:559    .text.__trace_halt:0000001c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:564    .text.chTraceWriteI:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:571    .text.chTraceWriteI:00000000 chTraceWriteI
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:617    .text.chTraceWriteI:0000001c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:624    .text.chTraceWrite:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:631    .text.chTraceWrite:00000000 chTraceWrite
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:802    .text.chTraceWrite:00000034 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:807    .text.chTraceSuspendI:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:814    .text.chTraceSuspendI:00000000 chTraceSuspendI
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:836    .text.chTraceSuspendI:00000010 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:841    .text.chTraceSuspend:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:848    .text.chTraceSuspend:00000000 chTraceSuspend
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:958    .text.chTraceSuspend:0000001c $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:963    .text.chTraceResumeI:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:970    .text.chTraceResumeI:00000000 chTraceResumeI
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:990    .text.chTraceResumeI:00000010 $d
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:995    .text.chTraceResume:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:1002   .text.chTraceResume:00000000 chTraceResume
+C:\Users\DEVELO~1\AppData\Local\Temp\ccU1EF50.s:1112   .text.chTraceResume:0000001c $d
 
 UNDEFINED SYMBOLS
 stGetCounter
