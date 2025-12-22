@@ -4,11 +4,12 @@
 #include "drivers.h"
 #include "drivers/audio/drv_audio.h"
 
-#include <math.h>
 #include <string.h>
 
-#define AUDIO_TEST_FREQUENCY_HZ 440.0f
-#define AUDIO_TEST_AMPLITUDE    0.2f
+#define AUDIO_BEEP_FREQUENCY_HZ 1000U
+#define AUDIO_BEEP_ON_MS        200U
+#define AUDIO_BEEP_OFF_MS       200U
+#define AUDIO_BEEP_AMPLITUDE    ((int32_t)(8388607L * 3L / 5L))
 
 void drv_audio_process_block(const int32_t               *adc_in,
                              const spilink_audio_block_t spi_in,
@@ -18,24 +19,34 @@ void drv_audio_process_block(const int32_t               *adc_in,
     (void)adc_in;
     (void)spi_in;
 
-    static float phase = 0.0f;
-    const float phase_inc = 2.0f * (float)M_PI * (AUDIO_TEST_FREQUENCY_HZ / (float)AUDIO_SAMPLE_RATE_HZ);
-    const float scale = AUDIO_TEST_AMPLITUDE * 8388607.0f;
+    static uint32_t beep_sample = 0U;
+    static uint32_t tone_phase = 0U;
+    const uint32_t samples_per_cycle = AUDIO_SAMPLE_RATE_HZ / AUDIO_BEEP_FREQUENCY_HZ;
+    const uint32_t samples_per_on = (AUDIO_SAMPLE_RATE_HZ * AUDIO_BEEP_ON_MS) / 1000U;
+    const uint32_t samples_per_off = (AUDIO_SAMPLE_RATE_HZ * AUDIO_BEEP_OFF_MS) / 1000U;
+    const uint32_t samples_per_period = samples_per_on + samples_per_off;
 
     for (size_t n = 0; n < frames; ++n) {
-        float sample = sinf(phase) * scale;
-        int32_t sample_i = (int32_t)sample;
+        const bool beep_on = (beep_sample % samples_per_period) < samples_per_on;
+        int32_t sample_i = 0;
 
-        dac_out[0] = sample_i;
-        dac_out[1] = sample_i;
-        dac_out[2] = sample_i;
-        dac_out[3] = sample_i;
+        if (beep_on) {
+            sample_i = (tone_phase < (samples_per_cycle / 2U)) ? AUDIO_BEEP_AMPLITUDE
+                                                              : -AUDIO_BEEP_AMPLITUDE;
+            tone_phase++;
+            if (tone_phase >= samples_per_cycle) {
+                tone_phase = 0U;
+            }
+        } else {
+            tone_phase = 0U;
+        }
+
+        for (size_t ch = 0; ch < AUDIO_NUM_OUTPUT_CHANNELS; ++ch) {
+            dac_out[ch] = sample_i;
+        }
 
         dac_out += AUDIO_NUM_OUTPUT_CHANNELS;
-        phase += phase_inc;
-        if (phase >= (2.0f * (float)M_PI)) {
-            phase -= 2.0f * (float)M_PI;
-        }
+        beep_sample++;
     }
 
     if (spi_out != NULL) {
