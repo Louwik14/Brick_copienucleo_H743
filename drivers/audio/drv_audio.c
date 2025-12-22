@@ -534,6 +534,7 @@ static void audio_hw_configure_sai(void) {
                               SAI_xCR1_PRTCFG_0 |        /* Free protocol. */
                               SAI_xCR1_DS_2 |            /* 24 bits data size (slot 32 bits). */
                               ((3U << 20U)) |             /* MCKDIV = 3 -> PLL3_P/4 = 12.288 MHz. */
+                              SAI_xCR1_MCKEN |            /* Active la sortie MCLK pour codecs externes. */
                               SAI_xCR1_CKSTR;             /* Données échantillonnées sur front montant. */
     AUDIO_SAI_RX_BLOCK->CR2 = SAI_xCR2_FTH_0;             /* Threshold half FIFO. */
     /* Frame 8 slots de 32 bits => 256 bits. FSALL = 128-1 (FS = 50% duty), FRL = 256-1. */
