@@ -407,6 +407,8 @@ void __attribute__((weak)) drv_audio_process_block(const int32_t              *a
     const int32_t *adc_ptr = adc_in;
     int32_t *dac_ptr = dac_out;
 
+    const size_t pcm_base = AUDIO_PCM4104_SUBFRAME * AUDIO_PCM4104_CHANNELS;
+
     for (size_t n = 0; n < frames; ++n) {
         float main_l = 0.0f;
         float main_r = 0.0f;
@@ -439,10 +441,13 @@ void __attribute__((weak)) drv_audio_process_block(const int32_t              *a
         cue_l = soft_clip(cue_l * master);
         cue_r = soft_clip(cue_r * master);
 
-        dac_ptr[0] = (int32_t)(main_l * AUDIO_INT24_MAX_F);
-        dac_ptr[1] = (int32_t)(main_r * AUDIO_INT24_MAX_F);
-        dac_ptr[2] = (int32_t)(cue_l * AUDIO_INT24_MAX_F);
-        dac_ptr[3] = (int32_t)(cue_r * AUDIO_INT24_MAX_F);
+        for (size_t i = 0U; i < AUDIO_NUM_OUTPUT_CHANNELS; ++i) {
+            dac_ptr[i] = 0;
+        }
+        dac_ptr[pcm_base + 0U] = (int32_t)(main_l * AUDIO_INT24_MAX_F);
+        dac_ptr[pcm_base + 1U] = (int32_t)(main_r * AUDIO_INT24_MAX_F);
+        dac_ptr[pcm_base + 2U] = (int32_t)(cue_l * AUDIO_INT24_MAX_F);
+        dac_ptr[pcm_base + 3U] = (int32_t)(cue_r * AUDIO_INT24_MAX_F);
 
         adc_ptr += AUDIO_NUM_INPUT_CHANNELS;
         dac_ptr += AUDIO_NUM_OUTPUT_CHANNELS;
@@ -527,7 +532,7 @@ static void audio_hw_configure_sai(void) {
     /* Bloc B = maître RX TDM 8x32 bits, données valides sur 24 bits MSB. */
     AUDIO_SAI_RX_BLOCK->CR1 = SAI_xCR1_MODE_0 |           /* Master Receiver (génère BCLK/FS). */
                               SAI_xCR1_PRTCFG_0 |        /* Free protocol. */
-                              SAI_xCR1_DS_4 | SAI_xCR1_DS_2 | /* 24 bits data size (slot 32 bits). */
+                              SAI_xCR1_DS_2 |            /* 24 bits data size (slot 32 bits). */
                               ((3U << 20U)) |             /* MCKDIV = 3 -> PLL3_P/4 = 12.288 MHz. */
                               SAI_xCR1_CKSTR;             /* Données échantillonnées sur front montant. */
     AUDIO_SAI_RX_BLOCK->CR2 = SAI_xCR2_FTH_0;             /* Threshold half FIFO. */
@@ -541,20 +546,20 @@ static void audio_hw_configure_sai(void) {
                                 ((AUDIO_NUM_INPUT_CHANNELS - 1U) << SAI_xSLOTR_NBSLOT_Pos) |
                                 0x00FFU; /* Slots 0..7 actifs */
 
-    /* Bloc A = esclave TX TDM 4x32 bits, synchronisé sur bloc B. */
+    /* Bloc A = esclave TX TDM 8x32 bits, synchronisé sur bloc B. */
     AUDIO_SAI_TX_BLOCK->CR1 = SAI_xCR1_MODE_1 |           /* Slave Transmitter. */
                               SAI_xCR1_PRTCFG_0 |
-                              SAI_xCR1_DS_4 | SAI_xCR1_DS_2 |
+                              SAI_xCR1_DS_2 |
                               SAI_xCR1_SYNCEN_0;          /* Synchro interne sur bloc B. */
     AUDIO_SAI_TX_BLOCK->CR2 = SAI_xCR2_FTH_0;
-    /* Frame 4 slots de 32 bits => 128 bits. FSALL = 64-1, FRL = 128-1. */
-    AUDIO_SAI_TX_BLOCK->FRCR = ((128U - 1U) << SAI_xFRCR_FRL_Pos) |
-                               ((64U - 1U) << SAI_xFRCR_FSALL_Pos) |
+    /* Frame 8 slots de 32 bits => 256 bits. FSALL = 128-1, FRL = 256-1. */
+    AUDIO_SAI_TX_BLOCK->FRCR = ((256U - 1U) << SAI_xFRCR_FRL_Pos) |
+                               ((128U - 1U) << SAI_xFRCR_FSALL_Pos) |
                                SAI_xFRCR_FSDEF | SAI_xFRCR_FSOFF;
     AUDIO_SAI_TX_BLOCK->SLOTR = (0U << SAI_xSLOTR_FBOFF_Pos) |
                                 (SAI_xSLOTR_SLOTSZ_1) |
                                 ((AUDIO_NUM_OUTPUT_CHANNELS - 1U) << SAI_xSLOTR_NBSLOT_Pos) |
-                                0x000FU; /* Slots 0..3 actifs */
+                                0x00FFU; /* Slots 0..7 actifs */
 
     /* Seul le bloc B (maître RX) génère les horloges MCLK/BCLK/FS pour éviter tout double pilotage. */
     AUDIO_SAI_RX_BLOCK->CR1 |= SAI_xCR1_OUTDRIV;
