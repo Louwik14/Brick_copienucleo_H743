@@ -29,8 +29,14 @@
 /** Nombre de canaux TDM en entrée (2× ADAU1979 = 8). */
 #define AUDIO_NUM_INPUT_CHANNELS      8U
 
-/** Nombre de canaux TDM en sortie (PCM4104 = 4). */
-#define AUDIO_NUM_OUTPUT_CHANNELS     4U
+/** Nombre de slots TDM en sortie (PCM4104 en long frame = 8 slots de 32 bits). */
+#define AUDIO_NUM_OUTPUT_CHANNELS     8U
+
+/** Nombre de canaux audio effectifs pour le PCM4104 (4 canaux). */
+#define AUDIO_PCM4104_CHANNELS        4U
+
+/** Sub-frame PCM4104 en TDM long frame (0 = slots 0..3, 1 = slots 4..7). */
+#define AUDIO_PCM4104_SUBFRAME        0U
 
 /** Résolution logique des échantillons (24 bits significatifs dans int32_t). */
 #define AUDIO_SAMPLE_BITS             24U
