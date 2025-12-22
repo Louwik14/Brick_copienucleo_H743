@@ -139,7 +139,7 @@
 #define GPIOE_SAI1_SD_B             3U
 #define GPIOE_SAI1_FS_A             4U
 #define GPIOE_SAI1_SCK_A            5U
-#define GPIOE_PIN6                  6U
+#define GPIOE_SAI1_SD_A             6U
 #define GPIOE_FMC_D4                7U
 #define GPIOE_FMC_D5                8U
 #define GPIOE_FMC_D6                9U
@@ -314,6 +314,7 @@
 #define LINE_SAI1_SD_B              PAL_LINE(GPIOE, 3U)
 #define LINE_SAI1_FS_A              PAL_LINE(GPIOE, 4U)
 #define LINE_SAI1_SCK_A             PAL_LINE(GPIOE, 5U)
+#define LINE_SAI1_SD_A              PAL_LINE(GPIOE, 6U)
 #define LINE_FMC_D4                 PAL_LINE(GPIOE, 7U)
 #define LINE_FMC_D5                 PAL_LINE(GPIOE, 8U)
 #define LINE_FMC_D6                 PAL_LINE(GPIOE, 9U)
@@ -886,7 +887,7 @@
  * PE3  - SAI1_SD_B                 (alternate 6).
  * PE4  - SAI1_FS_A                 (alternate 6).
  * PE5  - SAI1_SCK_A                (alternate 6).
- * PE6  - PIN6                      (analog).
+ * PE6  - SAI1_SD_A                 (alternate 6).
  * PE7  - FMC_D4                    (alternate 12).
  * PE8  - FMC_D5                    (alternate 12).
  * PE9  - FMC_D6                    (alternate 12).
@@ -903,7 +904,7 @@
                                      PIN_MODE_ALTERNATE(GPIOE_SAI1_SD_B) |  \
                                      PIN_MODE_ALTERNATE(GPIOE_SAI1_FS_A) |  \
                                      PIN_MODE_ALTERNATE(GPIOE_SAI1_SCK_A) | \
-                                     PIN_MODE_ANALOG(GPIOE_PIN6) |          \
+                                     PIN_MODE_ALTERNATE(GPIOE_SAI1_SD_A) |  \
                                      PIN_MODE_ALTERNATE(GPIOE_FMC_D4) |     \
                                      PIN_MODE_ALTERNATE(GPIOE_FMC_D5) |     \
                                      PIN_MODE_ALTERNATE(GPIOE_FMC_D6) |     \
@@ -919,7 +920,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOE_SAI1_SD_B) |  \
                                      PIN_OTYPE_PUSHPULL(GPIOE_SAI1_FS_A) |  \
                                      PIN_OTYPE_PUSHPULL(GPIOE_SAI1_SCK_A) | \
-                                     PIN_OTYPE_PUSHPULL(GPIOE_PIN6) |       \
+                                     PIN_OTYPE_PUSHPULL(GPIOE_SAI1_SD_A) |  \
                                      PIN_OTYPE_PUSHPULL(GPIOE_FMC_D4) |     \
                                      PIN_OTYPE_PUSHPULL(GPIOE_FMC_D5) |     \
                                      PIN_OTYPE_PUSHPULL(GPIOE_FMC_D6) |     \
@@ -935,7 +936,7 @@
                                      PIN_OSPEED_HIGH(GPIOE_SAI1_SD_B) |     \
                                      PIN_OSPEED_HIGH(GPIOE_SAI1_FS_A) |     \
                                      PIN_OSPEED_HIGH(GPIOE_SAI1_SCK_A) |    \
-                                     PIN_OSPEED_VERYLOW(GPIOE_PIN6) |       \
+                                     PIN_OSPEED_HIGH(GPIOE_SAI1_SD_A) |     \
                                      PIN_OSPEED_HIGH(GPIOE_FMC_D4) |        \
                                      PIN_OSPEED_HIGH(GPIOE_FMC_D5) |        \
                                      PIN_OSPEED_HIGH(GPIOE_FMC_D6) |        \
@@ -951,7 +952,7 @@
                                      PIN_PUPDR_FLOATING(GPIOE_SAI1_SD_B) |  \
                                      PIN_PUPDR_FLOATING(GPIOE_SAI1_FS_A) |  \
                                      PIN_PUPDR_FLOATING(GPIOE_SAI1_SCK_A) | \
-                                     PIN_PUPDR_FLOATING(GPIOE_PIN6) |       \
+                                     PIN_PUPDR_FLOATING(GPIOE_SAI1_SD_A) |  \
                                      PIN_PUPDR_FLOATING(GPIOE_FMC_D4) |     \
                                      PIN_PUPDR_FLOATING(GPIOE_FMC_D5) |     \
                                      PIN_PUPDR_FLOATING(GPIOE_FMC_D6) |     \
@@ -967,7 +968,7 @@
                                      PIN_ODR_HIGH(GPIOE_SAI1_SD_B) |        \
                                      PIN_ODR_HIGH(GPIOE_SAI1_FS_A) |        \
                                      PIN_ODR_HIGH(GPIOE_SAI1_SCK_A) |       \
-                                     PIN_ODR_HIGH(GPIOE_PIN6) |             \
+                                     PIN_ODR_HIGH(GPIOE_SAI1_SD_A) |        \
                                      PIN_ODR_HIGH(GPIOE_FMC_D4) |           \
                                      PIN_ODR_HIGH(GPIOE_FMC_D5) |           \
                                      PIN_ODR_HIGH(GPIOE_FMC_D6) |           \
@@ -983,7 +984,7 @@
                                      PIN_AFIO_AF(GPIOE_SAI1_SD_B, 6U) |     \
                                      PIN_AFIO_AF(GPIOE_SAI1_FS_A, 6U) |     \
                                      PIN_AFIO_AF(GPIOE_SAI1_SCK_A, 6U) |    \
-                                     PIN_AFIO_AF(GPIOE_PIN6, 0U) |          \
+                                     PIN_AFIO_AF(GPIOE_SAI1_SD_A, 6U) |     \
                                      PIN_AFIO_AF(GPIOE_FMC_D4, 12U))
 #define VAL_GPIOE_AFRH              (PIN_AFIO_AF(GPIOE_FMC_D5, 12U) |       \
                                      PIN_AFIO_AF(GPIOE_FMC_D6, 12U) |       \

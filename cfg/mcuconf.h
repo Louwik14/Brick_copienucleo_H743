@@ -110,8 +110,8 @@
 #define STM32_PLL3_Q_ENABLED                TRUE
 #define STM32_PLL3_R_ENABLED                TRUE
 #define STM32_PLL3_DIVM_VALUE               4
-#define STM32_PLL3_DIVN_VALUE               400
-#define STM32_PLL3_FRACN_VALUE              0
+#define STM32_PLL3_DIVN_VALUE               196
+#define STM32_PLL3_FRACN_VALUE              4987
 #define STM32_PLL3_DIVP_VALUE               8
 #define STM32_PLL3_DIVQ_VALUE               8
 #define STM32_PLL3_DIVR_VALUE               8
@@ -153,7 +153,7 @@
 #define STM32_SPI45SEL                      STM32_SPI45SEL_PCLK2
 #define STM32_SPI123SEL                     STM32_SPI123SEL_PLL1_Q_CK
 #define STM32_SAI23SEL                      STM32_SAI23SEL_PLL1_Q_CK
-#define STM32_SAI1SEL                       STM32_SAI1SEL_PLL1_Q_CK
+#define STM32_SAI1SEL                       STM32_SAI1SEL_PLL3_P_CK
 #define STM32_LPTIM1SEL                     STM32_LPTIM1SEL_PCLK1
 #define STM32_CECSEL                        STM32_CECSEL_LSE_CK
 #define STM32_USBSEL                        STM32_USBSEL_PLL1_Q_CK
