@@ -1,16 +1,16 @@
 build/obj/chcoreasm.o: \
- ../../../os/common/ports/ARMv7-M/compilers/GCC/chcoreasm.S \
- ../../../os/license/chlicense.h ../../../os/license/chversion.h \
- ../../../os/license/chcustomer.h cfg/chconf.h \
- ../../../os/common/ports/ARMv7-M/chcore.h \
- ../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
- ../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h \
- ../../../os/common/ports/ARMv7-M/mpu.h
-../../../os/license/chlicense.h:
-../../../os/license/chversion.h:
-../../../os/license/chcustomer.h:
+ ChibiOS/os/common/ports/ARMv7-M/compilers/GCC/chcoreasm.S \
+ ChibiOS/os/license/chlicense.h ChibiOS/os/license/chversion.h \
+ ChibiOS/os/license/chcustomer.h cfg/chconf.h \
+ ChibiOS/os/common/ports/ARMv7-M/chcore.h \
+ ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
+ ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h \
+ ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h
+ChibiOS/os/license/chlicense.h:
+ChibiOS/os/license/chversion.h:
+ChibiOS/os/license/chcustomer.h:
 cfg/chconf.h:
-../../../os/common/ports/ARMv7-M/chcore.h:
-../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
-../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
-../../../os/common/ports/ARMv7-M/mpu.h:
+ChibiOS/os/common/ports/ARMv7-M/chcore.h:
+ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
+ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
+ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h:

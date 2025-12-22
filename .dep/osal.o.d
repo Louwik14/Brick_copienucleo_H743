@@ -1,5 +1,5 @@
-build/obj/osal.o: ../../../os/hal/osal/rt-nil/osal.c \
- ../../../os/hal/osal/rt-nil/osal.h \
+build/obj/osal.o: ChibiOS/os/hal/osal/rt-nil/osal.c \
+ ChibiOS/os/hal/osal/rt-nil/osal.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stddef.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdint.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\stdint.h \
@@ -9,75 +9,48 @@ build/obj/osal.o: ../../../os/hal/osal/rt-nil/osal.c \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_intsup.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_stdint.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdbool.h \
- ../../../os/rt/include/ch.h ../../../os/license/chlicense.h \
- ../../../os/license/chversion.h ../../../os/license/chcustomer.h \
- cfg/chconf.h ../../../os/rt/include/chchecks.h \
- ../../../os/rt/include/chrestrictions.h ../../../os/rt/include/chearly.h \
- ../../../os/common/ports/ARM-common/chtypes.h \
- ../../../os/common/portability/GCC/ccportab.h \
- ../../../os/rt/include/chrfcu.h ../../../os/rt/include/chdebug.h \
- ../../../os/rt/include/chtime.h ../../../os/rt/include/chlists.h \
- ../../../os/rt/include/chalign.h ../../../os/rt/include/chtrace.h \
- ../../../os/rt/include/chport.h \
- ../../../os/common/ports/ARMv7-M/chcore.h \
- ../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
- ../../../os/common/ext/ST/STM32H7xx/stm32h7xx.h \
- ../../../os/common/ext/ST/STM32H7xx/stm32h743xx.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h \
- ../../../os/common/ext/ST/STM32H7xx/system_stm32h7xx.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal.h \
- cfg/stm32h7xx_hal_conf.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h \
- drivers/stm32h7xx-hal-driver/Inc/Legacy/stm32_hal_legacy.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_hcd.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_ll_usb.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_cortex.h \
- ../../../os/common/ports/ARMv7-M/mpu.h \
- ../../../os/hal/osal/rt-nil/chcore_timer.h ../../../os/rt/include/chtm.h \
- ../../../os/rt/include/chstats.h ../../../os/rt/include/chobjects.h \
- ../../../os/rt/include/chsys.h ../../../os/rt/include/chinstances.h \
- ../../../os/rt/include/chvt.h ../../../os/rt/include/chschd.h \
- ../../../os/rt/include/chthreads.h ../../../os/rt/include/chregistry.h \
- ../../../os/rt/include/chsem.h ../../../os/rt/include/chmtx.h \
- ../../../os/rt/include/chcond.h ../../../os/rt/include/chevents.h \
- ../../../os/rt/include/chmsg.h ../../../os/oslib/include/chlib.h \
- ../../../os/oslib/include/chbsem.h ../../../os/oslib/include/chmboxes.h \
- ../../../os/oslib/include/chmemcore.h \
- ../../../os/oslib/include/chmemheaps.h \
- ../../../os/oslib/include/chmempools.h \
- ../../../os/oslib/include/chobjfifos.h \
- ../../../os/oslib/include/chpipes.h \
- ../../../os/oslib/include/chobjcaches.h \
- ../../../os/oslib/include/chdelegates.h \
+ ChibiOS/os/rt/include/ch.h ChibiOS/os/license/chlicense.h \
+ ChibiOS/os/license/chversion.h ChibiOS/os/license/chcustomer.h \
+ cfg/chconf.h ChibiOS/os/rt/include/chchecks.h \
+ ChibiOS/os/rt/include/chrestrictions.h ChibiOS/os/rt/include/chearly.h \
+ ChibiOS/os/common/ports/ARM-common/include/chtypes.h \
+ ChibiOS/os/common/portability/GCC/ccportab.h \
+ ChibiOS/os/rt/include/chrfcu.h ChibiOS/os/rt/include/chdebug.h \
+ ChibiOS/os/rt/include/chtime.h ChibiOS/os/rt/include/chalign.h \
+ ChibiOS/os/rt/include/chtrace.h ChibiOS/os/rt/include/chport.h \
+ ChibiOS/os/common/ports/ARMv7-M/chcore.h \
+ ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
+ ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/stm32h7xx.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/stm32h743xx.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/system_stm32h7xx.h \
+ ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h \
+ ChibiOS/os/hal/osal/rt-nil/chcore_timer.h \
+ ChibiOS/os/rt/include/chsafety.h ChibiOS/os/rt/include/chlists.h \
+ ChibiOS/os/rt/include/chtm.h ChibiOS/os/rt/include/chstats.h \
+ ChibiOS/os/rt/include/chobjects.h ChibiOS/os/rt/include/chmem.h \
+ ChibiOS/os/rt/include/chsys.h ChibiOS/os/rt/include/chinstances.h \
+ ChibiOS/os/rt/include/chvt.h ChibiOS/os/rt/include/chschd.h \
+ ChibiOS/os/rt/include/chthreads.h ChibiOS/os/rt/include/chregistry.h \
+ ChibiOS/os/rt/include/chsem.h ChibiOS/os/rt/include/chmtx.h \
+ ChibiOS/os/rt/include/chcond.h ChibiOS/os/rt/include/chevents.h \
+ ChibiOS/os/rt/include/chmsg.h ChibiOS/os/oslib/include/chlib.h \
+ ChibiOS/os/oslib/include/chmemchecks.h ChibiOS/os/oslib/include/chbsem.h \
+ ChibiOS/os/oslib/include/chmboxes.h ChibiOS/os/oslib/include/chmemcore.h \
+ ChibiOS/os/oslib/include/chmemheaps.h \
+ ChibiOS/os/oslib/include/chmempools.h \
+ ChibiOS/os/oslib/include/chobjfifos.h ChibiOS/os/oslib/include/chpipes.h \
+ ChibiOS/os/oslib/include/chobjcaches.h \
+ ChibiOS/os/oslib/include/chdelegates.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdarg.h \
- ../../../os/oslib/include/chjobs.h ../../../os/oslib/include/chfactory.h \
- ../../../os/rt/include/chdynamic.h
-../../../os/hal/osal/rt-nil/osal.h:
+ ChibiOS/os/oslib/include/chjobs.h ChibiOS/os/oslib/include/chfactory.h \
+ ChibiOS/os/rt/include/chdynamic.h
+ChibiOS/os/hal/osal/rt-nil/osal.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stddef.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdint.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\stdint.h:
@@ -87,88 +60,64 @@ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\inclu
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_intsup.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_stdint.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdbool.h:
-../../../os/rt/include/ch.h:
-../../../os/license/chlicense.h:
-../../../os/license/chversion.h:
-../../../os/license/chcustomer.h:
+ChibiOS/os/rt/include/ch.h:
+ChibiOS/os/license/chlicense.h:
+ChibiOS/os/license/chversion.h:
+ChibiOS/os/license/chcustomer.h:
 cfg/chconf.h:
-../../../os/rt/include/chchecks.h:
-../../../os/rt/include/chrestrictions.h:
-../../../os/rt/include/chearly.h:
-../../../os/common/ports/ARM-common/chtypes.h:
-../../../os/common/portability/GCC/ccportab.h:
-../../../os/rt/include/chrfcu.h:
-../../../os/rt/include/chdebug.h:
-../../../os/rt/include/chtime.h:
-../../../os/rt/include/chlists.h:
-../../../os/rt/include/chalign.h:
-../../../os/rt/include/chtrace.h:
-../../../os/rt/include/chport.h:
-../../../os/common/ports/ARMv7-M/chcore.h:
-../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
-../../../os/common/ext/ST/STM32H7xx/stm32h7xx.h:
-../../../os/common/ext/ST/STM32H7xx/stm32h743xx.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h:
-../../../os/common/ext/ST/STM32H7xx/system_stm32h7xx.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal.h:
-cfg/stm32h7xx_hal_conf.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h:
-drivers/stm32h7xx-hal-driver/Inc/Legacy/stm32_hal_legacy.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_hcd.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_ll_usb.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_cortex.h:
-../../../os/common/ports/ARMv7-M/mpu.h:
-../../../os/hal/osal/rt-nil/chcore_timer.h:
-../../../os/rt/include/chtm.h:
-../../../os/rt/include/chstats.h:
-../../../os/rt/include/chobjects.h:
-../../../os/rt/include/chsys.h:
-../../../os/rt/include/chinstances.h:
-../../../os/rt/include/chvt.h:
-../../../os/rt/include/chschd.h:
-../../../os/rt/include/chthreads.h:
-../../../os/rt/include/chregistry.h:
-../../../os/rt/include/chsem.h:
-../../../os/rt/include/chmtx.h:
-../../../os/rt/include/chcond.h:
-../../../os/rt/include/chevents.h:
-../../../os/rt/include/chmsg.h:
-../../../os/oslib/include/chlib.h:
-../../../os/oslib/include/chbsem.h:
-../../../os/oslib/include/chmboxes.h:
-../../../os/oslib/include/chmemcore.h:
-../../../os/oslib/include/chmemheaps.h:
-../../../os/oslib/include/chmempools.h:
-../../../os/oslib/include/chobjfifos.h:
-../../../os/oslib/include/chpipes.h:
-../../../os/oslib/include/chobjcaches.h:
-../../../os/oslib/include/chdelegates.h:
+ChibiOS/os/rt/include/chchecks.h:
+ChibiOS/os/rt/include/chrestrictions.h:
+ChibiOS/os/rt/include/chearly.h:
+ChibiOS/os/common/ports/ARM-common/include/chtypes.h:
+ChibiOS/os/common/portability/GCC/ccportab.h:
+ChibiOS/os/rt/include/chrfcu.h:
+ChibiOS/os/rt/include/chdebug.h:
+ChibiOS/os/rt/include/chtime.h:
+ChibiOS/os/rt/include/chalign.h:
+ChibiOS/os/rt/include/chtrace.h:
+ChibiOS/os/rt/include/chport.h:
+ChibiOS/os/common/ports/ARMv7-M/chcore.h:
+ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
+ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/stm32h7xx.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/stm32h743xx.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/system_stm32h7xx.h:
+ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h:
+ChibiOS/os/hal/osal/rt-nil/chcore_timer.h:
+ChibiOS/os/rt/include/chsafety.h:
+ChibiOS/os/rt/include/chlists.h:
+ChibiOS/os/rt/include/chtm.h:
+ChibiOS/os/rt/include/chstats.h:
+ChibiOS/os/rt/include/chobjects.h:
+ChibiOS/os/rt/include/chmem.h:
+ChibiOS/os/rt/include/chsys.h:
+ChibiOS/os/rt/include/chinstances.h:
+ChibiOS/os/rt/include/chvt.h:
+ChibiOS/os/rt/include/chschd.h:
+ChibiOS/os/rt/include/chthreads.h:
+ChibiOS/os/rt/include/chregistry.h:
+ChibiOS/os/rt/include/chsem.h:
+ChibiOS/os/rt/include/chmtx.h:
+ChibiOS/os/rt/include/chcond.h:
+ChibiOS/os/rt/include/chevents.h:
+ChibiOS/os/rt/include/chmsg.h:
+ChibiOS/os/oslib/include/chlib.h:
+ChibiOS/os/oslib/include/chmemchecks.h:
+ChibiOS/os/oslib/include/chbsem.h:
+ChibiOS/os/oslib/include/chmboxes.h:
+ChibiOS/os/oslib/include/chmemcore.h:
+ChibiOS/os/oslib/include/chmemheaps.h:
+ChibiOS/os/oslib/include/chmempools.h:
+ChibiOS/os/oslib/include/chobjfifos.h:
+ChibiOS/os/oslib/include/chpipes.h:
+ChibiOS/os/oslib/include/chobjcaches.h:
+ChibiOS/os/oslib/include/chdelegates.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdarg.h:
-../../../os/oslib/include/chjobs.h:
-../../../os/oslib/include/chfactory.h:
-../../../os/rt/include/chdynamic.h:
+ChibiOS/os/oslib/include/chjobs.h:
+ChibiOS/os/oslib/include/chfactory.h:
+ChibiOS/os/rt/include/chdynamic.h:

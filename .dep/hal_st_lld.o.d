@@ -1,8 +1,8 @@
 build/obj/hal_st_lld.o: \
- ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c \
- ../../../os/hal/include/hal.h \
- ../../../os/common/portability/GCC/ccportab.h \
- ../../../os/hal/osal/rt-nil/osal.h \
+ ChibiOS/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c \
+ ChibiOS/os/hal/include/hal.h \
+ ChibiOS/os/common/portability/GCC/ccportab.h \
+ ChibiOS/os/hal/osal/rt-nil/osal.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stddef.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdint.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\stdint.h \
@@ -12,129 +12,92 @@ build/obj/hal_st_lld.o: \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_intsup.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_stdint.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdbool.h \
- ../../../os/rt/include/ch.h ../../../os/license/chlicense.h \
- ../../../os/license/chversion.h ../../../os/license/chcustomer.h \
- cfg/chconf.h ../../../os/rt/include/chchecks.h \
- ../../../os/rt/include/chrestrictions.h ../../../os/rt/include/chearly.h \
- ../../../os/common/ports/ARM-common/chtypes.h \
- ../../../os/rt/include/chrfcu.h ../../../os/rt/include/chdebug.h \
- ../../../os/rt/include/chtime.h ../../../os/rt/include/chlists.h \
- ../../../os/rt/include/chalign.h ../../../os/rt/include/chtrace.h \
- ../../../os/rt/include/chport.h \
- ../../../os/common/ports/ARMv7-M/chcore.h \
- ../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
- ../../../os/common/ext/ST/STM32H7xx/stm32h7xx.h \
- ../../../os/common/ext/ST/STM32H7xx/stm32h743xx.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h \
- ../../../os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h \
- ../../../os/common/ext/ST/STM32H7xx/system_stm32h7xx.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal.h \
- cfg/stm32h7xx_hal_conf.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h \
- drivers/stm32h7xx-hal-driver/Inc/Legacy/stm32_hal_legacy.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h \
- c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_hcd.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_ll_usb.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr_ex.h \
- drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_cortex.h \
- ../../../os/common/ports/ARMv7-M/mpu.h \
- ../../../os/hal/osal/rt-nil/chcore_timer.h ../../../os/rt/include/chtm.h \
- ../../../os/rt/include/chstats.h ../../../os/rt/include/chobjects.h \
- ../../../os/rt/include/chsys.h ../../../os/rt/include/chinstances.h \
- ../../../os/rt/include/chvt.h ../../../os/rt/include/chschd.h \
- ../../../os/rt/include/chthreads.h ../../../os/rt/include/chregistry.h \
- ../../../os/rt/include/chsem.h ../../../os/rt/include/chmtx.h \
- ../../../os/rt/include/chcond.h ../../../os/rt/include/chevents.h \
- ../../../os/rt/include/chmsg.h ../../../os/oslib/include/chlib.h \
- ../../../os/oslib/include/chbsem.h ../../../os/oslib/include/chmboxes.h \
- ../../../os/oslib/include/chmemcore.h \
- ../../../os/oslib/include/chmemheaps.h \
- ../../../os/oslib/include/chmempools.h \
- ../../../os/oslib/include/chobjfifos.h \
- ../../../os/oslib/include/chpipes.h \
- ../../../os/oslib/include/chobjcaches.h \
- ../../../os/oslib/include/chdelegates.h \
+ ChibiOS/os/rt/include/ch.h ChibiOS/os/license/chlicense.h \
+ ChibiOS/os/license/chversion.h ChibiOS/os/license/chcustomer.h \
+ cfg/chconf.h ChibiOS/os/rt/include/chchecks.h \
+ ChibiOS/os/rt/include/chrestrictions.h ChibiOS/os/rt/include/chearly.h \
+ ChibiOS/os/common/ports/ARM-common/include/chtypes.h \
+ ChibiOS/os/rt/include/chrfcu.h ChibiOS/os/rt/include/chdebug.h \
+ ChibiOS/os/rt/include/chtime.h ChibiOS/os/rt/include/chalign.h \
+ ChibiOS/os/rt/include/chtrace.h ChibiOS/os/rt/include/chport.h \
+ ChibiOS/os/common/ports/ARMv7-M/chcore.h \
+ ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h \
+ ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/stm32h7xx.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/stm32h743xx.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h \
+ ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h \
+ ChibiOS/os/common/ext/ST/STM32H7xx/system_stm32h7xx.h \
+ ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h \
+ ChibiOS/os/hal/osal/rt-nil/chcore_timer.h \
+ ChibiOS/os/rt/include/chsafety.h ChibiOS/os/rt/include/chlists.h \
+ ChibiOS/os/rt/include/chtm.h ChibiOS/os/rt/include/chstats.h \
+ ChibiOS/os/rt/include/chobjects.h ChibiOS/os/rt/include/chmem.h \
+ ChibiOS/os/rt/include/chsys.h ChibiOS/os/rt/include/chinstances.h \
+ ChibiOS/os/rt/include/chvt.h ChibiOS/os/rt/include/chschd.h \
+ ChibiOS/os/rt/include/chthreads.h ChibiOS/os/rt/include/chregistry.h \
+ ChibiOS/os/rt/include/chsem.h ChibiOS/os/rt/include/chmtx.h \
+ ChibiOS/os/rt/include/chcond.h ChibiOS/os/rt/include/chevents.h \
+ ChibiOS/os/rt/include/chmsg.h ChibiOS/os/oslib/include/chlib.h \
+ ChibiOS/os/oslib/include/chmemchecks.h ChibiOS/os/oslib/include/chbsem.h \
+ ChibiOS/os/oslib/include/chmboxes.h ChibiOS/os/oslib/include/chmemcore.h \
+ ChibiOS/os/oslib/include/chmemheaps.h \
+ ChibiOS/os/oslib/include/chmempools.h \
+ ChibiOS/os/oslib/include/chobjfifos.h ChibiOS/os/oslib/include/chpipes.h \
+ ChibiOS/os/oslib/include/chobjcaches.h \
+ ChibiOS/os/oslib/include/chdelegates.h \
  c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdarg.h \
- ../../../os/oslib/include/chjobs.h ../../../os/oslib/include/chfactory.h \
- ../../../os/rt/include/chdynamic.h \
- ../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h cfg/halconf.h \
- cfg/mcuconf.h ../../../os/hal/ports/STM32/STM32H7xx/hal_lld.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_registry.h \
- ../../../os/hal/ports/common/ARMCMx/nvic.h \
- ../../../os/hal/ports/common/ARMCMx/cache.h \
- ../../../os/hal/ports/common/ARMCMx/mpu_v7m.h \
- ../../../os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_isr.h \
- ../../../os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h \
- ../../../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h \
- ../../../os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h \
- ../../../os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h \
- ../../../os/hal/ports/STM32/STM32H7xx/stm32_rcc.h \
- ../../../os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
- ../../../os/hal/include/hal_objects.h \
- ../../../os/hal/include/hal_streams.h \
- ../../../os/hal/include/hal_channels.h \
- ../../../os/hal/include/hal_files.h \
- ../../../os/hal/include/hal_ioblock.h \
- ../../../os/hal/include/hal_mmcsd.h \
- ../../../os/hal/include/hal_persistent.h \
- ../../../os/hal/include/hal_flash.h \
- ../../../os/hal/include/hal_buffers.h \
- ../../../os/hal/include/hal_queues.h \
- ../../../os/hal/include/hal_buffered_serial.h \
- ../../../os/hal/include/hal_pal.h \
- ../../../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h \
- ../../../os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h \
- ../../../os/hal/include/hal_adc.h \
- ../../../os/hal/ports/STM32/LLD/ADCv4/hal_adc_lld.h \
- ../../../os/hal/include/hal_can.h ../../../os/hal/include/hal_crypto.h \
- ../../../os/hal/include/hal_dac.h ../../../os/hal/include/hal_efl.h \
- ../../../os/hal/include/hal_gpt.h ../../../os/hal/include/hal_i2c.h \
- ../../../os/hal/include/hal_i2s.h ../../../os/hal/include/hal_icu.h \
- ../../../os/hal/include/hal_mac.h ../../../os/hal/include/hal_pwm.h \
- ../../../os/hal/include/hal_rtc.h ../../../os/hal/include/hal_serial.h \
- ../../../os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h \
- ../../../os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h \
- ../../../os/hal/include/hal_sdc.h \
- ../../../os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h \
- ../../../os/hal/include/hal_sio.h ../../../os/hal/include/hal_spi.h \
- ../../../os/hal/include/hal_spi_v2.h \
- ../../../os/hal/ports/STM32/LLD/SPIv3/hal_spi_v2_lld.h \
- ../../../os/hal/include/hal_trng.h ../../../os/hal/include/hal_uart.h \
- ../../../os/hal/include/hal_usb.h \
- ../../../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
- ../../../os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
- ../../../os/hal/include/hal_wdg.h ../../../os/hal/include/hal_wspi.h \
- ../../../os/hal/include/hal_st.h \
- ../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
- ../../../os/hal/include/hal_mmc_spi.h \
- ../../../os/hal/include/hal_serial_usb.h
-../../../os/hal/include/hal.h:
-../../../os/common/portability/GCC/ccportab.h:
-../../../os/hal/osal/rt-nil/osal.h:
+ ChibiOS/os/oslib/include/chjobs.h ChibiOS/os/oslib/include/chfactory.h \
+ ChibiOS/os/rt/include/chdynamic.h cfg/halconf.h cfg/mcuconf.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/hal_lld.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_registry.h \
+ ChibiOS/os/hal/ports/common/ARMCMx/nvic.h \
+ ChibiOS/os/hal/ports/common/ARMCMx/cache.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_isr.h \
+ ChibiOS/os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h \
+ ChibiOS/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h \
+ ChibiOS/os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h \
+ ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h \
+ ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_rcc.h \
+ ChibiOS/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
+ ChibiOS/os/hal/include/hal_objects.h \
+ ChibiOS/os/hal/include/hal_streams.h \
+ ChibiOS/os/hal/include/hal_channels.h ChibiOS/os/hal/include/hal_files.h \
+ ChibiOS/os/hal/include/hal_ioblock.h ChibiOS/os/hal/include/hal_mmcsd.h \
+ ChibiOS/os/hal/include/hal_persistent.h \
+ ChibiOS/os/hal/include/hal_flash.h ChibiOS/os/hal/include/hal_safety.h \
+ ChibiOS/os/hal/include/hal_buffers.h ChibiOS/os/hal/include/hal_queues.h \
+ ChibiOS/os/hal/include/hal_buffered_serial.h \
+ ChibiOS/os/hal/include/hal_pal.h \
+ ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h \
+ ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h \
+ ChibiOS/os/hal/include/hal_adc.h ChibiOS/os/hal/include/hal_can.h \
+ ChibiOS/os/hal/include/hal_crypto.h ChibiOS/os/hal/include/hal_dac.h \
+ ChibiOS/os/hal/include/hal_efl.h ChibiOS/os/hal/include/hal_gpt.h \
+ ChibiOS/os/hal/include/hal_i2c.h \
+ ChibiOS/os/hal/ports/STM32/LLD/I2Cv3/hal_i2c_lld.h \
+ ChibiOS/os/hal/include/hal_i2s.h ChibiOS/os/hal/include/hal_icu.h \
+ ChibiOS/os/hal/include/hal_mac.h ChibiOS/os/hal/include/hal_pwm.h \
+ ChibiOS/os/hal/include/hal_rtc.h ChibiOS/os/hal/include/hal_serial.h \
+ ChibiOS/os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h \
+ ChibiOS/os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h \
+ ChibiOS/os/hal/include/hal_sdc.h \
+ ChibiOS/os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h \
+ ChibiOS/os/hal/include/hal_sio.h ChibiOS/os/hal/include/hal_spi.h \
+ ChibiOS/os/hal/include/hal_trng.h ChibiOS/os/hal/include/hal_uart.h \
+ ChibiOS/os/hal/include/hal_usb.h ChibiOS/os/hal/include/hal_wdg.h \
+ ChibiOS/os/hal/include/hal_wspi.h ChibiOS/os/hal/include/hal_st.h \
+ ChibiOS/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
+ ChibiOS/os/hal/include/hal_mmc_spi.h \
+ ChibiOS/os/hal/include/hal_serial_usb.h
+ChibiOS/os/hal/include/hal.h:
+ChibiOS/os/common/portability/GCC/ccportab.h:
+ChibiOS/os/hal/osal/rt-nil/osal.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stddef.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdint.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\stdint.h:
@@ -144,151 +107,122 @@ c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\inclu
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_intsup.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_stdint.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdbool.h:
-../../../os/rt/include/ch.h:
-../../../os/license/chlicense.h:
-../../../os/license/chversion.h:
-../../../os/license/chcustomer.h:
+ChibiOS/os/rt/include/ch.h:
+ChibiOS/os/license/chlicense.h:
+ChibiOS/os/license/chversion.h:
+ChibiOS/os/license/chcustomer.h:
 cfg/chconf.h:
-../../../os/rt/include/chchecks.h:
-../../../os/rt/include/chrestrictions.h:
-../../../os/rt/include/chearly.h:
-../../../os/common/ports/ARM-common/chtypes.h:
-../../../os/rt/include/chrfcu.h:
-../../../os/rt/include/chdebug.h:
-../../../os/rt/include/chtime.h:
-../../../os/rt/include/chlists.h:
-../../../os/rt/include/chalign.h:
-../../../os/rt/include/chtrace.h:
-../../../os/rt/include/chport.h:
-../../../os/common/ports/ARMv7-M/chcore.h:
-../../../os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
-../../../os/common/ext/ST/STM32H7xx/stm32h7xx.h:
-../../../os/common/ext/ST/STM32H7xx/stm32h743xx.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h:
-../../../os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h:
-../../../os/common/ext/ST/STM32H7xx/system_stm32h7xx.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal.h:
-cfg/stm32h7xx_hal_conf.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h:
-drivers/stm32h7xx-hal-driver/Inc/Legacy/stm32_hal_legacy.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\math.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\reent.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\newlib.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\config.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\ieeefp.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\_types.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\machine\_types.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\lock.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\sys\cdefs.h:
-c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\arm-none-eabi\include\_ansi.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_def.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_rcc_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_gpio_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_hcd.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_ll_usb.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_flash_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_pwr_ex.h:
-drivers/stm32h7xx-hal-driver/Inc/stm32h7xx_hal_cortex.h:
-../../../os/common/ports/ARMv7-M/mpu.h:
-../../../os/hal/osal/rt-nil/chcore_timer.h:
-../../../os/rt/include/chtm.h:
-../../../os/rt/include/chstats.h:
-../../../os/rt/include/chobjects.h:
-../../../os/rt/include/chsys.h:
-../../../os/rt/include/chinstances.h:
-../../../os/rt/include/chvt.h:
-../../../os/rt/include/chschd.h:
-../../../os/rt/include/chthreads.h:
-../../../os/rt/include/chregistry.h:
-../../../os/rt/include/chsem.h:
-../../../os/rt/include/chmtx.h:
-../../../os/rt/include/chcond.h:
-../../../os/rt/include/chevents.h:
-../../../os/rt/include/chmsg.h:
-../../../os/oslib/include/chlib.h:
-../../../os/oslib/include/chbsem.h:
-../../../os/oslib/include/chmboxes.h:
-../../../os/oslib/include/chmemcore.h:
-../../../os/oslib/include/chmemheaps.h:
-../../../os/oslib/include/chmempools.h:
-../../../os/oslib/include/chobjfifos.h:
-../../../os/oslib/include/chpipes.h:
-../../../os/oslib/include/chobjcaches.h:
-../../../os/oslib/include/chdelegates.h:
+ChibiOS/os/rt/include/chchecks.h:
+ChibiOS/os/rt/include/chrestrictions.h:
+ChibiOS/os/rt/include/chearly.h:
+ChibiOS/os/common/ports/ARM-common/include/chtypes.h:
+ChibiOS/os/rt/include/chrfcu.h:
+ChibiOS/os/rt/include/chdebug.h:
+ChibiOS/os/rt/include/chtime.h:
+ChibiOS/os/rt/include/chalign.h:
+ChibiOS/os/rt/include/chtrace.h:
+ChibiOS/os/rt/include/chport.h:
+ChibiOS/os/common/ports/ARMv7-M/chcore.h:
+ChibiOS/os/common/startup/ARMCMx/devices/STM32H7xx/cmparams.h:
+ChibiOS/os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/stm32h7xx.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/stm32h743xx.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/core_cm7.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h:
+ChibiOS/os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h:
+ChibiOS/os/common/ext/ST/STM32H7xx/system_stm32h7xx.h:
+ChibiOS/os/common/ports/ARM-common/include/mpu_v7m.h:
+ChibiOS/os/hal/osal/rt-nil/chcore_timer.h:
+ChibiOS/os/rt/include/chsafety.h:
+ChibiOS/os/rt/include/chlists.h:
+ChibiOS/os/rt/include/chtm.h:
+ChibiOS/os/rt/include/chstats.h:
+ChibiOS/os/rt/include/chobjects.h:
+ChibiOS/os/rt/include/chmem.h:
+ChibiOS/os/rt/include/chsys.h:
+ChibiOS/os/rt/include/chinstances.h:
+ChibiOS/os/rt/include/chvt.h:
+ChibiOS/os/rt/include/chschd.h:
+ChibiOS/os/rt/include/chthreads.h:
+ChibiOS/os/rt/include/chregistry.h:
+ChibiOS/os/rt/include/chsem.h:
+ChibiOS/os/rt/include/chmtx.h:
+ChibiOS/os/rt/include/chcond.h:
+ChibiOS/os/rt/include/chevents.h:
+ChibiOS/os/rt/include/chmsg.h:
+ChibiOS/os/oslib/include/chlib.h:
+ChibiOS/os/oslib/include/chmemchecks.h:
+ChibiOS/os/oslib/include/chbsem.h:
+ChibiOS/os/oslib/include/chmboxes.h:
+ChibiOS/os/oslib/include/chmemcore.h:
+ChibiOS/os/oslib/include/chmemheaps.h:
+ChibiOS/os/oslib/include/chmempools.h:
+ChibiOS/os/oslib/include/chobjfifos.h:
+ChibiOS/os/oslib/include/chpipes.h:
+ChibiOS/os/oslib/include/chobjcaches.h:
+ChibiOS/os/oslib/include/chdelegates.h:
 c:\chibistudio\tools\gnu\ tools\ arm\ embedded\11.3\ 2022.08\lib\gcc\arm-none-eabi\11.3.1\include\stdarg.h:
-../../../os/oslib/include/chjobs.h:
-../../../os/oslib/include/chfactory.h:
-../../../os/rt/include/chdynamic.h:
-../../../os/hal/boards/ST_NUCLEO144_H743ZI/board.h:
+ChibiOS/os/oslib/include/chjobs.h:
+ChibiOS/os/oslib/include/chfactory.h:
+ChibiOS/os/rt/include/chdynamic.h:
 cfg/halconf.h:
 cfg/mcuconf.h:
-../../../os/hal/ports/STM32/STM32H7xx/hal_lld.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_registry.h:
-../../../os/hal/ports/common/ARMCMx/nvic.h:
-../../../os/hal/ports/common/ARMCMx/cache.h:
-../../../os/hal/ports/common/ARMCMx/mpu_v7m.h:
-../../../os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_isr.h:
-../../../os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h:
-../../../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h:
-../../../os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h:
-../../../os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h:
-../../../os/hal/ports/STM32/STM32H7xx/stm32_rcc.h:
-../../../os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h:
-../../../os/hal/include/hal_objects.h:
-../../../os/hal/include/hal_streams.h:
-../../../os/hal/include/hal_channels.h:
-../../../os/hal/include/hal_files.h:
-../../../os/hal/include/hal_ioblock.h:
-../../../os/hal/include/hal_mmcsd.h:
-../../../os/hal/include/hal_persistent.h:
-../../../os/hal/include/hal_flash.h:
-../../../os/hal/include/hal_buffers.h:
-../../../os/hal/include/hal_queues.h:
-../../../os/hal/include/hal_buffered_serial.h:
-../../../os/hal/include/hal_pal.h:
-../../../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h:
-../../../os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h:
-../../../os/hal/include/hal_adc.h:
-../../../os/hal/ports/STM32/LLD/ADCv4/hal_adc_lld.h:
-../../../os/hal/include/hal_can.h:
-../../../os/hal/include/hal_crypto.h:
-../../../os/hal/include/hal_dac.h:
-../../../os/hal/include/hal_efl.h:
-../../../os/hal/include/hal_gpt.h:
-../../../os/hal/include/hal_i2c.h:
-../../../os/hal/include/hal_i2s.h:
-../../../os/hal/include/hal_icu.h:
-../../../os/hal/include/hal_mac.h:
-../../../os/hal/include/hal_pwm.h:
-../../../os/hal/include/hal_rtc.h:
-../../../os/hal/include/hal_serial.h:
-../../../os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h:
-../../../os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h:
-../../../os/hal/include/hal_sdc.h:
-../../../os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h:
-../../../os/hal/include/hal_sio.h:
-../../../os/hal/include/hal_spi.h:
-../../../os/hal/include/hal_spi_v2.h:
-../../../os/hal/ports/STM32/LLD/SPIv3/hal_spi_v2_lld.h:
-../../../os/hal/include/hal_trng.h:
-../../../os/hal/include/hal_uart.h:
-../../../os/hal/include/hal_usb.h:
-../../../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h:
-../../../os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h:
-../../../os/hal/include/hal_wdg.h:
-../../../os/hal/include/hal_wspi.h:
-../../../os/hal/include/hal_st.h:
-../../../os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h:
-../../../os/hal/include/hal_mmc_spi.h:
-../../../os/hal/include/hal_serial_usb.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/hal_lld.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_registry.h:
+ChibiOS/os/hal/ports/common/ARMCMx/nvic.h:
+ChibiOS/os/hal/ports/common/ARMCMx/cache.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/hal_lld_type1.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_isr.h:
+ChibiOS/os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.h:
+ChibiOS/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_dmamux.h:
+ChibiOS/os/hal/ports/STM32/LLD/BDMAv1/stm32_bdma.h:
+ChibiOS/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h:
+ChibiOS/os/hal/ports/STM32/STM32H7xx/stm32_rcc.h:
+ChibiOS/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h:
+ChibiOS/os/hal/include/hal_objects.h:
+ChibiOS/os/hal/include/hal_streams.h:
+ChibiOS/os/hal/include/hal_channels.h:
+ChibiOS/os/hal/include/hal_files.h:
+ChibiOS/os/hal/include/hal_ioblock.h:
+ChibiOS/os/hal/include/hal_mmcsd.h:
+ChibiOS/os/hal/include/hal_persistent.h:
+ChibiOS/os/hal/include/hal_flash.h:
+ChibiOS/os/hal/include/hal_safety.h:
+ChibiOS/os/hal/include/hal_buffers.h:
+ChibiOS/os/hal/include/hal_queues.h:
+ChibiOS/os/hal/include/hal_buffered_serial.h:
+ChibiOS/os/hal/include/hal_pal.h:
+ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h:
+ChibiOS/os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h:
+ChibiOS/os/hal/include/hal_adc.h:
+ChibiOS/os/hal/include/hal_can.h:
+ChibiOS/os/hal/include/hal_crypto.h:
+ChibiOS/os/hal/include/hal_dac.h:
+ChibiOS/os/hal/include/hal_efl.h:
+ChibiOS/os/hal/include/hal_gpt.h:
+ChibiOS/os/hal/include/hal_i2c.h:
+ChibiOS/os/hal/ports/STM32/LLD/I2Cv3/hal_i2c_lld.h:
+ChibiOS/os/hal/include/hal_i2s.h:
+ChibiOS/os/hal/include/hal_icu.h:
+ChibiOS/os/hal/include/hal_mac.h:
+ChibiOS/os/hal/include/hal_pwm.h:
+ChibiOS/os/hal/include/hal_rtc.h:
+ChibiOS/os/hal/include/hal_serial.h:
+ChibiOS/os/hal/ports/STM32/LLD/USARTv3/hal_serial_lld.h:
+ChibiOS/os/hal/ports/STM32/LLD/USARTv3/stm32_usart.h:
+ChibiOS/os/hal/include/hal_sdc.h:
+ChibiOS/os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.h:
+ChibiOS/os/hal/include/hal_sio.h:
+ChibiOS/os/hal/include/hal_spi.h:
+ChibiOS/os/hal/include/hal_trng.h:
+ChibiOS/os/hal/include/hal_uart.h:
+ChibiOS/os/hal/include/hal_usb.h:
+ChibiOS/os/hal/include/hal_wdg.h:
+ChibiOS/os/hal/include/hal_wspi.h:
+ChibiOS/os/hal/include/hal_st.h:
+ChibiOS/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h:
+ChibiOS/os/hal/include/hal_mmc_spi.h:
+ChibiOS/os/hal/include/hal_serial_usb.h:

@@ -1,5 +1,5 @@
 /*
-    ChibiOS - Copyright (C) 2006..2020 Giovanni Di Sirio
+    ChibiOS - Copyright (C) 2006..2025 Giovanni Di Sirio
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -29,9 +29,16 @@
 #define HALCONF_H
 
 #define _CHIBIOS_HAL_CONF_
-#define _CHIBIOS_HAL_CONF_VER_8_4_
+#define _CHIBIOS_HAL_CONF_VER_9_0_
 
 #include "mcuconf.h"
+
+/**
+ * @brief   Enables the HAL safety subsystem.
+ */
+#if !defined(HAL_USE_SAFETY) || defined(__DOXYGEN__)
+#define HAL_USE_SAFETY                      FALSE
+#endif
 
 /**
  * @brief   Enables the PAL subsystem.
@@ -44,7 +51,7 @@
  * @brief   Enables the ADC subsystem.
  */
 #if !defined(HAL_USE_ADC) || defined(__DOXYGEN__)
-#define HAL_USE_ADC                         TRUE
+#define HAL_USE_ADC                         FALSE
 #endif
 
 /**
@@ -86,7 +93,7 @@
  * @brief   Enables the I2C subsystem.
  */
 #if !defined(HAL_USE_I2C) || defined(__DOXYGEN__)
-#define HAL_USE_I2C                         FALSE
+#define HAL_USE_I2C                         TRUE
 #endif
 
 /**
@@ -163,7 +170,7 @@
  * @brief   Enables the SPI subsystem.
  */
 #if !defined(HAL_USE_SPI) || defined(__DOXYGEN__)
-#define HAL_USE_SPI                         TRUE
+#define HAL_USE_SPI                         FALSE
 #endif
 
 /**
@@ -184,7 +191,7 @@
  * @brief   Enables the USB subsystem.
  */
 #if !defined(HAL_USE_USB) || defined(__DOXYGEN__)
-#define HAL_USE_USB                         TRUE
+#define HAL_USE_USB                         FALSE
 #endif
 
 /**
@@ -304,6 +311,14 @@
 /*===========================================================================*/
 /* I2C driver related settings.                                              */
 /*===========================================================================*/
+
+/**
+ * @brief   Slave mode API enable switch.
+ * @note    The low level driver must support this capability.
+ */
+#if !defined(I2C_ENABLE_SLAVE_MODE)
+#define I2C_ENABLE_SLAVE_MODE               FALSE
+#endif
 
 /**
  * @brief   Enables the mutual exclusion APIs on the I2C bus.

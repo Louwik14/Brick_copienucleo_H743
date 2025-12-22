@@ -5,10 +5,8 @@
  */
 
 #include "drivers.h"
-#include "spi5_bus.h"
 
 void drivers_init_all(void) {
-    spi5_bus_init();
 
     /* Contrat de démarrage :
        - drv_display   : init + start (thread de rafraîchissement)
@@ -16,7 +14,6 @@ void drivers_init_all(void) {
        - drv_buttons   : start = init + thread de scan
        - drv_encoders  : start = init + thread de scan
        - drv_pots      : start = init + thread de scan */
-    drv_display_start();
 
 }
 

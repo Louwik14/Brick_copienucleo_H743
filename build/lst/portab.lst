@@ -1,0 +1,343 @@
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"portab.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.portab_setup,"ax",%progbits
+  18              		.align	1
+  19              		.p2align 4,,15
+  20              		.global	portab_setup
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	portab_setup, %function
+  25              	portab_setup:
+  26              	.LFB448:
+  27              		.file 1 "./cfg/portab.c"
+  28              		.loc 1 52 25 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              		.loc 1 54 1 view .LVU1
+  34 0000 7047     		bx	lr
+  35              		.cfi_endproc
+  36              	.LFE448:
+  37              		.size	portab_setup, .-portab_setup
+  38 0002 00BF     		.text
+  39              	.Letext0:
+  40              		.section	.debug_info,"",%progbits
+  41              	.Ldebug_info0:
+  42 0000 90000000 		.4byte	0x90
+  43 0004 0500     		.2byte	0x5
+  44 0006 01       		.byte	0x1
+  45 0007 04       		.byte	0x4
+  46 0008 00000000 		.4byte	.Ldebug_abbrev0
+  47 000c 02       		.uleb128 0x2
+  48 000d 06010000 		.4byte	.LASF12
+  49 0011 1D       		.byte	0x1d
+  50 0012 D5000000 		.4byte	.LASF13
+  51 0016 2E000000 		.4byte	.LASF14
+  52 001a 0C000000 		.4byte	.LLRL0
+  53 001e 00000000 		.4byte	0
+  54 0022 00000000 		.4byte	.Ldebug_line0
+  55 0026 03       		.uleb128 0x3
+  56 0027 04       		.byte	0x4
+  57 0028 05       		.byte	0x5
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 2
+
+
+  58 0029 696E7400 		.ascii	"int\000"
+  59 002d 01       		.uleb128 0x1
+  60 002e 04       		.byte	0x4
+  61 002f 07       		.byte	0x7
+  62 0030 21000000 		.4byte	.LASF0
+  63 0034 01       		.uleb128 0x1
+  64 0035 08       		.byte	0x8
+  65 0036 05       		.byte	0x5
+  66 0037 00000000 		.4byte	.LASF1
+  67 003b 01       		.uleb128 0x1
+  68 003c 08       		.byte	0x8
+  69 003d 04       		.byte	0x4
+  70 003e F0000000 		.4byte	.LASF2
+  71 0042 01       		.uleb128 0x1
+  72 0043 01       		.byte	0x1
+  73 0044 06       		.byte	0x6
+  74 0045 E4000000 		.4byte	.LASF3
+  75 0049 01       		.uleb128 0x1
+  76 004a 01       		.byte	0x1
+  77 004b 08       		.byte	0x8
+  78 004c A6000000 		.4byte	.LASF4
+  79 0050 01       		.uleb128 0x1
+  80 0051 02       		.byte	0x2
+  81 0052 05       		.byte	0x5
+  82 0053 FC000000 		.4byte	.LASF5
+  83 0057 01       		.uleb128 0x1
+  84 0058 02       		.byte	0x2
+  85 0059 07       		.byte	0x7
+  86 005a 0E000000 		.4byte	.LASF6
+  87 005e 01       		.uleb128 0x1
+  88 005f 04       		.byte	0x4
+  89 0060 05       		.byte	0x5
+  90 0061 C6000000 		.4byte	.LASF7
+  91 0065 01       		.uleb128 0x1
+  92 0066 04       		.byte	0x4
+  93 0067 07       		.byte	0x7
+  94 0068 7D000000 		.4byte	.LASF8
+  95 006c 01       		.uleb128 0x1
+  96 006d 08       		.byte	0x8
+  97 006e 07       		.byte	0x7
+  98 006f 8F000000 		.4byte	.LASF9
+  99 0073 01       		.uleb128 0x1
+ 100 0074 01       		.byte	0x1
+ 101 0075 08       		.byte	0x8
+ 102 0076 C1000000 		.4byte	.LASF10
+ 103 007a 01       		.uleb128 0x1
+ 104 007b 01       		.byte	0x1
+ 105 007c 02       		.byte	0x2
+ 106 007d CF000000 		.4byte	.LASF11
+ 107 0081 04       		.uleb128 0x4
+ 108 0082 B4000000 		.4byte	.LASF15
+ 109 0086 01       		.byte	0x1
+ 110 0087 34       		.byte	0x34
+ 111 0088 06       		.byte	0x6
+ 112 0089 00000000 		.4byte	.LFB448
+ 113 008d 02000000 		.4byte	.LFE448-.LFB448
+ 114 0091 01       		.uleb128 0x1
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 3
+
+
+ 115 0092 9C       		.byte	0x9c
+ 116 0093 00       		.byte	0
+ 117              		.section	.debug_abbrev,"",%progbits
+ 118              	.Ldebug_abbrev0:
+ 119 0000 01       		.uleb128 0x1
+ 120 0001 24       		.uleb128 0x24
+ 121 0002 00       		.byte	0
+ 122 0003 0B       		.uleb128 0xb
+ 123 0004 0B       		.uleb128 0xb
+ 124 0005 3E       		.uleb128 0x3e
+ 125 0006 0B       		.uleb128 0xb
+ 126 0007 03       		.uleb128 0x3
+ 127 0008 0E       		.uleb128 0xe
+ 128 0009 00       		.byte	0
+ 129 000a 00       		.byte	0
+ 130 000b 02       		.uleb128 0x2
+ 131 000c 11       		.uleb128 0x11
+ 132 000d 01       		.byte	0x1
+ 133 000e 25       		.uleb128 0x25
+ 134 000f 0E       		.uleb128 0xe
+ 135 0010 13       		.uleb128 0x13
+ 136 0011 0B       		.uleb128 0xb
+ 137 0012 03       		.uleb128 0x3
+ 138 0013 0E       		.uleb128 0xe
+ 139 0014 1B       		.uleb128 0x1b
+ 140 0015 0E       		.uleb128 0xe
+ 141 0016 55       		.uleb128 0x55
+ 142 0017 17       		.uleb128 0x17
+ 143 0018 11       		.uleb128 0x11
+ 144 0019 01       		.uleb128 0x1
+ 145 001a 10       		.uleb128 0x10
+ 146 001b 17       		.uleb128 0x17
+ 147 001c 00       		.byte	0
+ 148 001d 00       		.byte	0
+ 149 001e 03       		.uleb128 0x3
+ 150 001f 24       		.uleb128 0x24
+ 151 0020 00       		.byte	0
+ 152 0021 0B       		.uleb128 0xb
+ 153 0022 0B       		.uleb128 0xb
+ 154 0023 3E       		.uleb128 0x3e
+ 155 0024 0B       		.uleb128 0xb
+ 156 0025 03       		.uleb128 0x3
+ 157 0026 08       		.uleb128 0x8
+ 158 0027 00       		.byte	0
+ 159 0028 00       		.byte	0
+ 160 0029 04       		.uleb128 0x4
+ 161 002a 2E       		.uleb128 0x2e
+ 162 002b 00       		.byte	0
+ 163 002c 3F       		.uleb128 0x3f
+ 164 002d 19       		.uleb128 0x19
+ 165 002e 03       		.uleb128 0x3
+ 166 002f 0E       		.uleb128 0xe
+ 167 0030 3A       		.uleb128 0x3a
+ 168 0031 0B       		.uleb128 0xb
+ 169 0032 3B       		.uleb128 0x3b
+ 170 0033 0B       		.uleb128 0xb
+ 171 0034 39       		.uleb128 0x39
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 4
+
+
+ 172 0035 0B       		.uleb128 0xb
+ 173 0036 27       		.uleb128 0x27
+ 174 0037 19       		.uleb128 0x19
+ 175 0038 11       		.uleb128 0x11
+ 176 0039 01       		.uleb128 0x1
+ 177 003a 12       		.uleb128 0x12
+ 178 003b 06       		.uleb128 0x6
+ 179 003c 40       		.uleb128 0x40
+ 180 003d 18       		.uleb128 0x18
+ 181 003e 7A       		.uleb128 0x7a
+ 182 003f 19       		.uleb128 0x19
+ 183 0040 00       		.byte	0
+ 184 0041 00       		.byte	0
+ 185 0042 00       		.byte	0
+ 186              		.section	.debug_aranges,"",%progbits
+ 187 0000 1C000000 		.4byte	0x1c
+ 188 0004 0200     		.2byte	0x2
+ 189 0006 00000000 		.4byte	.Ldebug_info0
+ 190 000a 04       		.byte	0x4
+ 191 000b 00       		.byte	0
+ 192 000c 0000     		.2byte	0
+ 193 000e 0000     		.2byte	0
+ 194 0010 00000000 		.4byte	.LFB448
+ 195 0014 02000000 		.4byte	.LFE448-.LFB448
+ 196 0018 00000000 		.4byte	0
+ 197 001c 00000000 		.4byte	0
+ 198              		.section	.debug_rnglists,"",%progbits
+ 199              	.Ldebug_ranges0:
+ 200 0000 0F000000 		.4byte	.Ldebug_ranges3-.Ldebug_ranges2
+ 201              	.Ldebug_ranges2:
+ 202 0004 0500     		.2byte	0x5
+ 203 0006 04       		.byte	0x4
+ 204 0007 00       		.byte	0
+ 205 0008 00000000 		.4byte	0
+ 206              	.LLRL0:
+ 207 000c 07       		.byte	0x7
+ 208 000d 00000000 		.4byte	.LFB448
+ 209 0011 02       		.uleb128 .LFE448-.LFB448
+ 210 0012 00       		.byte	0
+ 211              	.Ldebug_ranges3:
+ 212              		.section	.debug_line,"",%progbits
+ 213              	.Ldebug_line0:
+ 214 0000 3F000000 		.section	.debug_str,"MS",%progbits,1
+ 214      03002500 
+ 214      00000201 
+ 214      FB0E0D00 
+ 214      01010101 
+ 215              	.LASF1:
+ 216 0000 6C6F6E67 		.ascii	"long long int\000"
+ 216      206C6F6E 
+ 216      6720696E 
+ 216      7400
+ 217              	.LASF6:
+ 218 000e 73686F72 		.ascii	"short unsigned int\000"
+ 218      7420756E 
+ 218      7369676E 
+ 218      65642069 
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 5
+
+
+ 218      6E7400
+ 219              	.LASF0:
+ 220 0021 756E7369 		.ascii	"unsigned int\000"
+ 220      676E6564 
+ 220      20696E74 
+ 220      00
+ 221              	.LASF14:
+ 222 002e 433A5C43 		.ascii	"C:\\ChibiStudio\\chibios2111\\demos\\STM32\\RT-STM3"
+ 222      68696269 
+ 222      53747564 
+ 222      696F5C63 
+ 222      68696269 
+ 223 005c 32483734 		.ascii	"2H743ZI_REV_XY-NUCLEO144 - Copie\000"
+ 223      335A495F 
+ 223      5245565F 
+ 223      58592D4E 
+ 223      55434C45 
+ 224              	.LASF8:
+ 225 007d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 225      20756E73 
+ 225      69676E65 
+ 225      6420696E 
+ 225      7400
+ 226              	.LASF9:
+ 227 008f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 227      206C6F6E 
+ 227      6720756E 
+ 227      7369676E 
+ 227      65642069 
+ 228              	.LASF4:
+ 229 00a6 756E7369 		.ascii	"unsigned char\000"
+ 229      676E6564 
+ 229      20636861 
+ 229      7200
+ 230              	.LASF15:
+ 231 00b4 706F7274 		.ascii	"portab_setup\000"
+ 231      61625F73 
+ 231      65747570 
+ 231      00
+ 232              	.LASF10:
+ 233 00c1 63686172 		.ascii	"char\000"
+ 233      00
+ 234              	.LASF7:
+ 235 00c6 6C6F6E67 		.ascii	"long int\000"
+ 235      20696E74 
+ 235      00
+ 236              	.LASF11:
+ 237 00cf 5F426F6F 		.ascii	"_Bool\000"
+ 237      6C00
+ 238              	.LASF13:
+ 239 00d5 2E2F6366 		.ascii	"./cfg/portab.c\000"
+ 239      672F706F 
+ 239      72746162 
+ 239      2E6300
+ 240              	.LASF3:
+ 241 00e4 7369676E 		.ascii	"signed char\000"
+ 241      65642063 
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 6
+
+
+ 241      68617200 
+ 242              	.LASF2:
+ 243 00f0 6C6F6E67 		.ascii	"long double\000"
+ 243      20646F75 
+ 243      626C6500 
+ 244              	.LASF5:
+ 245 00fc 73686F72 		.ascii	"short int\000"
+ 245      7420696E 
+ 245      7400
+ 246              	.LASF12:
+ 247 0106 474E5520 		.ascii	"GNU C17 11.3.1 20220712 -mcpu=cortex-m7 -mthumb -mf"
+ 247      43313720 
+ 247      31312E33 
+ 247      2E312032 
+ 247      30323230 
+ 248 0139 6C6F6174 		.ascii	"loat-abi=soft -march=armv7e-m -ggdb -O2 -fomit-fram"
+ 248      2D616269 
+ 248      3D736F66 
+ 248      74202D6D 
+ 248      61726368 
+ 249 016c 652D706F 		.ascii	"e-pointer -falign-functions=16 -ffunction-sections "
+ 249      696E7465 
+ 249      72202D66 
+ 249      616C6967 
+ 249      6E2D6675 
+ 250 019f 2D666461 		.ascii	"-fdata-sections -fno-common\000"
+ 250      74612D73 
+ 250      65637469 
+ 250      6F6E7320 
+ 250      2D666E6F 
+ 251              		.ident	"GCC: (Arm GNU Toolchain 11.3.Rel1) 11.3.1 20220712"
+ARM GAS  C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 portab.c
+C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s:18     .text.portab_setup:00000000 $t
+C:\Users\DEVELO~1\AppData\Local\Temp\ccr3opIJ.s:25     .text.portab_setup:00000000 portab_setup
+
+NO UNDEFINED SYMBOLS

@@ -22,7 +22,6 @@
 /**
  * @brief Drivers matériels composant le système Brick.
  */
-#include "drv_display.h"
 
 
 /* ====================================================================== */
